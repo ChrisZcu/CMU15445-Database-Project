@@ -285,8 +285,127 @@ namespace bustub
    * necessary.
    */
   INDEX_TEMPLATE_ARGUMENTS
-  void BPLUSTREE_TYPE::Remove(const KeyType &key, Transaction *transaction) {}
+  void BPLUSTREE_TYPE::Remove(const KeyType &key, Transaction *transaction)
+  {
+    if (IsEmpty)
+      return;
+    Page *leaf_page = FindLeafPage(key, transaction, DELETE);
 
+    if (leaf_page == nullptr)
+      return;
+
+    DeleteEntry(leaf_page, key, transaction);
+    UnLockAndUnpin(transaction, DELETE);
+  }
+  INDEX_TEMPLATE_ARGUMENTS
+  auto BPLUSTREE_TYPE::DeleteEntry(Page *&page, const KeyType &key, Transaction *transaction) -> void
+  {
+    auto b_node = reinterpret_cast<BPlusTreePage *>(page->GetData());
+    if (b_node->IsLeafPage())
+    {
+      auto leaf_node = reinterpret_cast<LeafPage *>(page->GetData());
+      if (!leaf_node->Delete(key, comparator_))
+      {
+        Transaction.GetPageSet()->pop_back();
+        page->WUnlatch();
+        buffer_pool_manager_->UnpinPage(page->GetPageId(), true);
+      }
+    }
+    else
+    {
+      auto inter_node = reinterpret_cast<InternalPage *>(page->GetData());
+      if (!inter_node->Delete(key, comparator_))
+      {
+        Transaction.GetPageSet()->pop_back();
+        page->WUnlatch();
+        buffer_pool_manager_->UnpinPage(page->GetPageId(), true);
+      }
+    }
+    // 删除之后的情况处理
+    // 当前节点为根节点
+    if (b_node->GetPageId() == root_page_id)
+    {
+      // 空树
+      if (b_node->IsLeafPage() && b_node->GetSize() == 0)
+      {
+        root_page_id_ = INVALID_PAGE_ID;
+        transaction->GetPageSet()->pop_back();
+        page->WUnlatch();
+        buffer_pool_manager_->UnpinPage(page->GetPageId(), true);
+        buffer_pool_manager_->DeletePage(page->GetPageId());
+        return;
+      }
+      // 处理root节点的删除情况，root节点孩子数目小于2
+      if (b_node->IsRootPage() && b_node->GetSize() == 1)
+      {
+        auto inter_node = reinterpret_cast<InternalPage *>(page->GetData());
+        root_page_id_ inter_node->ValueAt(0);
+        transaction->GetPageSet()->pop_stack();
+        page->WUnlatch();
+        buffer_pool_manager_->UnpinPage(page->GetPageId(), true);
+        buffer_pool_manager_->DeletePage(page->GetPageId());
+        return;
+      }
+      transaction->GetPageSet()->pop_stack();
+      page->WUnlatch();
+      buffer_pool_manager_->UnpinPage(page->GetPageId(), true);
+      return;
+    }
+    // 删除后的节点数目小于最小下限，进行合并或者向邻居节点借用
+    if (b_node->GetSize() < b_node->GetMinSize())
+    {
+      Page *bother_page;
+      KeyType parent_key;
+      bool ispre; // 判断邻居节点来自于前或者后
+
+      auto parent_page = (*transaction->GetPageSet())[transaction->GetPageSet()->size() - 2];
+      auto parent_node = reinterpret_cast<InternalPage *>(parent_page);
+
+      parent_node->GetBotherPage(page->GetPageId(), bother_page, parent_key, ispre, buffer_pool_manager_);
+      auto bother_node = reinterpret_cast<InternalPage *>(bother_page->GetData());
+      // 相加后节点数目小，进行合并
+      if (b_node->GetSize() + bother_node->GetSize() <= GetMaxSize(b_node))
+      {
+        if (!ispre)
+        {
+          auto tmp_page = page;
+          page = bother_page;
+          bother_page = tmp_page;
+          auto tmp_node = b_node;
+          b_node = bother_node;
+          bother_node = tmp_node;
+        }
+        if (b_node->IsRootPage())
+        {
+          auto inter_bother_node = reinterpret_cast<InternalPage *>(bother_page->GetData());
+          inter_bother_node->Merge(parent_key, page, buffer_pool_manager_);
+          transaction->GetPageSet()->pop_back();
+          bother_page->WUnlatch();
+          buffer_pool_manager_->UnpinPage(inter_bother_node->GetPageId(), true);
+        }
+        else
+        {
+          auto leaf_bother_node = reinterpret_cast<LeafPage *>(bother_page->GetData());
+          auto leaf_b_node = reinterpret_cast<LeafPage *>(page->GetData());
+          auto next_page_id = leaf_b_node->GetNextPageId();
+          leaf_bother_node->Merge(page, buffer_pool_manager_);
+          leaf_bother_node->SetNextPageId(next_page_id);
+          transaction->GetPageSet()->pop_back();
+          bother_page->WUnlatch();
+          buffer_pool_manager_->UnpinPage(leaf_bother_node->GetPageId(), true);
+        }
+        DeleteEntry(parent_page, parent_key, transaction);
+      }
+      else
+      { // 借用
+      }
+    }
+  }
+  INDEX_TEMPLATE_ARGUMENTS
+  auto BPLUSTREE_TYPE::GetMaxSize(BPlusTreePage *page_node) const -> int
+  {
+    return page_node->IsLeafPage() ? leaf_max_size_ - 1 : internal_max_size_;
+  }
   /*****************************************************************************
    * INDEX ITERATOR
    *****************************************************************************/
