@@ -258,7 +258,7 @@ namespace bustub
     /** The child executor that produces tuples over which the aggregation is computed */
     std::unique_ptr<AbstractExecutor> child_;
     /** Simple aggregation hash table */
-    SimpleAggregationHashTable aht; // 储存init时候的列对应的所有的值，在next的时候进行emit
+    SimpleAggregationHashTable aht_; // 储存init时候的列对应的所有的值，在next的时候进行emit
     // TODO(Student): Uncomment SimpleAggregationHashTable aht_;
     /** Simple aggregation hash table iterator */
     // TODO(Student): Uncomment SimpleAggregationHashTable::Iterator aht_iterator_;
