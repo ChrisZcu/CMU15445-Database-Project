@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub
+CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
+CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build
 
 # Include any dependencies generated for this target.
 include src/buffer/CMakeFiles/bustub_buffer.dir/depend.make
@@ -69,63 +69,63 @@ include src/buffer/CMakeFiles/bustub_buffer.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/buffer/CMakeFiles/bustub_buffer.dir/flags.make
 
-src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.o: src/buffer/CMakeFiles/bustub_buffer.dir/flags.make
-src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/buffer_pool_manager.cpp
-src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.o: src/buffer/CMakeFiles/bustub_buffer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.o"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.o -MF CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.o.d -o CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/buffer_pool_manager.cpp
+src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.o: src/buffer/CMakeFiles/bustub_buffer.dir/flags.make
+src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/buffer_pool_manager_instance.cpp
+src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.o: src/buffer/CMakeFiles/bustub_buffer.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.o"
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.o -MF CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.o.d -o CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/buffer_pool_manager_instance.cpp
 
-src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.i"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/buffer_pool_manager.cpp > CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.i
+src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.i"
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/buffer_pool_manager_instance.cpp > CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.i
 
-src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.s"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/buffer_pool_manager.cpp -o CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.s
+src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.s"
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/buffer_pool_manager_instance.cpp -o CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.s
 
 src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o: src/buffer/CMakeFiles/bustub_buffer.dir/flags.make
-src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/clock_replacer.cpp
+src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/clock_replacer.cpp
 src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o: src/buffer/CMakeFiles/bustub_buffer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o -MF CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o.d -o CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/clock_replacer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o"
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o -MF CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o.d -o CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/clock_replacer.cpp
 
 src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.i"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/clock_replacer.cpp > CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/clock_replacer.cpp > CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.i
 
 src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.s"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/clock_replacer.cpp -o CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/clock_replacer.cpp -o CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.s
 
 src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o: src/buffer/CMakeFiles/bustub_buffer.dir/flags.make
-src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/lru_replacer.cpp
+src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/lru_replacer.cpp
 src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o: src/buffer/CMakeFiles/bustub_buffer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o -MF CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o.d -o CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/lru_replacer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o"
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o -MF CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o.d -o CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/lru_replacer.cpp
 
 src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.i"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/lru_replacer.cpp > CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/lru_replacer.cpp > CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.i
 
 src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.s"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/lru_replacer.cpp -o CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/lru_replacer.cpp -o CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.s
 
 src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o: src/buffer/CMakeFiles/bustub_buffer.dir/flags.make
-src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/lru_k_replacer.cpp
+src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/lru_k_replacer.cpp
 src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o: src/buffer/CMakeFiles/bustub_buffer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o -MF CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o.d -o CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/lru_k_replacer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o"
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o -MF CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o.d -o CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/lru_k_replacer.cpp
 
 src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.i"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/lru_k_replacer.cpp > CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/lru_k_replacer.cpp > CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.i
 
 src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.s"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/lru_k_replacer.cpp -o CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/buffer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/lru_k_replacer.cpp -o CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.s
 
-bustub_buffer: src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.o
+bustub_buffer: src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.o
 bustub_buffer: src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o
 bustub_buffer: src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o
 bustub_buffer: src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o
@@ -137,10 +137,10 @@ src/buffer/CMakeFiles/bustub_buffer.dir/build: bustub_buffer
 .PHONY : src/buffer/CMakeFiles/bustub_buffer.dir/build
 
 src/buffer/CMakeFiles/bustub_buffer.dir/clean:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/buffer && $(CMAKE_COMMAND) -P CMakeFiles/bustub_buffer.dir/cmake_clean.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/buffer && $(CMAKE_COMMAND) -P CMakeFiles/bustub_buffer.dir/cmake_clean.cmake
 .PHONY : src/buffer/CMakeFiles/bustub_buffer.dir/clean
 
 src/buffer/CMakeFiles/bustub_buffer.dir/depend:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/buffer /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/buffer/CMakeFiles/bustub_buffer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/buffer /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/buffer/CMakeFiles/bustub_buffer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/buffer/CMakeFiles/bustub_buffer.dir/depend
 

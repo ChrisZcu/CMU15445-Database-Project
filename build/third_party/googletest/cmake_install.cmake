@@ -1,4 +1,4 @@
-# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/googletest
+# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party/googletest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/third_party/googletest/googlemock/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/third_party/googletest/googlemock/cmake_install.cmake")
 
 endif()
 

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/libfort/lib
+# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party/libfort/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/lib/libfort.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/lib/libfort.a")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libfort.a" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libfort.a")
     execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libfort.a")
@@ -47,19 +47,19 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES
-    "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/libfort/lib/fort.h"
-    "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/libfort/lib/fort.hpp"
+    "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party/libfort/lib/fort.h"
+    "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party/libfort/lib/fort.hpp"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/third_party/libfort/lib/libfort.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/third_party/libfort/lib/libfort.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libfort" TYPE FILE FILES
-    "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/third_party/libfort/lib/libfort-config.cmake"
-    "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/third_party/libfort/lib/libfort-config-version.cmake"
+    "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/third_party/libfort/lib/libfort-config.cmake"
+    "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/third_party/libfort/lib/libfort-config-version.cmake"
     )
 endif()
 
@@ -67,7 +67,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/libfort/libfort-targets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/libfort/libfort-targets.cmake"
-         "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/third_party/libfort/lib/CMakeFiles/Export/bba6333106b5e1b5982ab34d57f28053/libfort-targets.cmake")
+         "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/third_party/libfort/lib/CMakeFiles/Export/bba6333106b5e1b5982ab34d57f28053/libfort-targets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/libfort/libfort-targets-*.cmake")
       if(_cmake_old_config_files)
@@ -80,9 +80,9 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libfort" TYPE FILE FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/third_party/libfort/lib/CMakeFiles/Export/bba6333106b5e1b5982ab34d57f28053/libfort-targets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libfort" TYPE FILE FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/third_party/libfort/lib/CMakeFiles/Export/bba6333106b5e1b5982ab34d57f28053/libfort-targets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libfort" TYPE FILE FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/third_party/libfort/lib/CMakeFiles/Export/bba6333106b5e1b5982ab34d57f28053/libfort-targets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libfort" TYPE FILE FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/third_party/libfort/lib/CMakeFiles/Export/bba6333106b5e1b5982ab34d57f28053/libfort-targets-debug.cmake")
   endif()
 endif()
 

@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/tools/sqllogictest/parser.cpp" "tools/sqllogictest/CMakeFiles/sqllogictest.dir/parser.cpp.o" "gcc" "tools/sqllogictest/CMakeFiles/sqllogictest.dir/parser.cpp.o.d"
-  "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/tools/sqllogictest/sqllogictest.cpp" "tools/sqllogictest/CMakeFiles/sqllogictest.dir/sqllogictest.cpp.o" "gcc" "tools/sqllogictest/CMakeFiles/sqllogictest.dir/sqllogictest.cpp.o.d"
+  "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/tools/sqllogictest/parser.cpp" "tools/sqllogictest/CMakeFiles/sqllogictest.dir/parser.cpp.o" "gcc" "tools/sqllogictest/CMakeFiles/sqllogictest.dir/parser.cpp.o.d"
+  "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/tools/sqllogictest/sqllogictest.cpp" "tools/sqllogictest/CMakeFiles/sqllogictest.dir/sqllogictest.cpp.o" "gcc" "tools/sqllogictest/CMakeFiles/sqllogictest.dir/sqllogictest.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

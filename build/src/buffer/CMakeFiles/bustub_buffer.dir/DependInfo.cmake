@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/buffer_pool_manager.cpp" "src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.o" "gcc" "src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.o.d"
-  "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/clock_replacer.cpp" "src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o" "gcc" "src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o.d"
-  "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/lru_k_replacer.cpp" "src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o" "gcc" "src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o.d"
-  "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/buffer/lru_replacer.cpp" "src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o" "gcc" "src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o.d"
+  "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/buffer_pool_manager_instance.cpp" "src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.o" "gcc" "src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.o.d"
+  "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/clock_replacer.cpp" "src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o" "gcc" "src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o.d"
+  "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/lru_k_replacer.cpp" "src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o" "gcc" "src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o.d"
+  "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/buffer/lru_replacer.cpp" "src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o" "gcc" "src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -8,10 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/common/bustub_ddl.cpp" "src/common/CMakeFiles/bustub_common.dir/bustub_ddl.cpp.o" "gcc" "src/common/CMakeFiles/bustub_common.dir/bustub_ddl.cpp.o.d"
-  "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/common/bustub_instance.cpp" "src/common/CMakeFiles/bustub_common.dir/bustub_instance.cpp.o" "gcc" "src/common/CMakeFiles/bustub_common.dir/bustub_instance.cpp.o.d"
-  "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/common/config.cpp" "src/common/CMakeFiles/bustub_common.dir/config.cpp.o" "gcc" "src/common/CMakeFiles/bustub_common.dir/config.cpp.o.d"
-  "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/common/util/string_util.cpp" "src/common/CMakeFiles/bustub_common.dir/util/string_util.cpp.o" "gcc" "src/common/CMakeFiles/bustub_common.dir/util/string_util.cpp.o.d"
+  "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/common/bustub_instance.cpp" "src/common/CMakeFiles/bustub_common.dir/bustub_instance.cpp.o" "gcc" "src/common/CMakeFiles/bustub_common.dir/bustub_instance.cpp.o.d"
+  "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/common/config.cpp" "src/common/CMakeFiles/bustub_common.dir/config.cpp.o" "gcc" "src/common/CMakeFiles/bustub_common.dir/config.cpp.o.d"
+  "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/common/util/string_util.cpp" "src/common/CMakeFiles/bustub_common.dir/util/string_util.cpp.o" "gcc" "src/common/CMakeFiles/bustub_common.dir/util/string_util.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/googletest/googlemock/src/gmock_main.cc" "third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o" "gcc" "third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d"
+  "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party/googletest/googlemock/src/gmock_main.cc" "third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o" "gcc" "third_party/googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

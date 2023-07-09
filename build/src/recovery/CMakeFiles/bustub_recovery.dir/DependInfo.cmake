@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/recovery/checkpoint_manager.cpp" "src/recovery/CMakeFiles/bustub_recovery.dir/checkpoint_manager.cpp.o" "gcc" "src/recovery/CMakeFiles/bustub_recovery.dir/checkpoint_manager.cpp.o.d"
-  "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/recovery/log_manager.cpp" "src/recovery/CMakeFiles/bustub_recovery.dir/log_manager.cpp.o" "gcc" "src/recovery/CMakeFiles/bustub_recovery.dir/log_manager.cpp.o.d"
+  "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/recovery/checkpoint_manager.cpp" "src/recovery/CMakeFiles/bustub_recovery.dir/checkpoint_manager.cpp.o" "gcc" "src/recovery/CMakeFiles/bustub_recovery.dir/checkpoint_manager.cpp.o.d"
+  "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/recovery/log_manager.cpp" "src/recovery/CMakeFiles/bustub_recovery.dir/log_manager.cpp.o" "gcc" "src/recovery/CMakeFiles/bustub_recovery.dir/log_manager.cpp.o.d"
+  "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/recovery/log_recovery.cpp" "src/recovery/CMakeFiles/bustub_recovery.dir/log_recovery.cpp.o" "gcc" "src/recovery/CMakeFiles/bustub_recovery.dir/log_recovery.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

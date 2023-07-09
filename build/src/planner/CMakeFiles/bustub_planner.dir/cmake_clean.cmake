@@ -5,8 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/bustub_planner.dir/plan_aggregation.cpp.o.d"
   "CMakeFiles/bustub_planner.dir/plan_expression.cpp.o"
   "CMakeFiles/bustub_planner.dir/plan_expression.cpp.o.d"
-  "CMakeFiles/bustub_planner.dir/plan_func_call.cpp.o"
-  "CMakeFiles/bustub_planner.dir/plan_func_call.cpp.o.d"
   "CMakeFiles/bustub_planner.dir/plan_insert.cpp.o"
   "CMakeFiles/bustub_planner.dir/plan_insert.cpp.o.d"
   "CMakeFiles/bustub_planner.dir/plan_select.cpp.o"

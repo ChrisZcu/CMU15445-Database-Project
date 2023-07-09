@@ -1,4 +1,4 @@
-# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src
+# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,19 +39,19 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/binder/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/buffer/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/catalog/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/common/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/concurrency/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/container/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/execution/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/recovery/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/storage/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/type/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/planner/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/primer/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/binder/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/buffer/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/catalog/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/common/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/concurrency/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/container/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/execution/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/recovery/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/storage/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/type/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/planner/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/primer/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer/cmake_install.cmake")
 
 endif()
 

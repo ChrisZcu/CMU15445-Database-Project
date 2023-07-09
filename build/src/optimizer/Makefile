@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub
+CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
+CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CPackSourceConfig.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer//CMakeFiles/progress.marks
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles 0
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer//CMakeFiles/progress.marks
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/clean
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/preinstall
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/preinstall
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/optimizer/CMakeFiles/bustub_optimizer.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/CMakeFiles/bustub_optimizer.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/CMakeFiles/bustub_optimizer.dir/rule
 .PHONY : src/optimizer/CMakeFiles/bustub_optimizer.dir/rule
 
 # Convenience name for target.
@@ -202,7 +202,7 @@ bustub_optimizer: src/optimizer/CMakeFiles/bustub_optimizer.dir/rule
 
 # fast build rule for target.
 bustub_optimizer/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/build
 .PHONY : bustub_optimizer/fast
 
 eliminate_true_filter.o: eliminate_true_filter.cpp.o
@@ -210,7 +210,7 @@ eliminate_true_filter.o: eliminate_true_filter.cpp.o
 
 # target to build an object file
 eliminate_true_filter.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o
 .PHONY : eliminate_true_filter.cpp.o
 
 eliminate_true_filter.i: eliminate_true_filter.cpp.i
@@ -218,7 +218,7 @@ eliminate_true_filter.i: eliminate_true_filter.cpp.i
 
 # target to preprocess a source file
 eliminate_true_filter.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.i
 .PHONY : eliminate_true_filter.cpp.i
 
 eliminate_true_filter.s: eliminate_true_filter.cpp.s
@@ -226,7 +226,7 @@ eliminate_true_filter.s: eliminate_true_filter.cpp.s
 
 # target to generate assembly for a file
 eliminate_true_filter.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.s
 .PHONY : eliminate_true_filter.cpp.s
 
 merge_filter_nlj.o: merge_filter_nlj.cpp.o
@@ -234,7 +234,7 @@ merge_filter_nlj.o: merge_filter_nlj.cpp.o
 
 # target to build an object file
 merge_filter_nlj.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o
 .PHONY : merge_filter_nlj.cpp.o
 
 merge_filter_nlj.i: merge_filter_nlj.cpp.i
@@ -242,7 +242,7 @@ merge_filter_nlj.i: merge_filter_nlj.cpp.i
 
 # target to preprocess a source file
 merge_filter_nlj.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.i
 .PHONY : merge_filter_nlj.cpp.i
 
 merge_filter_nlj.s: merge_filter_nlj.cpp.s
@@ -250,7 +250,7 @@ merge_filter_nlj.s: merge_filter_nlj.cpp.s
 
 # target to generate assembly for a file
 merge_filter_nlj.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.s
 .PHONY : merge_filter_nlj.cpp.s
 
 merge_filter_scan.o: merge_filter_scan.cpp.o
@@ -258,7 +258,7 @@ merge_filter_scan.o: merge_filter_scan.cpp.o
 
 # target to build an object file
 merge_filter_scan.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o
 .PHONY : merge_filter_scan.cpp.o
 
 merge_filter_scan.i: merge_filter_scan.cpp.i
@@ -266,7 +266,7 @@ merge_filter_scan.i: merge_filter_scan.cpp.i
 
 # target to preprocess a source file
 merge_filter_scan.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.i
 .PHONY : merge_filter_scan.cpp.i
 
 merge_filter_scan.s: merge_filter_scan.cpp.s
@@ -274,7 +274,7 @@ merge_filter_scan.s: merge_filter_scan.cpp.s
 
 # target to generate assembly for a file
 merge_filter_scan.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.s
 .PHONY : merge_filter_scan.cpp.s
 
 merge_projection.o: merge_projection.cpp.o
@@ -282,7 +282,7 @@ merge_projection.o: merge_projection.cpp.o
 
 # target to build an object file
 merge_projection.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o
 .PHONY : merge_projection.cpp.o
 
 merge_projection.i: merge_projection.cpp.i
@@ -290,7 +290,7 @@ merge_projection.i: merge_projection.cpp.i
 
 # target to preprocess a source file
 merge_projection.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.i
 .PHONY : merge_projection.cpp.i
 
 merge_projection.s: merge_projection.cpp.s
@@ -298,7 +298,7 @@ merge_projection.s: merge_projection.cpp.s
 
 # target to generate assembly for a file
 merge_projection.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.s
 .PHONY : merge_projection.cpp.s
 
 nlj_as_hash_join.o: nlj_as_hash_join.cpp.o
@@ -306,7 +306,7 @@ nlj_as_hash_join.o: nlj_as_hash_join.cpp.o
 
 # target to build an object file
 nlj_as_hash_join.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o
 .PHONY : nlj_as_hash_join.cpp.o
 
 nlj_as_hash_join.i: nlj_as_hash_join.cpp.i
@@ -314,7 +314,7 @@ nlj_as_hash_join.i: nlj_as_hash_join.cpp.i
 
 # target to preprocess a source file
 nlj_as_hash_join.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.i
 .PHONY : nlj_as_hash_join.cpp.i
 
 nlj_as_hash_join.s: nlj_as_hash_join.cpp.s
@@ -322,7 +322,7 @@ nlj_as_hash_join.s: nlj_as_hash_join.cpp.s
 
 # target to generate assembly for a file
 nlj_as_hash_join.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.s
 .PHONY : nlj_as_hash_join.cpp.s
 
 nlj_as_index_join.o: nlj_as_index_join.cpp.o
@@ -330,7 +330,7 @@ nlj_as_index_join.o: nlj_as_index_join.cpp.o
 
 # target to build an object file
 nlj_as_index_join.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o
 .PHONY : nlj_as_index_join.cpp.o
 
 nlj_as_index_join.i: nlj_as_index_join.cpp.i
@@ -338,7 +338,7 @@ nlj_as_index_join.i: nlj_as_index_join.cpp.i
 
 # target to preprocess a source file
 nlj_as_index_join.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.i
 .PHONY : nlj_as_index_join.cpp.i
 
 nlj_as_index_join.s: nlj_as_index_join.cpp.s
@@ -346,7 +346,7 @@ nlj_as_index_join.s: nlj_as_index_join.cpp.s
 
 # target to generate assembly for a file
 nlj_as_index_join.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.s
 .PHONY : nlj_as_index_join.cpp.s
 
 optimizer.o: optimizer.cpp.o
@@ -354,7 +354,7 @@ optimizer.o: optimizer.cpp.o
 
 # target to build an object file
 optimizer.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o
 .PHONY : optimizer.cpp.o
 
 optimizer.i: optimizer.cpp.i
@@ -362,7 +362,7 @@ optimizer.i: optimizer.cpp.i
 
 # target to preprocess a source file
 optimizer.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.i
 .PHONY : optimizer.cpp.i
 
 optimizer.s: optimizer.cpp.s
@@ -370,7 +370,7 @@ optimizer.s: optimizer.cpp.s
 
 # target to generate assembly for a file
 optimizer.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.s
 .PHONY : optimizer.cpp.s
 
 optimizer_custom_rules.o: optimizer_custom_rules.cpp.o
@@ -378,7 +378,7 @@ optimizer_custom_rules.o: optimizer_custom_rules.cpp.o
 
 # target to build an object file
 optimizer_custom_rules.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o
 .PHONY : optimizer_custom_rules.cpp.o
 
 optimizer_custom_rules.i: optimizer_custom_rules.cpp.i
@@ -386,7 +386,7 @@ optimizer_custom_rules.i: optimizer_custom_rules.cpp.i
 
 # target to preprocess a source file
 optimizer_custom_rules.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.i
 .PHONY : optimizer_custom_rules.cpp.i
 
 optimizer_custom_rules.s: optimizer_custom_rules.cpp.s
@@ -394,39 +394,15 @@ optimizer_custom_rules.s: optimizer_custom_rules.cpp.s
 
 # target to generate assembly for a file
 optimizer_custom_rules.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.s
 .PHONY : optimizer_custom_rules.cpp.s
-
-optimizer_internal.o: optimizer_internal.cpp.o
-.PHONY : optimizer_internal.o
-
-# target to build an object file
-optimizer_internal.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.o
-.PHONY : optimizer_internal.cpp.o
-
-optimizer_internal.i: optimizer_internal.cpp.i
-.PHONY : optimizer_internal.i
-
-# target to preprocess a source file
-optimizer_internal.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.i
-.PHONY : optimizer_internal.cpp.i
-
-optimizer_internal.s: optimizer_internal.cpp.s
-.PHONY : optimizer_internal.s
-
-# target to generate assembly for a file
-optimizer_internal.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.s
-.PHONY : optimizer_internal.cpp.s
 
 order_by_index_scan.o: order_by_index_scan.cpp.o
 .PHONY : order_by_index_scan.o
 
 # target to build an object file
 order_by_index_scan.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o
 .PHONY : order_by_index_scan.cpp.o
 
 order_by_index_scan.i: order_by_index_scan.cpp.i
@@ -434,7 +410,7 @@ order_by_index_scan.i: order_by_index_scan.cpp.i
 
 # target to preprocess a source file
 order_by_index_scan.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.i
 .PHONY : order_by_index_scan.cpp.i
 
 order_by_index_scan.s: order_by_index_scan.cpp.s
@@ -442,7 +418,7 @@ order_by_index_scan.s: order_by_index_scan.cpp.s
 
 # target to generate assembly for a file
 order_by_index_scan.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.s
 .PHONY : order_by_index_scan.cpp.s
 
 sort_limit_as_topn.o: sort_limit_as_topn.cpp.o
@@ -450,7 +426,7 @@ sort_limit_as_topn.o: sort_limit_as_topn.cpp.o
 
 # target to build an object file
 sort_limit_as_topn.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o
 .PHONY : sort_limit_as_topn.cpp.o
 
 sort_limit_as_topn.i: sort_limit_as_topn.cpp.i
@@ -458,7 +434,7 @@ sort_limit_as_topn.i: sort_limit_as_topn.cpp.i
 
 # target to preprocess a source file
 sort_limit_as_topn.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.i
 .PHONY : sort_limit_as_topn.cpp.i
 
 sort_limit_as_topn.s: sort_limit_as_topn.cpp.s
@@ -466,7 +442,7 @@ sort_limit_as_topn.s: sort_limit_as_topn.cpp.s
 
 # target to generate assembly for a file
 sort_limit_as_topn.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.s
 .PHONY : sort_limit_as_topn.cpp.s
 
 # Help Target
@@ -509,9 +485,6 @@ help:
 	@echo "... optimizer_custom_rules.o"
 	@echo "... optimizer_custom_rules.i"
 	@echo "... optimizer_custom_rules.s"
-	@echo "... optimizer_internal.o"
-	@echo "... optimizer_internal.i"
-	@echo "... optimizer_internal.s"
 	@echo "... order_by_index_scan.o"
 	@echo "... order_by_index_scan.i"
 	@echo "... order_by_index_scan.s"
@@ -529,6 +502,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

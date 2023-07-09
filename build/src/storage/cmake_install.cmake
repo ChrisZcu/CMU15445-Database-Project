@@ -1,4 +1,4 @@
-# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/storage
+# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/storage
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,10 +39,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/storage/disk/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/storage/index/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/storage/page/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/storage/table/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/storage/disk/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/storage/index/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/storage/page/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/storage/table/cmake_install.cmake")
 
 endif()
 

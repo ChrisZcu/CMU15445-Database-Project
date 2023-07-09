@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub
+CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
+CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CPackSourceConfig.cmake
+	/usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,9 +162,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -294,19 +294,6 @@ check-clang-tidy-p0: cmake_check_build_system
 check-clang-tidy-p0/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/check-clang-tidy-p0.dir/build.make CMakeFiles/check-clang-tidy-p0.dir/build
 .PHONY : check-clang-tidy-p0/fast
-
-#=============================================================================
-# Target rules for targets named submit-p0
-
-# Build rule for target.
-submit-p0: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 submit-p0
-.PHONY : submit-p0
-
-# fast build rule for target.
-submit-p0/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/submit-p0.dir/build.make CMakeFiles/submit-p0.dir/build
-.PHONY : submit-p0/fast
 
 #=============================================================================
 # Target rules for targets named check-clang-tidy-p1
@@ -517,6 +504,19 @@ bustub_container_disk_hash/fast:
 .PHONY : bustub_container_disk_hash/fast
 
 #=============================================================================
+# Target rules for targets named bustub_container_hash
+
+# Build rule for target.
+bustub_container_hash: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bustub_container_hash
+.PHONY : bustub_container_hash
+
+# fast build rule for target.
+bustub_container_hash/fast:
+	$(MAKE) $(MAKESILENT) -f src/container/hash/CMakeFiles/bustub_container_hash.dir/build.make src/container/hash/CMakeFiles/bustub_container_hash.dir/build
+.PHONY : bustub_container_hash/fast
+
+#=============================================================================
 # Target rules for targets named bustub_execution
 
 # Build rule for target.
@@ -699,17 +699,17 @@ binder_test/fast:
 .PHONY : binder_test/fast
 
 #=============================================================================
-# Target rules for targets named buffer_pool_manager_test
+# Target rules for targets named buffer_pool_manager_instance_test
 
 # Build rule for target.
-buffer_pool_manager_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 buffer_pool_manager_test
-.PHONY : buffer_pool_manager_test
+buffer_pool_manager_instance_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 buffer_pool_manager_instance_test
+.PHONY : buffer_pool_manager_instance_test
 
 # fast build rule for target.
-buffer_pool_manager_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/buffer_pool_manager_test.dir/build.make test/CMakeFiles/buffer_pool_manager_test.dir/build
-.PHONY : buffer_pool_manager_test/fast
+buffer_pool_manager_instance_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/buffer_pool_manager_instance_test.dir/build.make test/CMakeFiles/buffer_pool_manager_instance_test.dir/build
+.PHONY : buffer_pool_manager_instance_test/fast
 
 #=============================================================================
 # Target rules for targets named clock_replacer_test
@@ -751,6 +751,19 @@ lru_replacer_test/fast:
 .PHONY : lru_replacer_test/fast
 
 #=============================================================================
+# Target rules for targets named catalog_test
+
+# Build rule for target.
+catalog_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 catalog_test
+.PHONY : catalog_test
+
+# fast build rule for target.
+catalog_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/catalog_test.dir/build.make test/CMakeFiles/catalog_test.dir/build
+.PHONY : catalog_test/fast
+
+#=============================================================================
 # Target rules for targets named rwlatch_test
 
 # Build rule for target.
@@ -790,17 +803,17 @@ lock_manager_test/fast:
 .PHONY : lock_manager_test/fast
 
 #=============================================================================
-# Target rules for targets named txn_integration_test
+# Target rules for targets named transaction_test
 
 # Build rule for target.
-txn_integration_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 txn_integration_test
-.PHONY : txn_integration_test
+transaction_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 transaction_test
+.PHONY : transaction_test
 
 # fast build rule for target.
-txn_integration_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/txn_integration_test.dir/build.make test/CMakeFiles/txn_integration_test.dir/build
-.PHONY : txn_integration_test/fast
+transaction_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/transaction_test.dir/build.make test/CMakeFiles/transaction_test.dir/build
+.PHONY : transaction_test/fast
 
 #=============================================================================
 # Target rules for targets named hash_table_page_test
@@ -829,69 +842,43 @@ hash_table_test/fast:
 .PHONY : hash_table_test/fast
 
 #=============================================================================
-# Target rules for targets named trie_debug_test
+# Target rules for targets named extendible_hash_table_test
 
 # Build rule for target.
-trie_debug_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 trie_debug_test
-.PHONY : trie_debug_test
+extendible_hash_table_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 extendible_hash_table_test
+.PHONY : extendible_hash_table_test
 
 # fast build rule for target.
-trie_debug_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_debug_test.dir/build.make test/CMakeFiles/trie_debug_test.dir/build
-.PHONY : trie_debug_test/fast
+extendible_hash_table_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/extendible_hash_table_test.dir/build.make test/CMakeFiles/extendible_hash_table_test.dir/build
+.PHONY : extendible_hash_table_test/fast
 
 #=============================================================================
-# Target rules for targets named trie_noncopy_test
+# Target rules for targets named starter_trie_test
 
 # Build rule for target.
-trie_noncopy_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 trie_noncopy_test
-.PHONY : trie_noncopy_test
+starter_trie_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 starter_trie_test
+.PHONY : starter_trie_test
 
 # fast build rule for target.
-trie_noncopy_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_noncopy_test.dir/build.make test/CMakeFiles/trie_noncopy_test.dir/build
-.PHONY : trie_noncopy_test/fast
+starter_trie_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/starter_trie_test.dir/build.make test/CMakeFiles/starter_trie_test.dir/build
+.PHONY : starter_trie_test/fast
 
 #=============================================================================
-# Target rules for targets named trie_store_noncopy_test
+# Target rules for targets named recovery_test
 
 # Build rule for target.
-trie_store_noncopy_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 trie_store_noncopy_test
-.PHONY : trie_store_noncopy_test
+recovery_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 recovery_test
+.PHONY : recovery_test
 
 # fast build rule for target.
-trie_store_noncopy_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_store_noncopy_test.dir/build.make test/CMakeFiles/trie_store_noncopy_test.dir/build
-.PHONY : trie_store_noncopy_test/fast
-
-#=============================================================================
-# Target rules for targets named trie_store_test
-
-# Build rule for target.
-trie_store_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 trie_store_test
-.PHONY : trie_store_test
-
-# fast build rule for target.
-trie_store_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_store_test.dir/build.make test/CMakeFiles/trie_store_test.dir/build
-.PHONY : trie_store_test/fast
-
-#=============================================================================
-# Target rules for targets named trie_test
-
-# Build rule for target.
-trie_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 trie_test
-.PHONY : trie_test
-
-# fast build rule for target.
-trie_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_test.dir/build.make test/CMakeFiles/trie_test.dir/build
-.PHONY : trie_test/fast
+recovery_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/recovery_test.dir/build.make test/CMakeFiles/recovery_test.dir/build
+.PHONY : recovery_test/fast
 
 #=============================================================================
 # Target rules for targets named b_plus_tree_concurrent_test
@@ -946,19 +933,6 @@ b_plus_tree_insert_test/fast:
 .PHONY : b_plus_tree_insert_test/fast
 
 #=============================================================================
-# Target rules for targets named b_plus_tree_sequential_scale_test
-
-# Build rule for target.
-b_plus_tree_sequential_scale_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 b_plus_tree_sequential_scale_test
-.PHONY : b_plus_tree_sequential_scale_test
-
-# fast build rule for target.
-b_plus_tree_sequential_scale_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_sequential_scale_test.dir/build.make test/CMakeFiles/b_plus_tree_sequential_scale_test.dir/build
-.PHONY : b_plus_tree_sequential_scale_test/fast
-
-#=============================================================================
 # Target rules for targets named disk_manager_test
 
 # Build rule for target.
@@ -970,19 +944,6 @@ disk_manager_test: cmake_check_build_system
 disk_manager_test/fast:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/disk_manager_test.dir/build.make test/CMakeFiles/disk_manager_test.dir/build
 .PHONY : disk_manager_test/fast
-
-#=============================================================================
-# Target rules for targets named page_guard_test
-
-# Build rule for target.
-page_guard_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 page_guard_test
-.PHONY : page_guard_test
-
-# fast build rule for target.
-page_guard_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/page_guard_test.dir/build.make test/CMakeFiles/page_guard_test.dir/build
-.PHONY : page_guard_test/fast
 
 #=============================================================================
 # Target rules for targets named tmp_tuple_page_test
@@ -1037,45 +998,6 @@ test-p3/fast:
 .PHONY : test-p3/fast
 
 #=============================================================================
-# Target rules for targets named p0.01-lower-upper_test
-
-# Build rule for target.
-p0.01-lower-upper_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p0.01-lower-upper_test
-.PHONY : p0.01-lower-upper_test
-
-# fast build rule for target.
-p0.01-lower-upper_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p0.01-lower-upper_test.dir/build.make test/CMakeFiles/p0.01-lower-upper_test.dir/build
-.PHONY : p0.01-lower-upper_test/fast
-
-#=============================================================================
-# Target rules for targets named p0.02-function-error_test
-
-# Build rule for target.
-p0.02-function-error_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p0.02-function-error_test
-.PHONY : p0.02-function-error_test
-
-# fast build rule for target.
-p0.02-function-error_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p0.02-function-error_test.dir/build.make test/CMakeFiles/p0.02-function-error_test.dir/build
-.PHONY : p0.02-function-error_test/fast
-
-#=============================================================================
-# Target rules for targets named p0.03-string-scan_test
-
-# Build rule for target.
-p0.03-string-scan_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p0.03-string-scan_test
-.PHONY : p0.03-string-scan_test
-
-# fast build rule for target.
-p0.03-string-scan_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p0.03-string-scan_test.dir/build.make test/CMakeFiles/p0.03-string-scan_test.dir/build
-.PHONY : p0.03-string-scan_test/fast
-
-#=============================================================================
 # Target rules for targets named p3.01-seqscan_test
 
 # Build rule for target.
@@ -1102,225 +1024,186 @@ p3.02-insert_test/fast:
 .PHONY : p3.02-insert_test/fast
 
 #=============================================================================
-# Target rules for targets named p3.03-update_test
+# Target rules for targets named p3.03-delete_test
 
 # Build rule for target.
-p3.03-update_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.03-update_test
-.PHONY : p3.03-update_test
+p3.03-delete_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.03-delete_test
+.PHONY : p3.03-delete_test
 
 # fast build rule for target.
-p3.03-update_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.03-update_test.dir/build.make test/CMakeFiles/p3.03-update_test.dir/build
-.PHONY : p3.03-update_test/fast
+p3.03-delete_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.03-delete_test.dir/build.make test/CMakeFiles/p3.03-delete_test.dir/build
+.PHONY : p3.03-delete_test/fast
 
 #=============================================================================
-# Target rules for targets named p3.04-delete_test
+# Target rules for targets named p3.04-index-scan_test
 
 # Build rule for target.
-p3.04-delete_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.04-delete_test
-.PHONY : p3.04-delete_test
+p3.04-index-scan_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.04-index-scan_test
+.PHONY : p3.04-index-scan_test
 
 # fast build rule for target.
-p3.04-delete_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.04-delete_test.dir/build.make test/CMakeFiles/p3.04-delete_test.dir/build
-.PHONY : p3.04-delete_test/fast
+p3.04-index-scan_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.04-index-scan_test.dir/build.make test/CMakeFiles/p3.04-index-scan_test.dir/build
+.PHONY : p3.04-index-scan_test/fast
 
 #=============================================================================
-# Target rules for targets named p3.05-index-scan_test
+# Target rules for targets named p3.05-empty-table_test
 
 # Build rule for target.
-p3.05-index-scan_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.05-index-scan_test
-.PHONY : p3.05-index-scan_test
+p3.05-empty-table_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.05-empty-table_test
+.PHONY : p3.05-empty-table_test
 
 # fast build rule for target.
-p3.05-index-scan_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.05-index-scan_test.dir/build.make test/CMakeFiles/p3.05-index-scan_test.dir/build
-.PHONY : p3.05-index-scan_test/fast
+p3.05-empty-table_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.05-empty-table_test.dir/build.make test/CMakeFiles/p3.05-empty-table_test.dir/build
+.PHONY : p3.05-empty-table_test/fast
 
 #=============================================================================
-# Target rules for targets named p3.06-empty-table_test
+# Target rules for targets named p3.06-simple-agg_test
 
 # Build rule for target.
-p3.06-empty-table_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.06-empty-table_test
-.PHONY : p3.06-empty-table_test
+p3.06-simple-agg_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.06-simple-agg_test
+.PHONY : p3.06-simple-agg_test
 
 # fast build rule for target.
-p3.06-empty-table_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.06-empty-table_test.dir/build.make test/CMakeFiles/p3.06-empty-table_test.dir/build
-.PHONY : p3.06-empty-table_test/fast
+p3.06-simple-agg_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.06-simple-agg_test.dir/build.make test/CMakeFiles/p3.06-simple-agg_test.dir/build
+.PHONY : p3.06-simple-agg_test/fast
 
 #=============================================================================
-# Target rules for targets named p3.07-simple-agg_test
+# Target rules for targets named p3.07-group-agg-1_test
 
 # Build rule for target.
-p3.07-simple-agg_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.07-simple-agg_test
-.PHONY : p3.07-simple-agg_test
+p3.07-group-agg-1_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.07-group-agg-1_test
+.PHONY : p3.07-group-agg-1_test
 
 # fast build rule for target.
-p3.07-simple-agg_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.07-simple-agg_test.dir/build.make test/CMakeFiles/p3.07-simple-agg_test.dir/build
-.PHONY : p3.07-simple-agg_test/fast
+p3.07-group-agg-1_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.07-group-agg-1_test.dir/build.make test/CMakeFiles/p3.07-group-agg-1_test.dir/build
+.PHONY : p3.07-group-agg-1_test/fast
 
 #=============================================================================
-# Target rules for targets named p3.08-group-agg-1_test
+# Target rules for targets named p3.08-group-agg-2_test
 
 # Build rule for target.
-p3.08-group-agg-1_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.08-group-agg-1_test
-.PHONY : p3.08-group-agg-1_test
+p3.08-group-agg-2_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.08-group-agg-2_test
+.PHONY : p3.08-group-agg-2_test
 
 # fast build rule for target.
-p3.08-group-agg-1_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.08-group-agg-1_test.dir/build.make test/CMakeFiles/p3.08-group-agg-1_test.dir/build
-.PHONY : p3.08-group-agg-1_test/fast
+p3.08-group-agg-2_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.08-group-agg-2_test.dir/build.make test/CMakeFiles/p3.08-group-agg-2_test.dir/build
+.PHONY : p3.08-group-agg-2_test/fast
 
 #=============================================================================
-# Target rules for targets named p3.09-group-agg-2_test
+# Target rules for targets named p3.09-simple-join_test
 
 # Build rule for target.
-p3.09-group-agg-2_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.09-group-agg-2_test
-.PHONY : p3.09-group-agg-2_test
+p3.09-simple-join_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.09-simple-join_test
+.PHONY : p3.09-simple-join_test
 
 # fast build rule for target.
-p3.09-group-agg-2_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.09-group-agg-2_test.dir/build.make test/CMakeFiles/p3.09-group-agg-2_test.dir/build
-.PHONY : p3.09-group-agg-2_test/fast
+p3.09-simple-join_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.09-simple-join_test.dir/build.make test/CMakeFiles/p3.09-simple-join_test.dir/build
+.PHONY : p3.09-simple-join_test/fast
 
 #=============================================================================
-# Target rules for targets named p3.10-simple-join_test
+# Target rules for targets named p3.10-multi-way-join_test
 
 # Build rule for target.
-p3.10-simple-join_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.10-simple-join_test
-.PHONY : p3.10-simple-join_test
+p3.10-multi-way-join_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.10-multi-way-join_test
+.PHONY : p3.10-multi-way-join_test
 
 # fast build rule for target.
-p3.10-simple-join_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.10-simple-join_test.dir/build.make test/CMakeFiles/p3.10-simple-join_test.dir/build
-.PHONY : p3.10-simple-join_test/fast
+p3.10-multi-way-join_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.10-multi-way-join_test.dir/build.make test/CMakeFiles/p3.10-multi-way-join_test.dir/build
+.PHONY : p3.10-multi-way-join_test/fast
 
 #=============================================================================
-# Target rules for targets named p3.11-multi-way-join_test
+# Target rules for targets named p3.11-repeat-execute_test
 
 # Build rule for target.
-p3.11-multi-way-join_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.11-multi-way-join_test
-.PHONY : p3.11-multi-way-join_test
+p3.11-repeat-execute_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.11-repeat-execute_test
+.PHONY : p3.11-repeat-execute_test
 
 # fast build rule for target.
-p3.11-multi-way-join_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.11-multi-way-join_test.dir/build.make test/CMakeFiles/p3.11-multi-way-join_test.dir/build
-.PHONY : p3.11-multi-way-join_test/fast
+p3.11-repeat-execute_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.11-repeat-execute_test.dir/build.make test/CMakeFiles/p3.11-repeat-execute_test.dir/build
+.PHONY : p3.11-repeat-execute_test/fast
 
 #=============================================================================
-# Target rules for targets named p3.12-repeat-execute_test
+# Target rules for targets named p3.12-nested-index-join_test
 
 # Build rule for target.
-p3.12-repeat-execute_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.12-repeat-execute_test
-.PHONY : p3.12-repeat-execute_test
+p3.12-nested-index-join_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.12-nested-index-join_test
+.PHONY : p3.12-nested-index-join_test
 
 # fast build rule for target.
-p3.12-repeat-execute_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.12-repeat-execute_test.dir/build.make test/CMakeFiles/p3.12-repeat-execute_test.dir/build
-.PHONY : p3.12-repeat-execute_test/fast
+p3.12-nested-index-join_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.12-nested-index-join_test.dir/build.make test/CMakeFiles/p3.12-nested-index-join_test.dir/build
+.PHONY : p3.12-nested-index-join_test/fast
 
 #=============================================================================
-# Target rules for targets named p3.13-nested-index-join_test
+# Target rules for targets named p3.13-sort-limit_test
 
 # Build rule for target.
-p3.13-nested-index-join_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.13-nested-index-join_test
-.PHONY : p3.13-nested-index-join_test
+p3.13-sort-limit_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.13-sort-limit_test
+.PHONY : p3.13-sort-limit_test
 
 # fast build rule for target.
-p3.13-nested-index-join_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.13-nested-index-join_test.dir/build.make test/CMakeFiles/p3.13-nested-index-join_test.dir/build
-.PHONY : p3.13-nested-index-join_test/fast
+p3.13-sort-limit_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.13-sort-limit_test.dir/build.make test/CMakeFiles/p3.13-sort-limit_test.dir/build
+.PHONY : p3.13-sort-limit_test/fast
 
 #=============================================================================
-# Target rules for targets named p3.14-hash-join_test
+# Target rules for targets named p3.14-topn_test
 
 # Build rule for target.
-p3.14-hash-join_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.14-hash-join_test
-.PHONY : p3.14-hash-join_test
+p3.14-topn_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.14-topn_test
+.PHONY : p3.14-topn_test
 
 # fast build rule for target.
-p3.14-hash-join_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.14-hash-join_test.dir/build.make test/CMakeFiles/p3.14-hash-join_test.dir/build
-.PHONY : p3.14-hash-join_test/fast
+p3.14-topn_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.14-topn_test.dir/build.make test/CMakeFiles/p3.14-topn_test.dir/build
+.PHONY : p3.14-topn_test/fast
 
 #=============================================================================
-# Target rules for targets named p3.15-multi-way-hash-join_test
+# Target rules for targets named p3.15-integration-1_test
 
 # Build rule for target.
-p3.15-multi-way-hash-join_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.15-multi-way-hash-join_test
-.PHONY : p3.15-multi-way-hash-join_test
+p3.15-integration-1_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.15-integration-1_test
+.PHONY : p3.15-integration-1_test
 
 # fast build rule for target.
-p3.15-multi-way-hash-join_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.15-multi-way-hash-join_test.dir/build.make test/CMakeFiles/p3.15-multi-way-hash-join_test.dir/build
-.PHONY : p3.15-multi-way-hash-join_test/fast
+p3.15-integration-1_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.15-integration-1_test.dir/build.make test/CMakeFiles/p3.15-integration-1_test.dir/build
+.PHONY : p3.15-integration-1_test/fast
 
 #=============================================================================
-# Target rules for targets named p3.16-sort-limit_test
+# Target rules for targets named p3.16-integration-2_test
 
 # Build rule for target.
-p3.16-sort-limit_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.16-sort-limit_test
-.PHONY : p3.16-sort-limit_test
+p3.16-integration-2_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.16-integration-2_test
+.PHONY : p3.16-integration-2_test
 
 # fast build rule for target.
-p3.16-sort-limit_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.16-sort-limit_test.dir/build.make test/CMakeFiles/p3.16-sort-limit_test.dir/build
-.PHONY : p3.16-sort-limit_test/fast
-
-#=============================================================================
-# Target rules for targets named p3.17-topn_test
-
-# Build rule for target.
-p3.17-topn_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.17-topn_test
-.PHONY : p3.17-topn_test
-
-# fast build rule for target.
-p3.17-topn_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.17-topn_test.dir/build.make test/CMakeFiles/p3.17-topn_test.dir/build
-.PHONY : p3.17-topn_test/fast
-
-#=============================================================================
-# Target rules for targets named p3.18-integration-1_test
-
-# Build rule for target.
-p3.18-integration-1_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.18-integration-1_test
-.PHONY : p3.18-integration-1_test
-
-# fast build rule for target.
-p3.18-integration-1_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.18-integration-1_test.dir/build.make test/CMakeFiles/p3.18-integration-1_test.dir/build
-.PHONY : p3.18-integration-1_test/fast
-
-#=============================================================================
-# Target rules for targets named p3.19-integration-2_test
-
-# Build rule for target.
-p3.19-integration-2_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p3.19-integration-2_test
-.PHONY : p3.19-integration-2_test
-
-# fast build rule for target.
-p3.19-integration-2_test/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.19-integration-2_test.dir/build.make test/CMakeFiles/p3.19-integration-2_test.dir/build
-.PHONY : p3.19-integration-2_test/fast
+p3.16-integration-2_test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.16-integration-2_test.dir/build.make test/CMakeFiles/p3.16-integration-2_test.dir/build
+.PHONY : p3.16-integration-2_test/fast
 
 #=============================================================================
 # Target rules for targets named p3.leaderboard-q1_test
@@ -1556,32 +1439,6 @@ terrier-bench/fast:
 	$(MAKE) $(MAKESILENT) -f tools/terrier_bench/CMakeFiles/terrier-bench.dir/build.make tools/terrier_bench/CMakeFiles/terrier-bench.dir/build
 .PHONY : terrier-bench/fast
 
-#=============================================================================
-# Target rules for targets named bpm-bench
-
-# Build rule for target.
-bpm-bench: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bpm-bench
-.PHONY : bpm-bench
-
-# fast build rule for target.
-bpm-bench/fast:
-	$(MAKE) $(MAKESILENT) -f tools/bpm_bench/CMakeFiles/bpm-bench.dir/build.make tools/bpm_bench/CMakeFiles/bpm-bench.dir/build
-.PHONY : bpm-bench/fast
-
-#=============================================================================
-# Target rules for targets named btree-bench
-
-# Build rule for target.
-btree-bench: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 btree-bench
-.PHONY : btree-bench
-
-# fast build rule for target.
-btree-bench/fast:
-	$(MAKE) $(MAKESILENT) -f tools/btree_bench/CMakeFiles/btree-bench.dir/build.make tools/btree_bench/CMakeFiles/btree-bench.dir/build
-.PHONY : btree-bench/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1613,32 +1470,25 @@ help:
 	@echo "... fix-clang-tidy-diff"
 	@echo "... format"
 	@echo "... headers"
-	@echo "... p0.01-lower-upper_test"
-	@echo "... p0.02-function-error_test"
-	@echo "... p0.03-string-scan_test"
 	@echo "... p3.01-seqscan_test"
 	@echo "... p3.02-insert_test"
-	@echo "... p3.03-update_test"
-	@echo "... p3.04-delete_test"
-	@echo "... p3.05-index-scan_test"
-	@echo "... p3.06-empty-table_test"
-	@echo "... p3.07-simple-agg_test"
-	@echo "... p3.08-group-agg-1_test"
-	@echo "... p3.09-group-agg-2_test"
-	@echo "... p3.10-simple-join_test"
-	@echo "... p3.11-multi-way-join_test"
-	@echo "... p3.12-repeat-execute_test"
-	@echo "... p3.13-nested-index-join_test"
-	@echo "... p3.14-hash-join_test"
-	@echo "... p3.15-multi-way-hash-join_test"
-	@echo "... p3.16-sort-limit_test"
-	@echo "... p3.17-topn_test"
-	@echo "... p3.18-integration-1_test"
-	@echo "... p3.19-integration-2_test"
+	@echo "... p3.03-delete_test"
+	@echo "... p3.04-index-scan_test"
+	@echo "... p3.05-empty-table_test"
+	@echo "... p3.06-simple-agg_test"
+	@echo "... p3.07-group-agg-1_test"
+	@echo "... p3.08-group-agg-2_test"
+	@echo "... p3.09-simple-join_test"
+	@echo "... p3.10-multi-way-join_test"
+	@echo "... p3.11-repeat-execute_test"
+	@echo "... p3.12-nested-index-join_test"
+	@echo "... p3.13-sort-limit_test"
+	@echo "... p3.14-topn_test"
+	@echo "... p3.15-integration-1_test"
+	@echo "... p3.16-integration-2_test"
 	@echo "... p3.leaderboard-q1_test"
 	@echo "... p3.leaderboard-q2_test"
 	@echo "... p3.leaderboard-q3_test"
-	@echo "... submit-p0"
 	@echo "... submit-p1"
 	@echo "... submit-p2"
 	@echo "... submit-p3"
@@ -1649,11 +1499,8 @@ help:
 	@echo "... b_plus_tree_delete_test"
 	@echo "... b_plus_tree_insert_test"
 	@echo "... b_plus_tree_printer"
-	@echo "... b_plus_tree_sequential_scale_test"
 	@echo "... binder_test"
-	@echo "... bpm-bench"
-	@echo "... btree-bench"
-	@echo "... buffer_pool_manager_test"
+	@echo "... buffer_pool_manager_instance_test"
 	@echo "... bustub"
 	@echo "... bustub_binder"
 	@echo "... bustub_buffer"
@@ -1661,6 +1508,7 @@ help:
 	@echo "... bustub_common"
 	@echo "... bustub_concurrency"
 	@echo "... bustub_container_disk_hash"
+	@echo "... bustub_container_hash"
 	@echo "... bustub_execution"
 	@echo "... bustub_linenoise"
 	@echo "... bustub_murmur3"
@@ -1674,10 +1522,12 @@ help:
 	@echo "... bustub_storage_page"
 	@echo "... bustub_storage_table"
 	@echo "... bustub_type"
+	@echo "... catalog_test"
 	@echo "... clock_replacer_test"
 	@echo "... deadlock_detection_test"
 	@echo "... disk_manager_test"
 	@echo "... duckdb_pg_query"
+	@echo "... extendible_hash_table_test"
 	@echo "... fmt"
 	@echo "... fort"
 	@echo "... gmock"
@@ -1689,19 +1539,15 @@ help:
 	@echo "... lock_manager_test"
 	@echo "... lru_k_replacer_test"
 	@echo "... lru_replacer_test"
-	@echo "... page_guard_test"
+	@echo "... recovery_test"
 	@echo "... rwlatch_test"
 	@echo "... shell"
 	@echo "... sqllogictest"
+	@echo "... starter_trie_test"
 	@echo "... terrier-bench"
 	@echo "... tmp_tuple_page_test"
-	@echo "... trie_debug_test"
-	@echo "... trie_noncopy_test"
-	@echo "... trie_store_noncopy_test"
-	@echo "... trie_store_test"
-	@echo "... trie_test"
+	@echo "... transaction_test"
 	@echo "... tuple_test"
-	@echo "... txn_integration_test"
 	@echo "... type_test"
 	@echo "... utf8proc"
 .PHONY : help

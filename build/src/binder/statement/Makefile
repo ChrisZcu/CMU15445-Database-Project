@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub
+CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
+CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CPackSourceConfig.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/binder/statement//CMakeFiles/progress.marks
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/statement/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles 0
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/binder/statement//CMakeFiles/progress.marks
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/statement/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/statement/clean
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/statement/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/statement/preinstall
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/statement/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/statement/preinstall
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/statement/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/binder/statement/CMakeFiles/bustub_statement.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/statement/CMakeFiles/bustub_statement.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/statement/CMakeFiles/bustub_statement.dir/rule
 .PHONY : src/binder/statement/CMakeFiles/bustub_statement.dir/rule
 
 # Convenience name for target.
@@ -202,7 +202,7 @@ bustub_statement: src/binder/statement/CMakeFiles/bustub_statement.dir/rule
 
 # fast build rule for target.
 bustub_statement/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/build
 .PHONY : bustub_statement/fast
 
 create_statement.o: create_statement.cpp.o
@@ -210,7 +210,7 @@ create_statement.o: create_statement.cpp.o
 
 # target to build an object file
 create_statement.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/create_statement.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/create_statement.cpp.o
 .PHONY : create_statement.cpp.o
 
 create_statement.i: create_statement.cpp.i
@@ -218,7 +218,7 @@ create_statement.i: create_statement.cpp.i
 
 # target to preprocess a source file
 create_statement.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/create_statement.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/create_statement.cpp.i
 .PHONY : create_statement.cpp.i
 
 create_statement.s: create_statement.cpp.s
@@ -226,7 +226,7 @@ create_statement.s: create_statement.cpp.s
 
 # target to generate assembly for a file
 create_statement.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/create_statement.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/create_statement.cpp.s
 .PHONY : create_statement.cpp.s
 
 delete_statement.o: delete_statement.cpp.o
@@ -234,7 +234,7 @@ delete_statement.o: delete_statement.cpp.o
 
 # target to build an object file
 delete_statement.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/delete_statement.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/delete_statement.cpp.o
 .PHONY : delete_statement.cpp.o
 
 delete_statement.i: delete_statement.cpp.i
@@ -242,7 +242,7 @@ delete_statement.i: delete_statement.cpp.i
 
 # target to preprocess a source file
 delete_statement.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/delete_statement.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/delete_statement.cpp.i
 .PHONY : delete_statement.cpp.i
 
 delete_statement.s: delete_statement.cpp.s
@@ -250,7 +250,7 @@ delete_statement.s: delete_statement.cpp.s
 
 # target to generate assembly for a file
 delete_statement.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/delete_statement.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/delete_statement.cpp.s
 .PHONY : delete_statement.cpp.s
 
 explain_statement.o: explain_statement.cpp.o
@@ -258,7 +258,7 @@ explain_statement.o: explain_statement.cpp.o
 
 # target to build an object file
 explain_statement.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/explain_statement.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/explain_statement.cpp.o
 .PHONY : explain_statement.cpp.o
 
 explain_statement.i: explain_statement.cpp.i
@@ -266,7 +266,7 @@ explain_statement.i: explain_statement.cpp.i
 
 # target to preprocess a source file
 explain_statement.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/explain_statement.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/explain_statement.cpp.i
 .PHONY : explain_statement.cpp.i
 
 explain_statement.s: explain_statement.cpp.s
@@ -274,7 +274,7 @@ explain_statement.s: explain_statement.cpp.s
 
 # target to generate assembly for a file
 explain_statement.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/explain_statement.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/explain_statement.cpp.s
 .PHONY : explain_statement.cpp.s
 
 index_statement.o: index_statement.cpp.o
@@ -282,7 +282,7 @@ index_statement.o: index_statement.cpp.o
 
 # target to build an object file
 index_statement.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/index_statement.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/index_statement.cpp.o
 .PHONY : index_statement.cpp.o
 
 index_statement.i: index_statement.cpp.i
@@ -290,7 +290,7 @@ index_statement.i: index_statement.cpp.i
 
 # target to preprocess a source file
 index_statement.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/index_statement.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/index_statement.cpp.i
 .PHONY : index_statement.cpp.i
 
 index_statement.s: index_statement.cpp.s
@@ -298,7 +298,7 @@ index_statement.s: index_statement.cpp.s
 
 # target to generate assembly for a file
 index_statement.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/index_statement.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/index_statement.cpp.s
 .PHONY : index_statement.cpp.s
 
 insert_statement.o: insert_statement.cpp.o
@@ -306,7 +306,7 @@ insert_statement.o: insert_statement.cpp.o
 
 # target to build an object file
 insert_statement.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/insert_statement.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/insert_statement.cpp.o
 .PHONY : insert_statement.cpp.o
 
 insert_statement.i: insert_statement.cpp.i
@@ -314,7 +314,7 @@ insert_statement.i: insert_statement.cpp.i
 
 # target to preprocess a source file
 insert_statement.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/insert_statement.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/insert_statement.cpp.i
 .PHONY : insert_statement.cpp.i
 
 insert_statement.s: insert_statement.cpp.s
@@ -322,7 +322,7 @@ insert_statement.s: insert_statement.cpp.s
 
 # target to generate assembly for a file
 insert_statement.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/insert_statement.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/insert_statement.cpp.s
 .PHONY : insert_statement.cpp.s
 
 select_statement.o: select_statement.cpp.o
@@ -330,7 +330,7 @@ select_statement.o: select_statement.cpp.o
 
 # target to build an object file
 select_statement.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/select_statement.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/select_statement.cpp.o
 .PHONY : select_statement.cpp.o
 
 select_statement.i: select_statement.cpp.i
@@ -338,7 +338,7 @@ select_statement.i: select_statement.cpp.i
 
 # target to preprocess a source file
 select_statement.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/select_statement.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/select_statement.cpp.i
 .PHONY : select_statement.cpp.i
 
 select_statement.s: select_statement.cpp.s
@@ -346,7 +346,7 @@ select_statement.s: select_statement.cpp.s
 
 # target to generate assembly for a file
 select_statement.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/select_statement.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/select_statement.cpp.s
 .PHONY : select_statement.cpp.s
 
 update_statement.o: update_statement.cpp.o
@@ -354,7 +354,7 @@ update_statement.o: update_statement.cpp.o
 
 # target to build an object file
 update_statement.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/update_statement.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/update_statement.cpp.o
 .PHONY : update_statement.cpp.o
 
 update_statement.i: update_statement.cpp.i
@@ -362,7 +362,7 @@ update_statement.i: update_statement.cpp.i
 
 # target to preprocess a source file
 update_statement.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/update_statement.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/update_statement.cpp.i
 .PHONY : update_statement.cpp.i
 
 update_statement.s: update_statement.cpp.s
@@ -370,7 +370,7 @@ update_statement.s: update_statement.cpp.s
 
 # target to generate assembly for a file
 update_statement.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/update_statement.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/statement/CMakeFiles/bustub_statement.dir/build.make src/binder/statement/CMakeFiles/bustub_statement.dir/update_statement.cpp.s
 .PHONY : update_statement.cpp.s
 
 # Help Target
@@ -421,6 +421,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/tools
+# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/tools
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,14 +39,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/tools/shell/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/tools/sqllogictest/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/tools/wasm-shell/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/tools/b_plus_tree_printer/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/tools/wasm-bpt-printer/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/tools/terrier_bench/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/tools/bpm_bench/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/tools/btree_bench/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/tools/shell/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/tools/sqllogictest/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/tools/wasm-shell/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/tools/b_plus_tree_printer/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/tools/wasm-bpt-printer/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/tools/terrier_bench/cmake_install.cmake")
 
 endif()
 

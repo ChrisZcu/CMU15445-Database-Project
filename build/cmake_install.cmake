@@ -1,4 +1,4 @@
-# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub
+# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,10 +39,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/test/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/third_party/cmake_install.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/tools/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/test/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/third_party/cmake_install.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/tools/cmake_install.cmake")
 
 endif()
 
@@ -54,5 +54,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub
+CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
+CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CPackSourceConfig.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/storage/page//CMakeFiles/progress.marks
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/storage/page/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles 0
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/storage/page//CMakeFiles/progress.marks
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/storage/page/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/storage/page/clean
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/storage/page/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/storage/page/preinstall
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/storage/page/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/storage/page/preinstall
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/storage/page/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/storage/page/CMakeFiles/bustub_storage_page.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/storage/page/CMakeFiles/bustub_storage_page.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/storage/page/CMakeFiles/bustub_storage_page.dir/rule
 .PHONY : src/storage/page/CMakeFiles/bustub_storage_page.dir/rule
 
 # Convenience name for target.
@@ -202,7 +202,7 @@ bustub_storage_page: src/storage/page/CMakeFiles/bustub_storage_page.dir/rule
 
 # fast build rule for target.
 bustub_storage_page/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/build
 .PHONY : bustub_storage_page/fast
 
 b_plus_tree_internal_page.o: b_plus_tree_internal_page.cpp.o
@@ -210,7 +210,7 @@ b_plus_tree_internal_page.o: b_plus_tree_internal_page.cpp.o
 
 # target to build an object file
 b_plus_tree_internal_page.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_internal_page.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_internal_page.cpp.o
 .PHONY : b_plus_tree_internal_page.cpp.o
 
 b_plus_tree_internal_page.i: b_plus_tree_internal_page.cpp.i
@@ -218,7 +218,7 @@ b_plus_tree_internal_page.i: b_plus_tree_internal_page.cpp.i
 
 # target to preprocess a source file
 b_plus_tree_internal_page.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_internal_page.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_internal_page.cpp.i
 .PHONY : b_plus_tree_internal_page.cpp.i
 
 b_plus_tree_internal_page.s: b_plus_tree_internal_page.cpp.s
@@ -226,7 +226,7 @@ b_plus_tree_internal_page.s: b_plus_tree_internal_page.cpp.s
 
 # target to generate assembly for a file
 b_plus_tree_internal_page.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_internal_page.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_internal_page.cpp.s
 .PHONY : b_plus_tree_internal_page.cpp.s
 
 b_plus_tree_leaf_page.o: b_plus_tree_leaf_page.cpp.o
@@ -234,7 +234,7 @@ b_plus_tree_leaf_page.o: b_plus_tree_leaf_page.cpp.o
 
 # target to build an object file
 b_plus_tree_leaf_page.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_leaf_page.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_leaf_page.cpp.o
 .PHONY : b_plus_tree_leaf_page.cpp.o
 
 b_plus_tree_leaf_page.i: b_plus_tree_leaf_page.cpp.i
@@ -242,7 +242,7 @@ b_plus_tree_leaf_page.i: b_plus_tree_leaf_page.cpp.i
 
 # target to preprocess a source file
 b_plus_tree_leaf_page.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_leaf_page.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_leaf_page.cpp.i
 .PHONY : b_plus_tree_leaf_page.cpp.i
 
 b_plus_tree_leaf_page.s: b_plus_tree_leaf_page.cpp.s
@@ -250,7 +250,7 @@ b_plus_tree_leaf_page.s: b_plus_tree_leaf_page.cpp.s
 
 # target to generate assembly for a file
 b_plus_tree_leaf_page.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_leaf_page.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_leaf_page.cpp.s
 .PHONY : b_plus_tree_leaf_page.cpp.s
 
 b_plus_tree_page.o: b_plus_tree_page.cpp.o
@@ -258,7 +258,7 @@ b_plus_tree_page.o: b_plus_tree_page.cpp.o
 
 # target to build an object file
 b_plus_tree_page.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_page.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_page.cpp.o
 .PHONY : b_plus_tree_page.cpp.o
 
 b_plus_tree_page.i: b_plus_tree_page.cpp.i
@@ -266,7 +266,7 @@ b_plus_tree_page.i: b_plus_tree_page.cpp.i
 
 # target to preprocess a source file
 b_plus_tree_page.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_page.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_page.cpp.i
 .PHONY : b_plus_tree_page.cpp.i
 
 b_plus_tree_page.s: b_plus_tree_page.cpp.s
@@ -274,7 +274,7 @@ b_plus_tree_page.s: b_plus_tree_page.cpp.s
 
 # target to generate assembly for a file
 b_plus_tree_page.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_page.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/b_plus_tree_page.cpp.s
 .PHONY : b_plus_tree_page.cpp.s
 
 hash_table_block_page.o: hash_table_block_page.cpp.o
@@ -282,7 +282,7 @@ hash_table_block_page.o: hash_table_block_page.cpp.o
 
 # target to build an object file
 hash_table_block_page.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_block_page.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_block_page.cpp.o
 .PHONY : hash_table_block_page.cpp.o
 
 hash_table_block_page.i: hash_table_block_page.cpp.i
@@ -290,7 +290,7 @@ hash_table_block_page.i: hash_table_block_page.cpp.i
 
 # target to preprocess a source file
 hash_table_block_page.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_block_page.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_block_page.cpp.i
 .PHONY : hash_table_block_page.cpp.i
 
 hash_table_block_page.s: hash_table_block_page.cpp.s
@@ -298,7 +298,7 @@ hash_table_block_page.s: hash_table_block_page.cpp.s
 
 # target to generate assembly for a file
 hash_table_block_page.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_block_page.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_block_page.cpp.s
 .PHONY : hash_table_block_page.cpp.s
 
 hash_table_bucket_page.o: hash_table_bucket_page.cpp.o
@@ -306,7 +306,7 @@ hash_table_bucket_page.o: hash_table_bucket_page.cpp.o
 
 # target to build an object file
 hash_table_bucket_page.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_bucket_page.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_bucket_page.cpp.o
 .PHONY : hash_table_bucket_page.cpp.o
 
 hash_table_bucket_page.i: hash_table_bucket_page.cpp.i
@@ -314,7 +314,7 @@ hash_table_bucket_page.i: hash_table_bucket_page.cpp.i
 
 # target to preprocess a source file
 hash_table_bucket_page.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_bucket_page.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_bucket_page.cpp.i
 .PHONY : hash_table_bucket_page.cpp.i
 
 hash_table_bucket_page.s: hash_table_bucket_page.cpp.s
@@ -322,7 +322,7 @@ hash_table_bucket_page.s: hash_table_bucket_page.cpp.s
 
 # target to generate assembly for a file
 hash_table_bucket_page.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_bucket_page.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_bucket_page.cpp.s
 .PHONY : hash_table_bucket_page.cpp.s
 
 hash_table_directory_page.o: hash_table_directory_page.cpp.o
@@ -330,7 +330,7 @@ hash_table_directory_page.o: hash_table_directory_page.cpp.o
 
 # target to build an object file
 hash_table_directory_page.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_directory_page.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_directory_page.cpp.o
 .PHONY : hash_table_directory_page.cpp.o
 
 hash_table_directory_page.i: hash_table_directory_page.cpp.i
@@ -338,7 +338,7 @@ hash_table_directory_page.i: hash_table_directory_page.cpp.i
 
 # target to preprocess a source file
 hash_table_directory_page.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_directory_page.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_directory_page.cpp.i
 .PHONY : hash_table_directory_page.cpp.i
 
 hash_table_directory_page.s: hash_table_directory_page.cpp.s
@@ -346,39 +346,39 @@ hash_table_directory_page.s: hash_table_directory_page.cpp.s
 
 # target to generate assembly for a file
 hash_table_directory_page.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_directory_page.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/hash_table_directory_page.cpp.s
 .PHONY : hash_table_directory_page.cpp.s
 
-page_guard.o: page_guard.cpp.o
-.PHONY : page_guard.o
+header_page.o: header_page.cpp.o
+.PHONY : header_page.o
 
 # target to build an object file
-page_guard.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/page_guard.cpp.o
-.PHONY : page_guard.cpp.o
+header_page.cpp.o:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/header_page.cpp.o
+.PHONY : header_page.cpp.o
 
-page_guard.i: page_guard.cpp.i
-.PHONY : page_guard.i
+header_page.i: header_page.cpp.i
+.PHONY : header_page.i
 
 # target to preprocess a source file
-page_guard.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/page_guard.cpp.i
-.PHONY : page_guard.cpp.i
+header_page.cpp.i:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/header_page.cpp.i
+.PHONY : header_page.cpp.i
 
-page_guard.s: page_guard.cpp.s
-.PHONY : page_guard.s
+header_page.s: header_page.cpp.s
+.PHONY : header_page.s
 
 # target to generate assembly for a file
-page_guard.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/page_guard.cpp.s
-.PHONY : page_guard.cpp.s
+header_page.cpp.s:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/header_page.cpp.s
+.PHONY : header_page.cpp.s
 
 table_page.o: table_page.cpp.o
 .PHONY : table_page.o
 
 # target to build an object file
 table_page.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/table_page.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/table_page.cpp.o
 .PHONY : table_page.cpp.o
 
 table_page.i: table_page.cpp.i
@@ -386,7 +386,7 @@ table_page.i: table_page.cpp.i
 
 # target to preprocess a source file
 table_page.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/table_page.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/table_page.cpp.i
 .PHONY : table_page.cpp.i
 
 table_page.s: table_page.cpp.s
@@ -394,7 +394,7 @@ table_page.s: table_page.cpp.s
 
 # target to generate assembly for a file
 table_page.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/table_page.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/storage/page/CMakeFiles/bustub_storage_page.dir/build.make src/storage/page/CMakeFiles/bustub_storage_page.dir/table_page.cpp.s
 .PHONY : table_page.cpp.s
 
 # Help Target
@@ -431,9 +431,9 @@ help:
 	@echo "... hash_table_directory_page.o"
 	@echo "... hash_table_directory_page.i"
 	@echo "... hash_table_directory_page.s"
-	@echo "... page_guard.o"
-	@echo "... page_guard.i"
-	@echo "... page_guard.s"
+	@echo "... header_page.o"
+	@echo "... header_page.i"
+	@echo "... header_page.s"
 	@echo "... table_page.o"
 	@echo "... table_page.i"
 	@echo "... table_page.s"
@@ -448,6 +448,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

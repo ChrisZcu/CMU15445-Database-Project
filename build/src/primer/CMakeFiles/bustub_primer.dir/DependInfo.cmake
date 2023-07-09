@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/primer/trie.cpp" "src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.o" "gcc" "src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.o.d"
-  "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/primer/trie_store.cpp" "src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.o" "gcc" "src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.o.d"
+  "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/primer/p0_trie.cpp" "src/primer/CMakeFiles/bustub_primer.dir/p0_trie.cpp.o" "gcc" "src/primer/CMakeFiles/bustub_primer.dir/p0_trie.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

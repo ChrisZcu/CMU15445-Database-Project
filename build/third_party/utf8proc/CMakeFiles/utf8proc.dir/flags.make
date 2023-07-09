@@ -4,7 +4,7 @@
 # compile C with /Library/Developer/CommandLineTools/usr/bin/cc
 C_DEFINES = -DUTF8PROC_EXPORTS -DUTF8PROC_STATIC
 
-C_INCLUDES = -I/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src -I/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/include -I/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/test/include -I/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party -I/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/fmt/include -I/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/libpg_query/include -I/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/argparse/include -I/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/cpp_random_distributions -I/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/utf8proc/.
+C_INCLUDES = -I/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src -I/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/include -I/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/test/include -I/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party -I/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party/fmt/include -I/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party/libpg_query/include -I/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party/argparse/include -I/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party/utf8proc/.
 
 C_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -fPIC -O2 -std=c99 -pedantic -Wall
 

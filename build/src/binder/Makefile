@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub
+CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
+CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CPackSourceConfig.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/binder//CMakeFiles/progress.marks
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles 0
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/binder//CMakeFiles/progress.marks
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/clean
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/preinstall
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/preinstall
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/binder/CMakeFiles/bustub_binder.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/CMakeFiles/bustub_binder.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/binder/CMakeFiles/bustub_binder.dir/rule
 .PHONY : src/binder/CMakeFiles/bustub_binder.dir/rule
 
 # Convenience name for target.
@@ -202,7 +202,7 @@ bustub_binder: src/binder/CMakeFiles/bustub_binder.dir/rule
 
 # fast build rule for target.
 bustub_binder/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/build
 .PHONY : bustub_binder/fast
 
 bind_create.o: bind_create.cpp.o
@@ -210,7 +210,7 @@ bind_create.o: bind_create.cpp.o
 
 # target to build an object file
 bind_create.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.o
 .PHONY : bind_create.cpp.o
 
 bind_create.i: bind_create.cpp.i
@@ -218,7 +218,7 @@ bind_create.i: bind_create.cpp.i
 
 # target to preprocess a source file
 bind_create.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.i
 .PHONY : bind_create.cpp.i
 
 bind_create.s: bind_create.cpp.s
@@ -226,7 +226,7 @@ bind_create.s: bind_create.cpp.s
 
 # target to generate assembly for a file
 bind_create.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.s
 .PHONY : bind_create.cpp.s
 
 bind_insert.o: bind_insert.cpp.o
@@ -234,7 +234,7 @@ bind_insert.o: bind_insert.cpp.o
 
 # target to build an object file
 bind_insert.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.o
 .PHONY : bind_insert.cpp.o
 
 bind_insert.i: bind_insert.cpp.i
@@ -242,7 +242,7 @@ bind_insert.i: bind_insert.cpp.i
 
 # target to preprocess a source file
 bind_insert.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.i
 .PHONY : bind_insert.cpp.i
 
 bind_insert.s: bind_insert.cpp.s
@@ -250,7 +250,7 @@ bind_insert.s: bind_insert.cpp.s
 
 # target to generate assembly for a file
 bind_insert.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.s
 .PHONY : bind_insert.cpp.s
 
 bind_select.o: bind_select.cpp.o
@@ -258,7 +258,7 @@ bind_select.o: bind_select.cpp.o
 
 # target to build an object file
 bind_select.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.o
 .PHONY : bind_select.cpp.o
 
 bind_select.i: bind_select.cpp.i
@@ -266,7 +266,7 @@ bind_select.i: bind_select.cpp.i
 
 # target to preprocess a source file
 bind_select.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.i
 .PHONY : bind_select.cpp.i
 
 bind_select.s: bind_select.cpp.s
@@ -274,7 +274,7 @@ bind_select.s: bind_select.cpp.s
 
 # target to generate assembly for a file
 bind_select.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.s
 .PHONY : bind_select.cpp.s
 
 bind_variable.o: bind_variable.cpp.o
@@ -282,7 +282,7 @@ bind_variable.o: bind_variable.cpp.o
 
 # target to build an object file
 bind_variable.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.o
 .PHONY : bind_variable.cpp.o
 
 bind_variable.i: bind_variable.cpp.i
@@ -290,7 +290,7 @@ bind_variable.i: bind_variable.cpp.i
 
 # target to preprocess a source file
 bind_variable.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.i
 .PHONY : bind_variable.cpp.i
 
 bind_variable.s: bind_variable.cpp.s
@@ -298,7 +298,7 @@ bind_variable.s: bind_variable.cpp.s
 
 # target to generate assembly for a file
 bind_variable.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.s
 .PHONY : bind_variable.cpp.s
 
 binder.o: binder.cpp.o
@@ -306,7 +306,7 @@ binder.o: binder.cpp.o
 
 # target to build an object file
 binder.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.o
 .PHONY : binder.cpp.o
 
 binder.i: binder.cpp.i
@@ -314,7 +314,7 @@ binder.i: binder.cpp.i
 
 # target to preprocess a source file
 binder.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.i
 .PHONY : binder.cpp.i
 
 binder.s: binder.cpp.s
@@ -322,7 +322,7 @@ binder.s: binder.cpp.s
 
 # target to generate assembly for a file
 binder.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.s
 .PHONY : binder.cpp.s
 
 bound_statement.o: bound_statement.cpp.o
@@ -330,7 +330,7 @@ bound_statement.o: bound_statement.cpp.o
 
 # target to build an object file
 bound_statement.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.o
 .PHONY : bound_statement.cpp.o
 
 bound_statement.i: bound_statement.cpp.i
@@ -338,7 +338,7 @@ bound_statement.i: bound_statement.cpp.i
 
 # target to preprocess a source file
 bound_statement.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.i
 .PHONY : bound_statement.cpp.i
 
 bound_statement.s: bound_statement.cpp.s
@@ -346,7 +346,7 @@ bound_statement.s: bound_statement.cpp.s
 
 # target to generate assembly for a file
 bound_statement.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.s
 .PHONY : bound_statement.cpp.s
 
 fmt_impl.o: fmt_impl.cpp.o
@@ -354,7 +354,7 @@ fmt_impl.o: fmt_impl.cpp.o
 
 # target to build an object file
 fmt_impl.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.o
 .PHONY : fmt_impl.cpp.o
 
 fmt_impl.i: fmt_impl.cpp.i
@@ -362,7 +362,7 @@ fmt_impl.i: fmt_impl.cpp.i
 
 # target to preprocess a source file
 fmt_impl.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.i
 .PHONY : fmt_impl.cpp.i
 
 fmt_impl.s: fmt_impl.cpp.s
@@ -370,7 +370,7 @@ fmt_impl.s: fmt_impl.cpp.s
 
 # target to generate assembly for a file
 fmt_impl.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.s
 .PHONY : fmt_impl.cpp.s
 
 keyword_helper.o: keyword_helper.cpp.o
@@ -378,7 +378,7 @@ keyword_helper.o: keyword_helper.cpp.o
 
 # target to build an object file
 keyword_helper.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.o
 .PHONY : keyword_helper.cpp.o
 
 keyword_helper.i: keyword_helper.cpp.i
@@ -386,7 +386,7 @@ keyword_helper.i: keyword_helper.cpp.i
 
 # target to preprocess a source file
 keyword_helper.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.i
 .PHONY : keyword_helper.cpp.i
 
 keyword_helper.s: keyword_helper.cpp.s
@@ -394,7 +394,7 @@ keyword_helper.s: keyword_helper.cpp.s
 
 # target to generate assembly for a file
 keyword_helper.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.s
 .PHONY : keyword_helper.cpp.s
 
 node_tag_to_string.o: node_tag_to_string.cpp.o
@@ -402,7 +402,7 @@ node_tag_to_string.o: node_tag_to_string.cpp.o
 
 # target to build an object file
 node_tag_to_string.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.o
 .PHONY : node_tag_to_string.cpp.o
 
 node_tag_to_string.i: node_tag_to_string.cpp.i
@@ -410,7 +410,7 @@ node_tag_to_string.i: node_tag_to_string.cpp.i
 
 # target to preprocess a source file
 node_tag_to_string.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.i
 .PHONY : node_tag_to_string.cpp.i
 
 node_tag_to_string.s: node_tag_to_string.cpp.s
@@ -418,7 +418,7 @@ node_tag_to_string.s: node_tag_to_string.cpp.s
 
 # target to generate assembly for a file
 node_tag_to_string.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.s
 .PHONY : node_tag_to_string.cpp.s
 
 transformer.o: transformer.cpp.o
@@ -426,7 +426,7 @@ transformer.o: transformer.cpp.o
 
 # target to build an object file
 transformer.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.o
 .PHONY : transformer.cpp.o
 
 transformer.i: transformer.cpp.i
@@ -434,7 +434,7 @@ transformer.i: transformer.cpp.i
 
 # target to preprocess a source file
 transformer.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.i
 .PHONY : transformer.cpp.i
 
 transformer.s: transformer.cpp.s
@@ -442,7 +442,7 @@ transformer.s: transformer.cpp.s
 
 # target to generate assembly for a file
 transformer.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/binder/CMakeFiles/bustub_binder.dir/build.make src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.s
 .PHONY : transformer.cpp.s
 
 # Help Target
@@ -502,6 +502,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

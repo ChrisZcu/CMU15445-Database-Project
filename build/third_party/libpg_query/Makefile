@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub
+CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
+CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CPackSourceConfig.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/third_party/libpg_query//CMakeFiles/progress.marks
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/libpg_query/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles 0
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/third_party/libpg_query//CMakeFiles/progress.marks
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/libpg_query/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/libpg_query/clean
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/libpg_query/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/libpg_query/preinstall
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/libpg_query/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/libpg_query/preinstall
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/libpg_query/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/rule
 .PHONY : third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/rule
 
 # Convenience name for target.
@@ -202,7 +202,7 @@ duckdb_pg_query: third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/rule
 
 # fast build rule for target.
 duckdb_pg_query/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build
 .PHONY : duckdb_pg_query/fast
 
 pg_functions.o: pg_functions.cpp.o
@@ -210,7 +210,7 @@ pg_functions.o: pg_functions.cpp.o
 
 # target to build an object file
 pg_functions.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/pg_functions.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/pg_functions.cpp.o
 .PHONY : pg_functions.cpp.o
 
 pg_functions.i: pg_functions.cpp.i
@@ -218,7 +218,7 @@ pg_functions.i: pg_functions.cpp.i
 
 # target to preprocess a source file
 pg_functions.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/pg_functions.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/pg_functions.cpp.i
 .PHONY : pg_functions.cpp.i
 
 pg_functions.s: pg_functions.cpp.s
@@ -226,7 +226,7 @@ pg_functions.s: pg_functions.cpp.s
 
 # target to generate assembly for a file
 pg_functions.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/pg_functions.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/pg_functions.cpp.s
 .PHONY : pg_functions.cpp.s
 
 postgres_parser.o: postgres_parser.cpp.o
@@ -234,7 +234,7 @@ postgres_parser.o: postgres_parser.cpp.o
 
 # target to build an object file
 postgres_parser.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/postgres_parser.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/postgres_parser.cpp.o
 .PHONY : postgres_parser.cpp.o
 
 postgres_parser.i: postgres_parser.cpp.i
@@ -242,7 +242,7 @@ postgres_parser.i: postgres_parser.cpp.i
 
 # target to preprocess a source file
 postgres_parser.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/postgres_parser.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/postgres_parser.cpp.i
 .PHONY : postgres_parser.cpp.i
 
 postgres_parser.s: postgres_parser.cpp.s
@@ -250,7 +250,7 @@ postgres_parser.s: postgres_parser.cpp.s
 
 # target to generate assembly for a file
 postgres_parser.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/postgres_parser.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/postgres_parser.cpp.s
 .PHONY : postgres_parser.cpp.s
 
 src_backend_nodes_list.o: src_backend_nodes_list.cpp.o
@@ -258,7 +258,7 @@ src_backend_nodes_list.o: src_backend_nodes_list.cpp.o
 
 # target to build an object file
 src_backend_nodes_list.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_list.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_list.cpp.o
 .PHONY : src_backend_nodes_list.cpp.o
 
 src_backend_nodes_list.i: src_backend_nodes_list.cpp.i
@@ -266,7 +266,7 @@ src_backend_nodes_list.i: src_backend_nodes_list.cpp.i
 
 # target to preprocess a source file
 src_backend_nodes_list.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_list.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_list.cpp.i
 .PHONY : src_backend_nodes_list.cpp.i
 
 src_backend_nodes_list.s: src_backend_nodes_list.cpp.s
@@ -274,7 +274,7 @@ src_backend_nodes_list.s: src_backend_nodes_list.cpp.s
 
 # target to generate assembly for a file
 src_backend_nodes_list.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_list.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_list.cpp.s
 .PHONY : src_backend_nodes_list.cpp.s
 
 src_backend_nodes_makefuncs.o: src_backend_nodes_makefuncs.cpp.o
@@ -282,7 +282,7 @@ src_backend_nodes_makefuncs.o: src_backend_nodes_makefuncs.cpp.o
 
 # target to build an object file
 src_backend_nodes_makefuncs.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_makefuncs.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_makefuncs.cpp.o
 .PHONY : src_backend_nodes_makefuncs.cpp.o
 
 src_backend_nodes_makefuncs.i: src_backend_nodes_makefuncs.cpp.i
@@ -290,7 +290,7 @@ src_backend_nodes_makefuncs.i: src_backend_nodes_makefuncs.cpp.i
 
 # target to preprocess a source file
 src_backend_nodes_makefuncs.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_makefuncs.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_makefuncs.cpp.i
 .PHONY : src_backend_nodes_makefuncs.cpp.i
 
 src_backend_nodes_makefuncs.s: src_backend_nodes_makefuncs.cpp.s
@@ -298,7 +298,7 @@ src_backend_nodes_makefuncs.s: src_backend_nodes_makefuncs.cpp.s
 
 # target to generate assembly for a file
 src_backend_nodes_makefuncs.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_makefuncs.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_makefuncs.cpp.s
 .PHONY : src_backend_nodes_makefuncs.cpp.s
 
 src_backend_nodes_value.o: src_backend_nodes_value.cpp.o
@@ -306,7 +306,7 @@ src_backend_nodes_value.o: src_backend_nodes_value.cpp.o
 
 # target to build an object file
 src_backend_nodes_value.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_value.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_value.cpp.o
 .PHONY : src_backend_nodes_value.cpp.o
 
 src_backend_nodes_value.i: src_backend_nodes_value.cpp.i
@@ -314,7 +314,7 @@ src_backend_nodes_value.i: src_backend_nodes_value.cpp.i
 
 # target to preprocess a source file
 src_backend_nodes_value.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_value.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_value.cpp.i
 .PHONY : src_backend_nodes_value.cpp.i
 
 src_backend_nodes_value.s: src_backend_nodes_value.cpp.s
@@ -322,7 +322,7 @@ src_backend_nodes_value.s: src_backend_nodes_value.cpp.s
 
 # target to generate assembly for a file
 src_backend_nodes_value.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_value.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_nodes_value.cpp.s
 .PHONY : src_backend_nodes_value.cpp.s
 
 src_backend_parser_gram.o: src_backend_parser_gram.cpp.o
@@ -330,7 +330,7 @@ src_backend_parser_gram.o: src_backend_parser_gram.cpp.o
 
 # target to build an object file
 src_backend_parser_gram.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_gram.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_gram.cpp.o
 .PHONY : src_backend_parser_gram.cpp.o
 
 src_backend_parser_gram.i: src_backend_parser_gram.cpp.i
@@ -338,7 +338,7 @@ src_backend_parser_gram.i: src_backend_parser_gram.cpp.i
 
 # target to preprocess a source file
 src_backend_parser_gram.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_gram.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_gram.cpp.i
 .PHONY : src_backend_parser_gram.cpp.i
 
 src_backend_parser_gram.s: src_backend_parser_gram.cpp.s
@@ -346,7 +346,7 @@ src_backend_parser_gram.s: src_backend_parser_gram.cpp.s
 
 # target to generate assembly for a file
 src_backend_parser_gram.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_gram.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_gram.cpp.s
 .PHONY : src_backend_parser_gram.cpp.s
 
 src_backend_parser_parser.o: src_backend_parser_parser.cpp.o
@@ -354,7 +354,7 @@ src_backend_parser_parser.o: src_backend_parser_parser.cpp.o
 
 # target to build an object file
 src_backend_parser_parser.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_parser.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_parser.cpp.o
 .PHONY : src_backend_parser_parser.cpp.o
 
 src_backend_parser_parser.i: src_backend_parser_parser.cpp.i
@@ -362,7 +362,7 @@ src_backend_parser_parser.i: src_backend_parser_parser.cpp.i
 
 # target to preprocess a source file
 src_backend_parser_parser.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_parser.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_parser.cpp.i
 .PHONY : src_backend_parser_parser.cpp.i
 
 src_backend_parser_parser.s: src_backend_parser_parser.cpp.s
@@ -370,7 +370,7 @@ src_backend_parser_parser.s: src_backend_parser_parser.cpp.s
 
 # target to generate assembly for a file
 src_backend_parser_parser.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_parser.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_parser.cpp.s
 .PHONY : src_backend_parser_parser.cpp.s
 
 src_backend_parser_scan.o: src_backend_parser_scan.cpp.o
@@ -378,7 +378,7 @@ src_backend_parser_scan.o: src_backend_parser_scan.cpp.o
 
 # target to build an object file
 src_backend_parser_scan.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scan.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scan.cpp.o
 .PHONY : src_backend_parser_scan.cpp.o
 
 src_backend_parser_scan.i: src_backend_parser_scan.cpp.i
@@ -386,7 +386,7 @@ src_backend_parser_scan.i: src_backend_parser_scan.cpp.i
 
 # target to preprocess a source file
 src_backend_parser_scan.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scan.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scan.cpp.i
 .PHONY : src_backend_parser_scan.cpp.i
 
 src_backend_parser_scan.s: src_backend_parser_scan.cpp.s
@@ -394,7 +394,7 @@ src_backend_parser_scan.s: src_backend_parser_scan.cpp.s
 
 # target to generate assembly for a file
 src_backend_parser_scan.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scan.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scan.cpp.s
 .PHONY : src_backend_parser_scan.cpp.s
 
 src_backend_parser_scansup.o: src_backend_parser_scansup.cpp.o
@@ -402,7 +402,7 @@ src_backend_parser_scansup.o: src_backend_parser_scansup.cpp.o
 
 # target to build an object file
 src_backend_parser_scansup.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scansup.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scansup.cpp.o
 .PHONY : src_backend_parser_scansup.cpp.o
 
 src_backend_parser_scansup.i: src_backend_parser_scansup.cpp.i
@@ -410,7 +410,7 @@ src_backend_parser_scansup.i: src_backend_parser_scansup.cpp.i
 
 # target to preprocess a source file
 src_backend_parser_scansup.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scansup.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scansup.cpp.i
 .PHONY : src_backend_parser_scansup.cpp.i
 
 src_backend_parser_scansup.s: src_backend_parser_scansup.cpp.s
@@ -418,7 +418,7 @@ src_backend_parser_scansup.s: src_backend_parser_scansup.cpp.s
 
 # target to generate assembly for a file
 src_backend_parser_scansup.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scansup.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_backend_parser_scansup.cpp.s
 .PHONY : src_backend_parser_scansup.cpp.s
 
 src_common_keywords.o: src_common_keywords.cpp.o
@@ -426,7 +426,7 @@ src_common_keywords.o: src_common_keywords.cpp.o
 
 # target to build an object file
 src_common_keywords.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_common_keywords.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_common_keywords.cpp.o
 .PHONY : src_common_keywords.cpp.o
 
 src_common_keywords.i: src_common_keywords.cpp.i
@@ -434,7 +434,7 @@ src_common_keywords.i: src_common_keywords.cpp.i
 
 # target to preprocess a source file
 src_common_keywords.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_common_keywords.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_common_keywords.cpp.i
 .PHONY : src_common_keywords.cpp.i
 
 src_common_keywords.s: src_common_keywords.cpp.s
@@ -442,7 +442,7 @@ src_common_keywords.s: src_common_keywords.cpp.s
 
 # target to generate assembly for a file
 src_common_keywords.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_common_keywords.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/build.make third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/src_common_keywords.cpp.s
 .PHONY : src_common_keywords.cpp.s
 
 # Help Target
@@ -502,6 +502,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

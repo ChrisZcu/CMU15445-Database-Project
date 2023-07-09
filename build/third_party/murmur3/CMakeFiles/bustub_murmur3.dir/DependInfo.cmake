@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/murmur3/MurmurHash3.cpp" "third_party/murmur3/CMakeFiles/bustub_murmur3.dir/MurmurHash3.cpp.o" "gcc" "third_party/murmur3/CMakeFiles/bustub_murmur3.dir/MurmurHash3.cpp.o.d"
+  "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party/murmur3/MurmurHash3.cpp" "third_party/murmur3/CMakeFiles/bustub_murmur3.dir/MurmurHash3.cpp.o" "gcc" "third_party/murmur3/CMakeFiles/bustub_murmur3.dir/MurmurHash3.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/utf8proc
+# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party/utf8proc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -46,7 +46,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include" TYPE FILE FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/utf8proc/utf8proc.h")
+  file(INSTALL DESTINATION "/usr/local/include" TYPE FILE FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party/utf8proc/utf8proc.h")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -58,7 +58,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/lib" TYPE STATIC_LIBRARY FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/lib/libutf8proc.a")
+  file(INSTALL DESTINATION "/usr/local/lib" TYPE STATIC_LIBRARY FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/lib/libutf8proc.a")
   if(EXISTS "$ENV{DESTDIR}/usr/local/lib/libutf8proc.a" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/local/lib/libutf8proc.a")
     execute_process(COMMAND "/Library/Developer/CommandLineTools/usr/bin/ranlib" "$ENV{DESTDIR}/usr/local/lib/libutf8proc.a")
@@ -74,6 +74,6 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/lib/pkgconfig" TYPE FILE FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/third_party/utf8proc/libutf8proc.pc")
+  file(INSTALL DESTINATION "/usr/local/lib/pkgconfig" TYPE FILE FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/third_party/utf8proc/libutf8proc.pc")
 endif()
 

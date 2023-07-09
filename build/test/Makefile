@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub
+CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
+CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CPackSourceConfig.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/test//CMakeFiles/progress.marks
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles 0
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/test//CMakeFiles/progress.marks
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/CMakeFiles/build-tests.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/build-tests.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/build-tests.dir/rule
 .PHONY : test/CMakeFiles/build-tests.dir/rule
 
 # Convenience name for target.
@@ -202,12 +202,12 @@ build-tests: test/CMakeFiles/build-tests.dir/rule
 
 # fast build rule for target.
 build-tests/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/build-tests.dir/build.make test/CMakeFiles/build-tests.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/build-tests.dir/build.make test/CMakeFiles/build-tests.dir/build
 .PHONY : build-tests/fast
 
 # Convenience name for target.
 test/CMakeFiles/check-tests.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/check-tests.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/check-tests.dir/rule
 .PHONY : test/CMakeFiles/check-tests.dir/rule
 
 # Convenience name for target.
@@ -216,12 +216,12 @@ check-tests: test/CMakeFiles/check-tests.dir/rule
 
 # fast build rule for target.
 check-tests/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/check-tests.dir/build.make test/CMakeFiles/check-tests.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/check-tests.dir/build.make test/CMakeFiles/check-tests.dir/build
 .PHONY : check-tests/fast
 
 # Convenience name for target.
 test/CMakeFiles/check-public-ci-tests.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/check-public-ci-tests.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/check-public-ci-tests.dir/rule
 .PHONY : test/CMakeFiles/check-public-ci-tests.dir/rule
 
 # Convenience name for target.
@@ -230,12 +230,12 @@ check-public-ci-tests: test/CMakeFiles/check-public-ci-tests.dir/rule
 
 # fast build rule for target.
 check-public-ci-tests/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/check-public-ci-tests.dir/build.make test/CMakeFiles/check-public-ci-tests.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/check-public-ci-tests.dir/build.make test/CMakeFiles/check-public-ci-tests.dir/build
 .PHONY : check-public-ci-tests/fast
 
 # Convenience name for target.
 test/CMakeFiles/binder_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/binder_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/binder_test.dir/rule
 .PHONY : test/CMakeFiles/binder_test.dir/rule
 
 # Convenience name for target.
@@ -244,26 +244,26 @@ binder_test: test/CMakeFiles/binder_test.dir/rule
 
 # fast build rule for target.
 binder_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/binder_test.dir/build.make test/CMakeFiles/binder_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/binder_test.dir/build.make test/CMakeFiles/binder_test.dir/build
 .PHONY : binder_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/buffer_pool_manager_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/buffer_pool_manager_test.dir/rule
-.PHONY : test/CMakeFiles/buffer_pool_manager_test.dir/rule
+test/CMakeFiles/buffer_pool_manager_instance_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/buffer_pool_manager_instance_test.dir/rule
+.PHONY : test/CMakeFiles/buffer_pool_manager_instance_test.dir/rule
 
 # Convenience name for target.
-buffer_pool_manager_test: test/CMakeFiles/buffer_pool_manager_test.dir/rule
-.PHONY : buffer_pool_manager_test
+buffer_pool_manager_instance_test: test/CMakeFiles/buffer_pool_manager_instance_test.dir/rule
+.PHONY : buffer_pool_manager_instance_test
 
 # fast build rule for target.
-buffer_pool_manager_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/buffer_pool_manager_test.dir/build.make test/CMakeFiles/buffer_pool_manager_test.dir/build
-.PHONY : buffer_pool_manager_test/fast
+buffer_pool_manager_instance_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/buffer_pool_manager_instance_test.dir/build.make test/CMakeFiles/buffer_pool_manager_instance_test.dir/build
+.PHONY : buffer_pool_manager_instance_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/clock_replacer_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/clock_replacer_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/clock_replacer_test.dir/rule
 .PHONY : test/CMakeFiles/clock_replacer_test.dir/rule
 
 # Convenience name for target.
@@ -272,12 +272,12 @@ clock_replacer_test: test/CMakeFiles/clock_replacer_test.dir/rule
 
 # fast build rule for target.
 clock_replacer_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/clock_replacer_test.dir/build.make test/CMakeFiles/clock_replacer_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/clock_replacer_test.dir/build.make test/CMakeFiles/clock_replacer_test.dir/build
 .PHONY : clock_replacer_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/lru_k_replacer_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/lru_k_replacer_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/lru_k_replacer_test.dir/rule
 .PHONY : test/CMakeFiles/lru_k_replacer_test.dir/rule
 
 # Convenience name for target.
@@ -286,12 +286,12 @@ lru_k_replacer_test: test/CMakeFiles/lru_k_replacer_test.dir/rule
 
 # fast build rule for target.
 lru_k_replacer_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_k_replacer_test.dir/build.make test/CMakeFiles/lru_k_replacer_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_k_replacer_test.dir/build.make test/CMakeFiles/lru_k_replacer_test.dir/build
 .PHONY : lru_k_replacer_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/lru_replacer_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/lru_replacer_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/lru_replacer_test.dir/rule
 .PHONY : test/CMakeFiles/lru_replacer_test.dir/rule
 
 # Convenience name for target.
@@ -300,12 +300,26 @@ lru_replacer_test: test/CMakeFiles/lru_replacer_test.dir/rule
 
 # fast build rule for target.
 lru_replacer_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_replacer_test.dir/build.make test/CMakeFiles/lru_replacer_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_replacer_test.dir/build.make test/CMakeFiles/lru_replacer_test.dir/build
 .PHONY : lru_replacer_test/fast
 
 # Convenience name for target.
+test/CMakeFiles/catalog_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/catalog_test.dir/rule
+.PHONY : test/CMakeFiles/catalog_test.dir/rule
+
+# Convenience name for target.
+catalog_test: test/CMakeFiles/catalog_test.dir/rule
+.PHONY : catalog_test
+
+# fast build rule for target.
+catalog_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/catalog_test.dir/build.make test/CMakeFiles/catalog_test.dir/build
+.PHONY : catalog_test/fast
+
+# Convenience name for target.
 test/CMakeFiles/rwlatch_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/rwlatch_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/rwlatch_test.dir/rule
 .PHONY : test/CMakeFiles/rwlatch_test.dir/rule
 
 # Convenience name for target.
@@ -314,12 +328,12 @@ rwlatch_test: test/CMakeFiles/rwlatch_test.dir/rule
 
 # fast build rule for target.
 rwlatch_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/rwlatch_test.dir/build.make test/CMakeFiles/rwlatch_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/rwlatch_test.dir/build.make test/CMakeFiles/rwlatch_test.dir/build
 .PHONY : rwlatch_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/deadlock_detection_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/deadlock_detection_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/deadlock_detection_test.dir/rule
 .PHONY : test/CMakeFiles/deadlock_detection_test.dir/rule
 
 # Convenience name for target.
@@ -328,12 +342,12 @@ deadlock_detection_test: test/CMakeFiles/deadlock_detection_test.dir/rule
 
 # fast build rule for target.
 deadlock_detection_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/deadlock_detection_test.dir/build.make test/CMakeFiles/deadlock_detection_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/deadlock_detection_test.dir/build.make test/CMakeFiles/deadlock_detection_test.dir/build
 .PHONY : deadlock_detection_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/lock_manager_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/lock_manager_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/lock_manager_test.dir/rule
 .PHONY : test/CMakeFiles/lock_manager_test.dir/rule
 
 # Convenience name for target.
@@ -342,26 +356,26 @@ lock_manager_test: test/CMakeFiles/lock_manager_test.dir/rule
 
 # fast build rule for target.
 lock_manager_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lock_manager_test.dir/build.make test/CMakeFiles/lock_manager_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lock_manager_test.dir/build.make test/CMakeFiles/lock_manager_test.dir/build
 .PHONY : lock_manager_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/txn_integration_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/txn_integration_test.dir/rule
-.PHONY : test/CMakeFiles/txn_integration_test.dir/rule
+test/CMakeFiles/transaction_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/transaction_test.dir/rule
+.PHONY : test/CMakeFiles/transaction_test.dir/rule
 
 # Convenience name for target.
-txn_integration_test: test/CMakeFiles/txn_integration_test.dir/rule
-.PHONY : txn_integration_test
+transaction_test: test/CMakeFiles/transaction_test.dir/rule
+.PHONY : transaction_test
 
 # fast build rule for target.
-txn_integration_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/txn_integration_test.dir/build.make test/CMakeFiles/txn_integration_test.dir/build
-.PHONY : txn_integration_test/fast
+transaction_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/transaction_test.dir/build.make test/CMakeFiles/transaction_test.dir/build
+.PHONY : transaction_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/hash_table_page_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/hash_table_page_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/hash_table_page_test.dir/rule
 .PHONY : test/CMakeFiles/hash_table_page_test.dir/rule
 
 # Convenience name for target.
@@ -370,12 +384,12 @@ hash_table_page_test: test/CMakeFiles/hash_table_page_test.dir/rule
 
 # fast build rule for target.
 hash_table_page_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hash_table_page_test.dir/build.make test/CMakeFiles/hash_table_page_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hash_table_page_test.dir/build.make test/CMakeFiles/hash_table_page_test.dir/build
 .PHONY : hash_table_page_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/hash_table_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/hash_table_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/hash_table_test.dir/rule
 .PHONY : test/CMakeFiles/hash_table_test.dir/rule
 
 # Convenience name for target.
@@ -384,82 +398,54 @@ hash_table_test: test/CMakeFiles/hash_table_test.dir/rule
 
 # fast build rule for target.
 hash_table_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hash_table_test.dir/build.make test/CMakeFiles/hash_table_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hash_table_test.dir/build.make test/CMakeFiles/hash_table_test.dir/build
 .PHONY : hash_table_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/trie_debug_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/trie_debug_test.dir/rule
-.PHONY : test/CMakeFiles/trie_debug_test.dir/rule
+test/CMakeFiles/extendible_hash_table_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/extendible_hash_table_test.dir/rule
+.PHONY : test/CMakeFiles/extendible_hash_table_test.dir/rule
 
 # Convenience name for target.
-trie_debug_test: test/CMakeFiles/trie_debug_test.dir/rule
-.PHONY : trie_debug_test
+extendible_hash_table_test: test/CMakeFiles/extendible_hash_table_test.dir/rule
+.PHONY : extendible_hash_table_test
 
 # fast build rule for target.
-trie_debug_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_debug_test.dir/build.make test/CMakeFiles/trie_debug_test.dir/build
-.PHONY : trie_debug_test/fast
+extendible_hash_table_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/extendible_hash_table_test.dir/build.make test/CMakeFiles/extendible_hash_table_test.dir/build
+.PHONY : extendible_hash_table_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/trie_noncopy_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/trie_noncopy_test.dir/rule
-.PHONY : test/CMakeFiles/trie_noncopy_test.dir/rule
+test/CMakeFiles/starter_trie_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/starter_trie_test.dir/rule
+.PHONY : test/CMakeFiles/starter_trie_test.dir/rule
 
 # Convenience name for target.
-trie_noncopy_test: test/CMakeFiles/trie_noncopy_test.dir/rule
-.PHONY : trie_noncopy_test
+starter_trie_test: test/CMakeFiles/starter_trie_test.dir/rule
+.PHONY : starter_trie_test
 
 # fast build rule for target.
-trie_noncopy_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_noncopy_test.dir/build.make test/CMakeFiles/trie_noncopy_test.dir/build
-.PHONY : trie_noncopy_test/fast
+starter_trie_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/starter_trie_test.dir/build.make test/CMakeFiles/starter_trie_test.dir/build
+.PHONY : starter_trie_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/trie_store_noncopy_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/trie_store_noncopy_test.dir/rule
-.PHONY : test/CMakeFiles/trie_store_noncopy_test.dir/rule
+test/CMakeFiles/recovery_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/recovery_test.dir/rule
+.PHONY : test/CMakeFiles/recovery_test.dir/rule
 
 # Convenience name for target.
-trie_store_noncopy_test: test/CMakeFiles/trie_store_noncopy_test.dir/rule
-.PHONY : trie_store_noncopy_test
+recovery_test: test/CMakeFiles/recovery_test.dir/rule
+.PHONY : recovery_test
 
 # fast build rule for target.
-trie_store_noncopy_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_store_noncopy_test.dir/build.make test/CMakeFiles/trie_store_noncopy_test.dir/build
-.PHONY : trie_store_noncopy_test/fast
-
-# Convenience name for target.
-test/CMakeFiles/trie_store_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/trie_store_test.dir/rule
-.PHONY : test/CMakeFiles/trie_store_test.dir/rule
-
-# Convenience name for target.
-trie_store_test: test/CMakeFiles/trie_store_test.dir/rule
-.PHONY : trie_store_test
-
-# fast build rule for target.
-trie_store_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_store_test.dir/build.make test/CMakeFiles/trie_store_test.dir/build
-.PHONY : trie_store_test/fast
-
-# Convenience name for target.
-test/CMakeFiles/trie_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/trie_test.dir/rule
-.PHONY : test/CMakeFiles/trie_test.dir/rule
-
-# Convenience name for target.
-trie_test: test/CMakeFiles/trie_test.dir/rule
-.PHONY : trie_test
-
-# fast build rule for target.
-trie_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_test.dir/build.make test/CMakeFiles/trie_test.dir/build
-.PHONY : trie_test/fast
+recovery_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/recovery_test.dir/build.make test/CMakeFiles/recovery_test.dir/build
+.PHONY : recovery_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/b_plus_tree_concurrent_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/b_plus_tree_concurrent_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/b_plus_tree_concurrent_test.dir/rule
 .PHONY : test/CMakeFiles/b_plus_tree_concurrent_test.dir/rule
 
 # Convenience name for target.
@@ -468,12 +454,12 @@ b_plus_tree_concurrent_test: test/CMakeFiles/b_plus_tree_concurrent_test.dir/rul
 
 # fast build rule for target.
 b_plus_tree_concurrent_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_concurrent_test.dir/build.make test/CMakeFiles/b_plus_tree_concurrent_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_concurrent_test.dir/build.make test/CMakeFiles/b_plus_tree_concurrent_test.dir/build
 .PHONY : b_plus_tree_concurrent_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/b_plus_tree_contention_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/b_plus_tree_contention_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/b_plus_tree_contention_test.dir/rule
 .PHONY : test/CMakeFiles/b_plus_tree_contention_test.dir/rule
 
 # Convenience name for target.
@@ -482,12 +468,12 @@ b_plus_tree_contention_test: test/CMakeFiles/b_plus_tree_contention_test.dir/rul
 
 # fast build rule for target.
 b_plus_tree_contention_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_contention_test.dir/build.make test/CMakeFiles/b_plus_tree_contention_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_contention_test.dir/build.make test/CMakeFiles/b_plus_tree_contention_test.dir/build
 .PHONY : b_plus_tree_contention_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/b_plus_tree_delete_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/b_plus_tree_delete_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/b_plus_tree_delete_test.dir/rule
 .PHONY : test/CMakeFiles/b_plus_tree_delete_test.dir/rule
 
 # Convenience name for target.
@@ -496,12 +482,12 @@ b_plus_tree_delete_test: test/CMakeFiles/b_plus_tree_delete_test.dir/rule
 
 # fast build rule for target.
 b_plus_tree_delete_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_delete_test.dir/build.make test/CMakeFiles/b_plus_tree_delete_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_delete_test.dir/build.make test/CMakeFiles/b_plus_tree_delete_test.dir/build
 .PHONY : b_plus_tree_delete_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/b_plus_tree_insert_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/b_plus_tree_insert_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/b_plus_tree_insert_test.dir/rule
 .PHONY : test/CMakeFiles/b_plus_tree_insert_test.dir/rule
 
 # Convenience name for target.
@@ -510,26 +496,12 @@ b_plus_tree_insert_test: test/CMakeFiles/b_plus_tree_insert_test.dir/rule
 
 # fast build rule for target.
 b_plus_tree_insert_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_insert_test.dir/build.make test/CMakeFiles/b_plus_tree_insert_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_insert_test.dir/build.make test/CMakeFiles/b_plus_tree_insert_test.dir/build
 .PHONY : b_plus_tree_insert_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/b_plus_tree_sequential_scale_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/b_plus_tree_sequential_scale_test.dir/rule
-.PHONY : test/CMakeFiles/b_plus_tree_sequential_scale_test.dir/rule
-
-# Convenience name for target.
-b_plus_tree_sequential_scale_test: test/CMakeFiles/b_plus_tree_sequential_scale_test.dir/rule
-.PHONY : b_plus_tree_sequential_scale_test
-
-# fast build rule for target.
-b_plus_tree_sequential_scale_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_sequential_scale_test.dir/build.make test/CMakeFiles/b_plus_tree_sequential_scale_test.dir/build
-.PHONY : b_plus_tree_sequential_scale_test/fast
-
-# Convenience name for target.
 test/CMakeFiles/disk_manager_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/disk_manager_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/disk_manager_test.dir/rule
 .PHONY : test/CMakeFiles/disk_manager_test.dir/rule
 
 # Convenience name for target.
@@ -538,26 +510,12 @@ disk_manager_test: test/CMakeFiles/disk_manager_test.dir/rule
 
 # fast build rule for target.
 disk_manager_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/disk_manager_test.dir/build.make test/CMakeFiles/disk_manager_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/disk_manager_test.dir/build.make test/CMakeFiles/disk_manager_test.dir/build
 .PHONY : disk_manager_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/page_guard_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/page_guard_test.dir/rule
-.PHONY : test/CMakeFiles/page_guard_test.dir/rule
-
-# Convenience name for target.
-page_guard_test: test/CMakeFiles/page_guard_test.dir/rule
-.PHONY : page_guard_test
-
-# fast build rule for target.
-page_guard_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/page_guard_test.dir/build.make test/CMakeFiles/page_guard_test.dir/build
-.PHONY : page_guard_test/fast
-
-# Convenience name for target.
 test/CMakeFiles/tmp_tuple_page_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/tmp_tuple_page_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/tmp_tuple_page_test.dir/rule
 .PHONY : test/CMakeFiles/tmp_tuple_page_test.dir/rule
 
 # Convenience name for target.
@@ -566,12 +524,12 @@ tmp_tuple_page_test: test/CMakeFiles/tmp_tuple_page_test.dir/rule
 
 # fast build rule for target.
 tmp_tuple_page_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tmp_tuple_page_test.dir/build.make test/CMakeFiles/tmp_tuple_page_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tmp_tuple_page_test.dir/build.make test/CMakeFiles/tmp_tuple_page_test.dir/build
 .PHONY : tmp_tuple_page_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/tuple_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/tuple_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/tuple_test.dir/rule
 .PHONY : test/CMakeFiles/tuple_test.dir/rule
 
 # Convenience name for target.
@@ -580,12 +538,12 @@ tuple_test: test/CMakeFiles/tuple_test.dir/rule
 
 # fast build rule for target.
 tuple_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tuple_test.dir/build.make test/CMakeFiles/tuple_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tuple_test.dir/build.make test/CMakeFiles/tuple_test.dir/build
 .PHONY : tuple_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/type_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/type_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/type_test.dir/rule
 .PHONY : test/CMakeFiles/type_test.dir/rule
 
 # Convenience name for target.
@@ -594,12 +552,12 @@ type_test: test/CMakeFiles/type_test.dir/rule
 
 # fast build rule for target.
 type_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/type_test.dir/build.make test/CMakeFiles/type_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/type_test.dir/build.make test/CMakeFiles/type_test.dir/build
 .PHONY : type_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/test-p3.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test-p3.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test-p3.dir/rule
 .PHONY : test/CMakeFiles/test-p3.dir/rule
 
 # Convenience name for target.
@@ -608,54 +566,12 @@ test-p3: test/CMakeFiles/test-p3.dir/rule
 
 # fast build rule for target.
 test-p3/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test-p3.dir/build.make test/CMakeFiles/test-p3.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test-p3.dir/build.make test/CMakeFiles/test-p3.dir/build
 .PHONY : test-p3/fast
 
 # Convenience name for target.
-test/CMakeFiles/p0.01-lower-upper_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p0.01-lower-upper_test.dir/rule
-.PHONY : test/CMakeFiles/p0.01-lower-upper_test.dir/rule
-
-# Convenience name for target.
-p0.01-lower-upper_test: test/CMakeFiles/p0.01-lower-upper_test.dir/rule
-.PHONY : p0.01-lower-upper_test
-
-# fast build rule for target.
-p0.01-lower-upper_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p0.01-lower-upper_test.dir/build.make test/CMakeFiles/p0.01-lower-upper_test.dir/build
-.PHONY : p0.01-lower-upper_test/fast
-
-# Convenience name for target.
-test/CMakeFiles/p0.02-function-error_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p0.02-function-error_test.dir/rule
-.PHONY : test/CMakeFiles/p0.02-function-error_test.dir/rule
-
-# Convenience name for target.
-p0.02-function-error_test: test/CMakeFiles/p0.02-function-error_test.dir/rule
-.PHONY : p0.02-function-error_test
-
-# fast build rule for target.
-p0.02-function-error_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p0.02-function-error_test.dir/build.make test/CMakeFiles/p0.02-function-error_test.dir/build
-.PHONY : p0.02-function-error_test/fast
-
-# Convenience name for target.
-test/CMakeFiles/p0.03-string-scan_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p0.03-string-scan_test.dir/rule
-.PHONY : test/CMakeFiles/p0.03-string-scan_test.dir/rule
-
-# Convenience name for target.
-p0.03-string-scan_test: test/CMakeFiles/p0.03-string-scan_test.dir/rule
-.PHONY : p0.03-string-scan_test
-
-# fast build rule for target.
-p0.03-string-scan_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p0.03-string-scan_test.dir/build.make test/CMakeFiles/p0.03-string-scan_test.dir/build
-.PHONY : p0.03-string-scan_test/fast
-
-# Convenience name for target.
 test/CMakeFiles/p3.01-seqscan_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.01-seqscan_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.01-seqscan_test.dir/rule
 .PHONY : test/CMakeFiles/p3.01-seqscan_test.dir/rule
 
 # Convenience name for target.
@@ -664,12 +580,12 @@ p3.01-seqscan_test: test/CMakeFiles/p3.01-seqscan_test.dir/rule
 
 # fast build rule for target.
 p3.01-seqscan_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.01-seqscan_test.dir/build.make test/CMakeFiles/p3.01-seqscan_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.01-seqscan_test.dir/build.make test/CMakeFiles/p3.01-seqscan_test.dir/build
 .PHONY : p3.01-seqscan_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/p3.02-insert_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.02-insert_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.02-insert_test.dir/rule
 .PHONY : test/CMakeFiles/p3.02-insert_test.dir/rule
 
 # Convenience name for target.
@@ -678,250 +594,208 @@ p3.02-insert_test: test/CMakeFiles/p3.02-insert_test.dir/rule
 
 # fast build rule for target.
 p3.02-insert_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.02-insert_test.dir/build.make test/CMakeFiles/p3.02-insert_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.02-insert_test.dir/build.make test/CMakeFiles/p3.02-insert_test.dir/build
 .PHONY : p3.02-insert_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/p3.03-update_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.03-update_test.dir/rule
-.PHONY : test/CMakeFiles/p3.03-update_test.dir/rule
+test/CMakeFiles/p3.03-delete_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.03-delete_test.dir/rule
+.PHONY : test/CMakeFiles/p3.03-delete_test.dir/rule
 
 # Convenience name for target.
-p3.03-update_test: test/CMakeFiles/p3.03-update_test.dir/rule
-.PHONY : p3.03-update_test
+p3.03-delete_test: test/CMakeFiles/p3.03-delete_test.dir/rule
+.PHONY : p3.03-delete_test
 
 # fast build rule for target.
-p3.03-update_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.03-update_test.dir/build.make test/CMakeFiles/p3.03-update_test.dir/build
-.PHONY : p3.03-update_test/fast
+p3.03-delete_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.03-delete_test.dir/build.make test/CMakeFiles/p3.03-delete_test.dir/build
+.PHONY : p3.03-delete_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/p3.04-delete_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.04-delete_test.dir/rule
-.PHONY : test/CMakeFiles/p3.04-delete_test.dir/rule
+test/CMakeFiles/p3.04-index-scan_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.04-index-scan_test.dir/rule
+.PHONY : test/CMakeFiles/p3.04-index-scan_test.dir/rule
 
 # Convenience name for target.
-p3.04-delete_test: test/CMakeFiles/p3.04-delete_test.dir/rule
-.PHONY : p3.04-delete_test
+p3.04-index-scan_test: test/CMakeFiles/p3.04-index-scan_test.dir/rule
+.PHONY : p3.04-index-scan_test
 
 # fast build rule for target.
-p3.04-delete_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.04-delete_test.dir/build.make test/CMakeFiles/p3.04-delete_test.dir/build
-.PHONY : p3.04-delete_test/fast
+p3.04-index-scan_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.04-index-scan_test.dir/build.make test/CMakeFiles/p3.04-index-scan_test.dir/build
+.PHONY : p3.04-index-scan_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/p3.05-index-scan_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.05-index-scan_test.dir/rule
-.PHONY : test/CMakeFiles/p3.05-index-scan_test.dir/rule
+test/CMakeFiles/p3.05-empty-table_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.05-empty-table_test.dir/rule
+.PHONY : test/CMakeFiles/p3.05-empty-table_test.dir/rule
 
 # Convenience name for target.
-p3.05-index-scan_test: test/CMakeFiles/p3.05-index-scan_test.dir/rule
-.PHONY : p3.05-index-scan_test
+p3.05-empty-table_test: test/CMakeFiles/p3.05-empty-table_test.dir/rule
+.PHONY : p3.05-empty-table_test
 
 # fast build rule for target.
-p3.05-index-scan_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.05-index-scan_test.dir/build.make test/CMakeFiles/p3.05-index-scan_test.dir/build
-.PHONY : p3.05-index-scan_test/fast
+p3.05-empty-table_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.05-empty-table_test.dir/build.make test/CMakeFiles/p3.05-empty-table_test.dir/build
+.PHONY : p3.05-empty-table_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/p3.06-empty-table_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.06-empty-table_test.dir/rule
-.PHONY : test/CMakeFiles/p3.06-empty-table_test.dir/rule
+test/CMakeFiles/p3.06-simple-agg_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.06-simple-agg_test.dir/rule
+.PHONY : test/CMakeFiles/p3.06-simple-agg_test.dir/rule
 
 # Convenience name for target.
-p3.06-empty-table_test: test/CMakeFiles/p3.06-empty-table_test.dir/rule
-.PHONY : p3.06-empty-table_test
+p3.06-simple-agg_test: test/CMakeFiles/p3.06-simple-agg_test.dir/rule
+.PHONY : p3.06-simple-agg_test
 
 # fast build rule for target.
-p3.06-empty-table_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.06-empty-table_test.dir/build.make test/CMakeFiles/p3.06-empty-table_test.dir/build
-.PHONY : p3.06-empty-table_test/fast
+p3.06-simple-agg_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.06-simple-agg_test.dir/build.make test/CMakeFiles/p3.06-simple-agg_test.dir/build
+.PHONY : p3.06-simple-agg_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/p3.07-simple-agg_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.07-simple-agg_test.dir/rule
-.PHONY : test/CMakeFiles/p3.07-simple-agg_test.dir/rule
+test/CMakeFiles/p3.07-group-agg-1_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.07-group-agg-1_test.dir/rule
+.PHONY : test/CMakeFiles/p3.07-group-agg-1_test.dir/rule
 
 # Convenience name for target.
-p3.07-simple-agg_test: test/CMakeFiles/p3.07-simple-agg_test.dir/rule
-.PHONY : p3.07-simple-agg_test
+p3.07-group-agg-1_test: test/CMakeFiles/p3.07-group-agg-1_test.dir/rule
+.PHONY : p3.07-group-agg-1_test
 
 # fast build rule for target.
-p3.07-simple-agg_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.07-simple-agg_test.dir/build.make test/CMakeFiles/p3.07-simple-agg_test.dir/build
-.PHONY : p3.07-simple-agg_test/fast
+p3.07-group-agg-1_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.07-group-agg-1_test.dir/build.make test/CMakeFiles/p3.07-group-agg-1_test.dir/build
+.PHONY : p3.07-group-agg-1_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/p3.08-group-agg-1_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.08-group-agg-1_test.dir/rule
-.PHONY : test/CMakeFiles/p3.08-group-agg-1_test.dir/rule
+test/CMakeFiles/p3.08-group-agg-2_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.08-group-agg-2_test.dir/rule
+.PHONY : test/CMakeFiles/p3.08-group-agg-2_test.dir/rule
 
 # Convenience name for target.
-p3.08-group-agg-1_test: test/CMakeFiles/p3.08-group-agg-1_test.dir/rule
-.PHONY : p3.08-group-agg-1_test
+p3.08-group-agg-2_test: test/CMakeFiles/p3.08-group-agg-2_test.dir/rule
+.PHONY : p3.08-group-agg-2_test
 
 # fast build rule for target.
-p3.08-group-agg-1_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.08-group-agg-1_test.dir/build.make test/CMakeFiles/p3.08-group-agg-1_test.dir/build
-.PHONY : p3.08-group-agg-1_test/fast
+p3.08-group-agg-2_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.08-group-agg-2_test.dir/build.make test/CMakeFiles/p3.08-group-agg-2_test.dir/build
+.PHONY : p3.08-group-agg-2_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/p3.09-group-agg-2_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.09-group-agg-2_test.dir/rule
-.PHONY : test/CMakeFiles/p3.09-group-agg-2_test.dir/rule
+test/CMakeFiles/p3.09-simple-join_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.09-simple-join_test.dir/rule
+.PHONY : test/CMakeFiles/p3.09-simple-join_test.dir/rule
 
 # Convenience name for target.
-p3.09-group-agg-2_test: test/CMakeFiles/p3.09-group-agg-2_test.dir/rule
-.PHONY : p3.09-group-agg-2_test
+p3.09-simple-join_test: test/CMakeFiles/p3.09-simple-join_test.dir/rule
+.PHONY : p3.09-simple-join_test
 
 # fast build rule for target.
-p3.09-group-agg-2_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.09-group-agg-2_test.dir/build.make test/CMakeFiles/p3.09-group-agg-2_test.dir/build
-.PHONY : p3.09-group-agg-2_test/fast
+p3.09-simple-join_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.09-simple-join_test.dir/build.make test/CMakeFiles/p3.09-simple-join_test.dir/build
+.PHONY : p3.09-simple-join_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/p3.10-simple-join_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.10-simple-join_test.dir/rule
-.PHONY : test/CMakeFiles/p3.10-simple-join_test.dir/rule
+test/CMakeFiles/p3.10-multi-way-join_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.10-multi-way-join_test.dir/rule
+.PHONY : test/CMakeFiles/p3.10-multi-way-join_test.dir/rule
 
 # Convenience name for target.
-p3.10-simple-join_test: test/CMakeFiles/p3.10-simple-join_test.dir/rule
-.PHONY : p3.10-simple-join_test
+p3.10-multi-way-join_test: test/CMakeFiles/p3.10-multi-way-join_test.dir/rule
+.PHONY : p3.10-multi-way-join_test
 
 # fast build rule for target.
-p3.10-simple-join_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.10-simple-join_test.dir/build.make test/CMakeFiles/p3.10-simple-join_test.dir/build
-.PHONY : p3.10-simple-join_test/fast
+p3.10-multi-way-join_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.10-multi-way-join_test.dir/build.make test/CMakeFiles/p3.10-multi-way-join_test.dir/build
+.PHONY : p3.10-multi-way-join_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/p3.11-multi-way-join_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.11-multi-way-join_test.dir/rule
-.PHONY : test/CMakeFiles/p3.11-multi-way-join_test.dir/rule
+test/CMakeFiles/p3.11-repeat-execute_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.11-repeat-execute_test.dir/rule
+.PHONY : test/CMakeFiles/p3.11-repeat-execute_test.dir/rule
 
 # Convenience name for target.
-p3.11-multi-way-join_test: test/CMakeFiles/p3.11-multi-way-join_test.dir/rule
-.PHONY : p3.11-multi-way-join_test
+p3.11-repeat-execute_test: test/CMakeFiles/p3.11-repeat-execute_test.dir/rule
+.PHONY : p3.11-repeat-execute_test
 
 # fast build rule for target.
-p3.11-multi-way-join_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.11-multi-way-join_test.dir/build.make test/CMakeFiles/p3.11-multi-way-join_test.dir/build
-.PHONY : p3.11-multi-way-join_test/fast
+p3.11-repeat-execute_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.11-repeat-execute_test.dir/build.make test/CMakeFiles/p3.11-repeat-execute_test.dir/build
+.PHONY : p3.11-repeat-execute_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/p3.12-repeat-execute_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.12-repeat-execute_test.dir/rule
-.PHONY : test/CMakeFiles/p3.12-repeat-execute_test.dir/rule
+test/CMakeFiles/p3.12-nested-index-join_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.12-nested-index-join_test.dir/rule
+.PHONY : test/CMakeFiles/p3.12-nested-index-join_test.dir/rule
 
 # Convenience name for target.
-p3.12-repeat-execute_test: test/CMakeFiles/p3.12-repeat-execute_test.dir/rule
-.PHONY : p3.12-repeat-execute_test
+p3.12-nested-index-join_test: test/CMakeFiles/p3.12-nested-index-join_test.dir/rule
+.PHONY : p3.12-nested-index-join_test
 
 # fast build rule for target.
-p3.12-repeat-execute_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.12-repeat-execute_test.dir/build.make test/CMakeFiles/p3.12-repeat-execute_test.dir/build
-.PHONY : p3.12-repeat-execute_test/fast
+p3.12-nested-index-join_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.12-nested-index-join_test.dir/build.make test/CMakeFiles/p3.12-nested-index-join_test.dir/build
+.PHONY : p3.12-nested-index-join_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/p3.13-nested-index-join_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.13-nested-index-join_test.dir/rule
-.PHONY : test/CMakeFiles/p3.13-nested-index-join_test.dir/rule
+test/CMakeFiles/p3.13-sort-limit_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.13-sort-limit_test.dir/rule
+.PHONY : test/CMakeFiles/p3.13-sort-limit_test.dir/rule
 
 # Convenience name for target.
-p3.13-nested-index-join_test: test/CMakeFiles/p3.13-nested-index-join_test.dir/rule
-.PHONY : p3.13-nested-index-join_test
+p3.13-sort-limit_test: test/CMakeFiles/p3.13-sort-limit_test.dir/rule
+.PHONY : p3.13-sort-limit_test
 
 # fast build rule for target.
-p3.13-nested-index-join_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.13-nested-index-join_test.dir/build.make test/CMakeFiles/p3.13-nested-index-join_test.dir/build
-.PHONY : p3.13-nested-index-join_test/fast
+p3.13-sort-limit_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.13-sort-limit_test.dir/build.make test/CMakeFiles/p3.13-sort-limit_test.dir/build
+.PHONY : p3.13-sort-limit_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/p3.14-hash-join_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.14-hash-join_test.dir/rule
-.PHONY : test/CMakeFiles/p3.14-hash-join_test.dir/rule
+test/CMakeFiles/p3.14-topn_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.14-topn_test.dir/rule
+.PHONY : test/CMakeFiles/p3.14-topn_test.dir/rule
 
 # Convenience name for target.
-p3.14-hash-join_test: test/CMakeFiles/p3.14-hash-join_test.dir/rule
-.PHONY : p3.14-hash-join_test
+p3.14-topn_test: test/CMakeFiles/p3.14-topn_test.dir/rule
+.PHONY : p3.14-topn_test
 
 # fast build rule for target.
-p3.14-hash-join_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.14-hash-join_test.dir/build.make test/CMakeFiles/p3.14-hash-join_test.dir/build
-.PHONY : p3.14-hash-join_test/fast
+p3.14-topn_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.14-topn_test.dir/build.make test/CMakeFiles/p3.14-topn_test.dir/build
+.PHONY : p3.14-topn_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/p3.15-multi-way-hash-join_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.15-multi-way-hash-join_test.dir/rule
-.PHONY : test/CMakeFiles/p3.15-multi-way-hash-join_test.dir/rule
+test/CMakeFiles/p3.15-integration-1_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.15-integration-1_test.dir/rule
+.PHONY : test/CMakeFiles/p3.15-integration-1_test.dir/rule
 
 # Convenience name for target.
-p3.15-multi-way-hash-join_test: test/CMakeFiles/p3.15-multi-way-hash-join_test.dir/rule
-.PHONY : p3.15-multi-way-hash-join_test
+p3.15-integration-1_test: test/CMakeFiles/p3.15-integration-1_test.dir/rule
+.PHONY : p3.15-integration-1_test
 
 # fast build rule for target.
-p3.15-multi-way-hash-join_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.15-multi-way-hash-join_test.dir/build.make test/CMakeFiles/p3.15-multi-way-hash-join_test.dir/build
-.PHONY : p3.15-multi-way-hash-join_test/fast
+p3.15-integration-1_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.15-integration-1_test.dir/build.make test/CMakeFiles/p3.15-integration-1_test.dir/build
+.PHONY : p3.15-integration-1_test/fast
 
 # Convenience name for target.
-test/CMakeFiles/p3.16-sort-limit_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.16-sort-limit_test.dir/rule
-.PHONY : test/CMakeFiles/p3.16-sort-limit_test.dir/rule
+test/CMakeFiles/p3.16-integration-2_test.dir/rule:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.16-integration-2_test.dir/rule
+.PHONY : test/CMakeFiles/p3.16-integration-2_test.dir/rule
 
 # Convenience name for target.
-p3.16-sort-limit_test: test/CMakeFiles/p3.16-sort-limit_test.dir/rule
-.PHONY : p3.16-sort-limit_test
+p3.16-integration-2_test: test/CMakeFiles/p3.16-integration-2_test.dir/rule
+.PHONY : p3.16-integration-2_test
 
 # fast build rule for target.
-p3.16-sort-limit_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.16-sort-limit_test.dir/build.make test/CMakeFiles/p3.16-sort-limit_test.dir/build
-.PHONY : p3.16-sort-limit_test/fast
-
-# Convenience name for target.
-test/CMakeFiles/p3.17-topn_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.17-topn_test.dir/rule
-.PHONY : test/CMakeFiles/p3.17-topn_test.dir/rule
-
-# Convenience name for target.
-p3.17-topn_test: test/CMakeFiles/p3.17-topn_test.dir/rule
-.PHONY : p3.17-topn_test
-
-# fast build rule for target.
-p3.17-topn_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.17-topn_test.dir/build.make test/CMakeFiles/p3.17-topn_test.dir/build
-.PHONY : p3.17-topn_test/fast
-
-# Convenience name for target.
-test/CMakeFiles/p3.18-integration-1_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.18-integration-1_test.dir/rule
-.PHONY : test/CMakeFiles/p3.18-integration-1_test.dir/rule
-
-# Convenience name for target.
-p3.18-integration-1_test: test/CMakeFiles/p3.18-integration-1_test.dir/rule
-.PHONY : p3.18-integration-1_test
-
-# fast build rule for target.
-p3.18-integration-1_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.18-integration-1_test.dir/build.make test/CMakeFiles/p3.18-integration-1_test.dir/build
-.PHONY : p3.18-integration-1_test/fast
-
-# Convenience name for target.
-test/CMakeFiles/p3.19-integration-2_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.19-integration-2_test.dir/rule
-.PHONY : test/CMakeFiles/p3.19-integration-2_test.dir/rule
-
-# Convenience name for target.
-p3.19-integration-2_test: test/CMakeFiles/p3.19-integration-2_test.dir/rule
-.PHONY : p3.19-integration-2_test
-
-# fast build rule for target.
-p3.19-integration-2_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.19-integration-2_test.dir/build.make test/CMakeFiles/p3.19-integration-2_test.dir/build
-.PHONY : p3.19-integration-2_test/fast
+p3.16-integration-2_test/fast:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.16-integration-2_test.dir/build.make test/CMakeFiles/p3.16-integration-2_test.dir/build
+.PHONY : p3.16-integration-2_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/p3.leaderboard-q1_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.leaderboard-q1_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.leaderboard-q1_test.dir/rule
 .PHONY : test/CMakeFiles/p3.leaderboard-q1_test.dir/rule
 
 # Convenience name for target.
@@ -930,12 +804,12 @@ p3.leaderboard-q1_test: test/CMakeFiles/p3.leaderboard-q1_test.dir/rule
 
 # fast build rule for target.
 p3.leaderboard-q1_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.leaderboard-q1_test.dir/build.make test/CMakeFiles/p3.leaderboard-q1_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.leaderboard-q1_test.dir/build.make test/CMakeFiles/p3.leaderboard-q1_test.dir/build
 .PHONY : p3.leaderboard-q1_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/p3.leaderboard-q2_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.leaderboard-q2_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.leaderboard-q2_test.dir/rule
 .PHONY : test/CMakeFiles/p3.leaderboard-q2_test.dir/rule
 
 # Convenience name for target.
@@ -944,12 +818,12 @@ p3.leaderboard-q2_test: test/CMakeFiles/p3.leaderboard-q2_test.dir/rule
 
 # fast build rule for target.
 p3.leaderboard-q2_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.leaderboard-q2_test.dir/build.make test/CMakeFiles/p3.leaderboard-q2_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.leaderboard-q2_test.dir/build.make test/CMakeFiles/p3.leaderboard-q2_test.dir/build
 .PHONY : p3.leaderboard-q2_test/fast
 
 # Convenience name for target.
 test/CMakeFiles/p3.leaderboard-q3_test.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.leaderboard-q3_test.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/p3.leaderboard-q3_test.dir/rule
 .PHONY : test/CMakeFiles/p3.leaderboard-q3_test.dir/rule
 
 # Convenience name for target.
@@ -958,7 +832,7 @@ p3.leaderboard-q3_test: test/CMakeFiles/p3.leaderboard-q3_test.dir/rule
 
 # fast build rule for target.
 p3.leaderboard-q3_test/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.leaderboard-q3_test.dir/build.make test/CMakeFiles/p3.leaderboard-q3_test.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/p3.leaderboard-q3_test.dir/build.make test/CMakeFiles/p3.leaderboard-q3_test.dir/build
 .PHONY : p3.leaderboard-q3_test/fast
 
 binder/binder_test.o: binder/binder_test.cpp.o
@@ -966,7 +840,7 @@ binder/binder_test.o: binder/binder_test.cpp.o
 
 # target to build an object file
 binder/binder_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/binder_test.dir/build.make test/CMakeFiles/binder_test.dir/binder/binder_test.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/binder_test.dir/build.make test/CMakeFiles/binder_test.dir/binder/binder_test.cpp.o
 .PHONY : binder/binder_test.cpp.o
 
 binder/binder_test.i: binder/binder_test.cpp.i
@@ -974,7 +848,7 @@ binder/binder_test.i: binder/binder_test.cpp.i
 
 # target to preprocess a source file
 binder/binder_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/binder_test.dir/build.make test/CMakeFiles/binder_test.dir/binder/binder_test.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/binder_test.dir/build.make test/CMakeFiles/binder_test.dir/binder/binder_test.cpp.i
 .PHONY : binder/binder_test.cpp.i
 
 binder/binder_test.s: binder/binder_test.cpp.s
@@ -982,39 +856,39 @@ binder/binder_test.s: binder/binder_test.cpp.s
 
 # target to generate assembly for a file
 binder/binder_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/binder_test.dir/build.make test/CMakeFiles/binder_test.dir/binder/binder_test.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/binder_test.dir/build.make test/CMakeFiles/binder_test.dir/binder/binder_test.cpp.s
 .PHONY : binder/binder_test.cpp.s
 
-buffer/buffer_pool_manager_test.o: buffer/buffer_pool_manager_test.cpp.o
-.PHONY : buffer/buffer_pool_manager_test.o
+buffer/buffer_pool_manager_instance_test.o: buffer/buffer_pool_manager_instance_test.cpp.o
+.PHONY : buffer/buffer_pool_manager_instance_test.o
 
 # target to build an object file
-buffer/buffer_pool_manager_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/buffer_pool_manager_test.dir/build.make test/CMakeFiles/buffer_pool_manager_test.dir/buffer/buffer_pool_manager_test.cpp.o
-.PHONY : buffer/buffer_pool_manager_test.cpp.o
+buffer/buffer_pool_manager_instance_test.cpp.o:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/buffer_pool_manager_instance_test.dir/build.make test/CMakeFiles/buffer_pool_manager_instance_test.dir/buffer/buffer_pool_manager_instance_test.cpp.o
+.PHONY : buffer/buffer_pool_manager_instance_test.cpp.o
 
-buffer/buffer_pool_manager_test.i: buffer/buffer_pool_manager_test.cpp.i
-.PHONY : buffer/buffer_pool_manager_test.i
+buffer/buffer_pool_manager_instance_test.i: buffer/buffer_pool_manager_instance_test.cpp.i
+.PHONY : buffer/buffer_pool_manager_instance_test.i
 
 # target to preprocess a source file
-buffer/buffer_pool_manager_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/buffer_pool_manager_test.dir/build.make test/CMakeFiles/buffer_pool_manager_test.dir/buffer/buffer_pool_manager_test.cpp.i
-.PHONY : buffer/buffer_pool_manager_test.cpp.i
+buffer/buffer_pool_manager_instance_test.cpp.i:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/buffer_pool_manager_instance_test.dir/build.make test/CMakeFiles/buffer_pool_manager_instance_test.dir/buffer/buffer_pool_manager_instance_test.cpp.i
+.PHONY : buffer/buffer_pool_manager_instance_test.cpp.i
 
-buffer/buffer_pool_manager_test.s: buffer/buffer_pool_manager_test.cpp.s
-.PHONY : buffer/buffer_pool_manager_test.s
+buffer/buffer_pool_manager_instance_test.s: buffer/buffer_pool_manager_instance_test.cpp.s
+.PHONY : buffer/buffer_pool_manager_instance_test.s
 
 # target to generate assembly for a file
-buffer/buffer_pool_manager_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/buffer_pool_manager_test.dir/build.make test/CMakeFiles/buffer_pool_manager_test.dir/buffer/buffer_pool_manager_test.cpp.s
-.PHONY : buffer/buffer_pool_manager_test.cpp.s
+buffer/buffer_pool_manager_instance_test.cpp.s:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/buffer_pool_manager_instance_test.dir/build.make test/CMakeFiles/buffer_pool_manager_instance_test.dir/buffer/buffer_pool_manager_instance_test.cpp.s
+.PHONY : buffer/buffer_pool_manager_instance_test.cpp.s
 
 buffer/clock_replacer_test.o: buffer/clock_replacer_test.cpp.o
 .PHONY : buffer/clock_replacer_test.o
 
 # target to build an object file
 buffer/clock_replacer_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/clock_replacer_test.dir/build.make test/CMakeFiles/clock_replacer_test.dir/buffer/clock_replacer_test.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/clock_replacer_test.dir/build.make test/CMakeFiles/clock_replacer_test.dir/buffer/clock_replacer_test.cpp.o
 .PHONY : buffer/clock_replacer_test.cpp.o
 
 buffer/clock_replacer_test.i: buffer/clock_replacer_test.cpp.i
@@ -1022,7 +896,7 @@ buffer/clock_replacer_test.i: buffer/clock_replacer_test.cpp.i
 
 # target to preprocess a source file
 buffer/clock_replacer_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/clock_replacer_test.dir/build.make test/CMakeFiles/clock_replacer_test.dir/buffer/clock_replacer_test.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/clock_replacer_test.dir/build.make test/CMakeFiles/clock_replacer_test.dir/buffer/clock_replacer_test.cpp.i
 .PHONY : buffer/clock_replacer_test.cpp.i
 
 buffer/clock_replacer_test.s: buffer/clock_replacer_test.cpp.s
@@ -1030,7 +904,7 @@ buffer/clock_replacer_test.s: buffer/clock_replacer_test.cpp.s
 
 # target to generate assembly for a file
 buffer/clock_replacer_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/clock_replacer_test.dir/build.make test/CMakeFiles/clock_replacer_test.dir/buffer/clock_replacer_test.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/clock_replacer_test.dir/build.make test/CMakeFiles/clock_replacer_test.dir/buffer/clock_replacer_test.cpp.s
 .PHONY : buffer/clock_replacer_test.cpp.s
 
 buffer/lru_k_replacer_test.o: buffer/lru_k_replacer_test.cpp.o
@@ -1038,7 +912,7 @@ buffer/lru_k_replacer_test.o: buffer/lru_k_replacer_test.cpp.o
 
 # target to build an object file
 buffer/lru_k_replacer_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_k_replacer_test.dir/build.make test/CMakeFiles/lru_k_replacer_test.dir/buffer/lru_k_replacer_test.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_k_replacer_test.dir/build.make test/CMakeFiles/lru_k_replacer_test.dir/buffer/lru_k_replacer_test.cpp.o
 .PHONY : buffer/lru_k_replacer_test.cpp.o
 
 buffer/lru_k_replacer_test.i: buffer/lru_k_replacer_test.cpp.i
@@ -1046,7 +920,7 @@ buffer/lru_k_replacer_test.i: buffer/lru_k_replacer_test.cpp.i
 
 # target to preprocess a source file
 buffer/lru_k_replacer_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_k_replacer_test.dir/build.make test/CMakeFiles/lru_k_replacer_test.dir/buffer/lru_k_replacer_test.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_k_replacer_test.dir/build.make test/CMakeFiles/lru_k_replacer_test.dir/buffer/lru_k_replacer_test.cpp.i
 .PHONY : buffer/lru_k_replacer_test.cpp.i
 
 buffer/lru_k_replacer_test.s: buffer/lru_k_replacer_test.cpp.s
@@ -1054,7 +928,7 @@ buffer/lru_k_replacer_test.s: buffer/lru_k_replacer_test.cpp.s
 
 # target to generate assembly for a file
 buffer/lru_k_replacer_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_k_replacer_test.dir/build.make test/CMakeFiles/lru_k_replacer_test.dir/buffer/lru_k_replacer_test.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_k_replacer_test.dir/build.make test/CMakeFiles/lru_k_replacer_test.dir/buffer/lru_k_replacer_test.cpp.s
 .PHONY : buffer/lru_k_replacer_test.cpp.s
 
 buffer/lru_replacer_test.o: buffer/lru_replacer_test.cpp.o
@@ -1062,7 +936,7 @@ buffer/lru_replacer_test.o: buffer/lru_replacer_test.cpp.o
 
 # target to build an object file
 buffer/lru_replacer_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_replacer_test.dir/build.make test/CMakeFiles/lru_replacer_test.dir/buffer/lru_replacer_test.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_replacer_test.dir/build.make test/CMakeFiles/lru_replacer_test.dir/buffer/lru_replacer_test.cpp.o
 .PHONY : buffer/lru_replacer_test.cpp.o
 
 buffer/lru_replacer_test.i: buffer/lru_replacer_test.cpp.i
@@ -1070,7 +944,7 @@ buffer/lru_replacer_test.i: buffer/lru_replacer_test.cpp.i
 
 # target to preprocess a source file
 buffer/lru_replacer_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_replacer_test.dir/build.make test/CMakeFiles/lru_replacer_test.dir/buffer/lru_replacer_test.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_replacer_test.dir/build.make test/CMakeFiles/lru_replacer_test.dir/buffer/lru_replacer_test.cpp.i
 .PHONY : buffer/lru_replacer_test.cpp.i
 
 buffer/lru_replacer_test.s: buffer/lru_replacer_test.cpp.s
@@ -1078,15 +952,39 @@ buffer/lru_replacer_test.s: buffer/lru_replacer_test.cpp.s
 
 # target to generate assembly for a file
 buffer/lru_replacer_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_replacer_test.dir/build.make test/CMakeFiles/lru_replacer_test.dir/buffer/lru_replacer_test.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lru_replacer_test.dir/build.make test/CMakeFiles/lru_replacer_test.dir/buffer/lru_replacer_test.cpp.s
 .PHONY : buffer/lru_replacer_test.cpp.s
+
+catalog/catalog_test.o: catalog/catalog_test.cpp.o
+.PHONY : catalog/catalog_test.o
+
+# target to build an object file
+catalog/catalog_test.cpp.o:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/catalog_test.dir/build.make test/CMakeFiles/catalog_test.dir/catalog/catalog_test.cpp.o
+.PHONY : catalog/catalog_test.cpp.o
+
+catalog/catalog_test.i: catalog/catalog_test.cpp.i
+.PHONY : catalog/catalog_test.i
+
+# target to preprocess a source file
+catalog/catalog_test.cpp.i:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/catalog_test.dir/build.make test/CMakeFiles/catalog_test.dir/catalog/catalog_test.cpp.i
+.PHONY : catalog/catalog_test.cpp.i
+
+catalog/catalog_test.s: catalog/catalog_test.cpp.s
+.PHONY : catalog/catalog_test.s
+
+# target to generate assembly for a file
+catalog/catalog_test.cpp.s:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/catalog_test.dir/build.make test/CMakeFiles/catalog_test.dir/catalog/catalog_test.cpp.s
+.PHONY : catalog/catalog_test.cpp.s
 
 common/rwlatch_test.o: common/rwlatch_test.cpp.o
 .PHONY : common/rwlatch_test.o
 
 # target to build an object file
 common/rwlatch_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/rwlatch_test.dir/build.make test/CMakeFiles/rwlatch_test.dir/common/rwlatch_test.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/rwlatch_test.dir/build.make test/CMakeFiles/rwlatch_test.dir/common/rwlatch_test.cpp.o
 .PHONY : common/rwlatch_test.cpp.o
 
 common/rwlatch_test.i: common/rwlatch_test.cpp.i
@@ -1094,7 +992,7 @@ common/rwlatch_test.i: common/rwlatch_test.cpp.i
 
 # target to preprocess a source file
 common/rwlatch_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/rwlatch_test.dir/build.make test/CMakeFiles/rwlatch_test.dir/common/rwlatch_test.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/rwlatch_test.dir/build.make test/CMakeFiles/rwlatch_test.dir/common/rwlatch_test.cpp.i
 .PHONY : common/rwlatch_test.cpp.i
 
 common/rwlatch_test.s: common/rwlatch_test.cpp.s
@@ -1102,7 +1000,7 @@ common/rwlatch_test.s: common/rwlatch_test.cpp.s
 
 # target to generate assembly for a file
 common/rwlatch_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/rwlatch_test.dir/build.make test/CMakeFiles/rwlatch_test.dir/common/rwlatch_test.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/rwlatch_test.dir/build.make test/CMakeFiles/rwlatch_test.dir/common/rwlatch_test.cpp.s
 .PHONY : common/rwlatch_test.cpp.s
 
 concurrency/deadlock_detection_test.o: concurrency/deadlock_detection_test.cpp.o
@@ -1110,7 +1008,7 @@ concurrency/deadlock_detection_test.o: concurrency/deadlock_detection_test.cpp.o
 
 # target to build an object file
 concurrency/deadlock_detection_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/deadlock_detection_test.dir/build.make test/CMakeFiles/deadlock_detection_test.dir/concurrency/deadlock_detection_test.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/deadlock_detection_test.dir/build.make test/CMakeFiles/deadlock_detection_test.dir/concurrency/deadlock_detection_test.cpp.o
 .PHONY : concurrency/deadlock_detection_test.cpp.o
 
 concurrency/deadlock_detection_test.i: concurrency/deadlock_detection_test.cpp.i
@@ -1118,7 +1016,7 @@ concurrency/deadlock_detection_test.i: concurrency/deadlock_detection_test.cpp.i
 
 # target to preprocess a source file
 concurrency/deadlock_detection_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/deadlock_detection_test.dir/build.make test/CMakeFiles/deadlock_detection_test.dir/concurrency/deadlock_detection_test.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/deadlock_detection_test.dir/build.make test/CMakeFiles/deadlock_detection_test.dir/concurrency/deadlock_detection_test.cpp.i
 .PHONY : concurrency/deadlock_detection_test.cpp.i
 
 concurrency/deadlock_detection_test.s: concurrency/deadlock_detection_test.cpp.s
@@ -1126,7 +1024,7 @@ concurrency/deadlock_detection_test.s: concurrency/deadlock_detection_test.cpp.s
 
 # target to generate assembly for a file
 concurrency/deadlock_detection_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/deadlock_detection_test.dir/build.make test/CMakeFiles/deadlock_detection_test.dir/concurrency/deadlock_detection_test.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/deadlock_detection_test.dir/build.make test/CMakeFiles/deadlock_detection_test.dir/concurrency/deadlock_detection_test.cpp.s
 .PHONY : concurrency/deadlock_detection_test.cpp.s
 
 concurrency/lock_manager_test.o: concurrency/lock_manager_test.cpp.o
@@ -1134,7 +1032,7 @@ concurrency/lock_manager_test.o: concurrency/lock_manager_test.cpp.o
 
 # target to build an object file
 concurrency/lock_manager_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lock_manager_test.dir/build.make test/CMakeFiles/lock_manager_test.dir/concurrency/lock_manager_test.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lock_manager_test.dir/build.make test/CMakeFiles/lock_manager_test.dir/concurrency/lock_manager_test.cpp.o
 .PHONY : concurrency/lock_manager_test.cpp.o
 
 concurrency/lock_manager_test.i: concurrency/lock_manager_test.cpp.i
@@ -1142,7 +1040,7 @@ concurrency/lock_manager_test.i: concurrency/lock_manager_test.cpp.i
 
 # target to preprocess a source file
 concurrency/lock_manager_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lock_manager_test.dir/build.make test/CMakeFiles/lock_manager_test.dir/concurrency/lock_manager_test.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lock_manager_test.dir/build.make test/CMakeFiles/lock_manager_test.dir/concurrency/lock_manager_test.cpp.i
 .PHONY : concurrency/lock_manager_test.cpp.i
 
 concurrency/lock_manager_test.s: concurrency/lock_manager_test.cpp.s
@@ -1150,39 +1048,39 @@ concurrency/lock_manager_test.s: concurrency/lock_manager_test.cpp.s
 
 # target to generate assembly for a file
 concurrency/lock_manager_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lock_manager_test.dir/build.make test/CMakeFiles/lock_manager_test.dir/concurrency/lock_manager_test.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/lock_manager_test.dir/build.make test/CMakeFiles/lock_manager_test.dir/concurrency/lock_manager_test.cpp.s
 .PHONY : concurrency/lock_manager_test.cpp.s
 
-concurrency/txn_integration_test.o: concurrency/txn_integration_test.cpp.o
-.PHONY : concurrency/txn_integration_test.o
+concurrency/transaction_test.o: concurrency/transaction_test.cpp.o
+.PHONY : concurrency/transaction_test.o
 
 # target to build an object file
-concurrency/txn_integration_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/txn_integration_test.dir/build.make test/CMakeFiles/txn_integration_test.dir/concurrency/txn_integration_test.cpp.o
-.PHONY : concurrency/txn_integration_test.cpp.o
+concurrency/transaction_test.cpp.o:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/transaction_test.dir/build.make test/CMakeFiles/transaction_test.dir/concurrency/transaction_test.cpp.o
+.PHONY : concurrency/transaction_test.cpp.o
 
-concurrency/txn_integration_test.i: concurrency/txn_integration_test.cpp.i
-.PHONY : concurrency/txn_integration_test.i
+concurrency/transaction_test.i: concurrency/transaction_test.cpp.i
+.PHONY : concurrency/transaction_test.i
 
 # target to preprocess a source file
-concurrency/txn_integration_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/txn_integration_test.dir/build.make test/CMakeFiles/txn_integration_test.dir/concurrency/txn_integration_test.cpp.i
-.PHONY : concurrency/txn_integration_test.cpp.i
+concurrency/transaction_test.cpp.i:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/transaction_test.dir/build.make test/CMakeFiles/transaction_test.dir/concurrency/transaction_test.cpp.i
+.PHONY : concurrency/transaction_test.cpp.i
 
-concurrency/txn_integration_test.s: concurrency/txn_integration_test.cpp.s
-.PHONY : concurrency/txn_integration_test.s
+concurrency/transaction_test.s: concurrency/transaction_test.cpp.s
+.PHONY : concurrency/transaction_test.s
 
 # target to generate assembly for a file
-concurrency/txn_integration_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/txn_integration_test.dir/build.make test/CMakeFiles/txn_integration_test.dir/concurrency/txn_integration_test.cpp.s
-.PHONY : concurrency/txn_integration_test.cpp.s
+concurrency/transaction_test.cpp.s:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/transaction_test.dir/build.make test/CMakeFiles/transaction_test.dir/concurrency/transaction_test.cpp.s
+.PHONY : concurrency/transaction_test.cpp.s
 
 container/disk/hash/hash_table_page_test.o: container/disk/hash/hash_table_page_test.cpp.o
 .PHONY : container/disk/hash/hash_table_page_test.o
 
 # target to build an object file
 container/disk/hash/hash_table_page_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hash_table_page_test.dir/build.make test/CMakeFiles/hash_table_page_test.dir/container/disk/hash/hash_table_page_test.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hash_table_page_test.dir/build.make test/CMakeFiles/hash_table_page_test.dir/container/disk/hash/hash_table_page_test.cpp.o
 .PHONY : container/disk/hash/hash_table_page_test.cpp.o
 
 container/disk/hash/hash_table_page_test.i: container/disk/hash/hash_table_page_test.cpp.i
@@ -1190,7 +1088,7 @@ container/disk/hash/hash_table_page_test.i: container/disk/hash/hash_table_page_
 
 # target to preprocess a source file
 container/disk/hash/hash_table_page_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hash_table_page_test.dir/build.make test/CMakeFiles/hash_table_page_test.dir/container/disk/hash/hash_table_page_test.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hash_table_page_test.dir/build.make test/CMakeFiles/hash_table_page_test.dir/container/disk/hash/hash_table_page_test.cpp.i
 .PHONY : container/disk/hash/hash_table_page_test.cpp.i
 
 container/disk/hash/hash_table_page_test.s: container/disk/hash/hash_table_page_test.cpp.s
@@ -1198,7 +1096,7 @@ container/disk/hash/hash_table_page_test.s: container/disk/hash/hash_table_page_
 
 # target to generate assembly for a file
 container/disk/hash/hash_table_page_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hash_table_page_test.dir/build.make test/CMakeFiles/hash_table_page_test.dir/container/disk/hash/hash_table_page_test.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hash_table_page_test.dir/build.make test/CMakeFiles/hash_table_page_test.dir/container/disk/hash/hash_table_page_test.cpp.s
 .PHONY : container/disk/hash/hash_table_page_test.cpp.s
 
 container/disk/hash/hash_table_test.o: container/disk/hash/hash_table_test.cpp.o
@@ -1206,7 +1104,7 @@ container/disk/hash/hash_table_test.o: container/disk/hash/hash_table_test.cpp.o
 
 # target to build an object file
 container/disk/hash/hash_table_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hash_table_test.dir/build.make test/CMakeFiles/hash_table_test.dir/container/disk/hash/hash_table_test.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hash_table_test.dir/build.make test/CMakeFiles/hash_table_test.dir/container/disk/hash/hash_table_test.cpp.o
 .PHONY : container/disk/hash/hash_table_test.cpp.o
 
 container/disk/hash/hash_table_test.i: container/disk/hash/hash_table_test.cpp.i
@@ -1214,7 +1112,7 @@ container/disk/hash/hash_table_test.i: container/disk/hash/hash_table_test.cpp.i
 
 # target to preprocess a source file
 container/disk/hash/hash_table_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hash_table_test.dir/build.make test/CMakeFiles/hash_table_test.dir/container/disk/hash/hash_table_test.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hash_table_test.dir/build.make test/CMakeFiles/hash_table_test.dir/container/disk/hash/hash_table_test.cpp.i
 .PHONY : container/disk/hash/hash_table_test.cpp.i
 
 container/disk/hash/hash_table_test.s: container/disk/hash/hash_table_test.cpp.s
@@ -1222,135 +1120,87 @@ container/disk/hash/hash_table_test.s: container/disk/hash/hash_table_test.cpp.s
 
 # target to generate assembly for a file
 container/disk/hash/hash_table_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hash_table_test.dir/build.make test/CMakeFiles/hash_table_test.dir/container/disk/hash/hash_table_test.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/hash_table_test.dir/build.make test/CMakeFiles/hash_table_test.dir/container/disk/hash/hash_table_test.cpp.s
 .PHONY : container/disk/hash/hash_table_test.cpp.s
 
-primer/trie_debug_test.o: primer/trie_debug_test.cpp.o
-.PHONY : primer/trie_debug_test.o
+container/hash/extendible_hash_table_test.o: container/hash/extendible_hash_table_test.cpp.o
+.PHONY : container/hash/extendible_hash_table_test.o
 
 # target to build an object file
-primer/trie_debug_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_debug_test.dir/build.make test/CMakeFiles/trie_debug_test.dir/primer/trie_debug_test.cpp.o
-.PHONY : primer/trie_debug_test.cpp.o
+container/hash/extendible_hash_table_test.cpp.o:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/extendible_hash_table_test.dir/build.make test/CMakeFiles/extendible_hash_table_test.dir/container/hash/extendible_hash_table_test.cpp.o
+.PHONY : container/hash/extendible_hash_table_test.cpp.o
 
-primer/trie_debug_test.i: primer/trie_debug_test.cpp.i
-.PHONY : primer/trie_debug_test.i
+container/hash/extendible_hash_table_test.i: container/hash/extendible_hash_table_test.cpp.i
+.PHONY : container/hash/extendible_hash_table_test.i
 
 # target to preprocess a source file
-primer/trie_debug_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_debug_test.dir/build.make test/CMakeFiles/trie_debug_test.dir/primer/trie_debug_test.cpp.i
-.PHONY : primer/trie_debug_test.cpp.i
+container/hash/extendible_hash_table_test.cpp.i:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/extendible_hash_table_test.dir/build.make test/CMakeFiles/extendible_hash_table_test.dir/container/hash/extendible_hash_table_test.cpp.i
+.PHONY : container/hash/extendible_hash_table_test.cpp.i
 
-primer/trie_debug_test.s: primer/trie_debug_test.cpp.s
-.PHONY : primer/trie_debug_test.s
+container/hash/extendible_hash_table_test.s: container/hash/extendible_hash_table_test.cpp.s
+.PHONY : container/hash/extendible_hash_table_test.s
 
 # target to generate assembly for a file
-primer/trie_debug_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_debug_test.dir/build.make test/CMakeFiles/trie_debug_test.dir/primer/trie_debug_test.cpp.s
-.PHONY : primer/trie_debug_test.cpp.s
+container/hash/extendible_hash_table_test.cpp.s:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/extendible_hash_table_test.dir/build.make test/CMakeFiles/extendible_hash_table_test.dir/container/hash/extendible_hash_table_test.cpp.s
+.PHONY : container/hash/extendible_hash_table_test.cpp.s
 
-primer/trie_noncopy_test.o: primer/trie_noncopy_test.cpp.o
-.PHONY : primer/trie_noncopy_test.o
+primer/starter_trie_test.o: primer/starter_trie_test.cpp.o
+.PHONY : primer/starter_trie_test.o
 
 # target to build an object file
-primer/trie_noncopy_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_noncopy_test.dir/build.make test/CMakeFiles/trie_noncopy_test.dir/primer/trie_noncopy_test.cpp.o
-.PHONY : primer/trie_noncopy_test.cpp.o
+primer/starter_trie_test.cpp.o:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/starter_trie_test.dir/build.make test/CMakeFiles/starter_trie_test.dir/primer/starter_trie_test.cpp.o
+.PHONY : primer/starter_trie_test.cpp.o
 
-primer/trie_noncopy_test.i: primer/trie_noncopy_test.cpp.i
-.PHONY : primer/trie_noncopy_test.i
+primer/starter_trie_test.i: primer/starter_trie_test.cpp.i
+.PHONY : primer/starter_trie_test.i
 
 # target to preprocess a source file
-primer/trie_noncopy_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_noncopy_test.dir/build.make test/CMakeFiles/trie_noncopy_test.dir/primer/trie_noncopy_test.cpp.i
-.PHONY : primer/trie_noncopy_test.cpp.i
+primer/starter_trie_test.cpp.i:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/starter_trie_test.dir/build.make test/CMakeFiles/starter_trie_test.dir/primer/starter_trie_test.cpp.i
+.PHONY : primer/starter_trie_test.cpp.i
 
-primer/trie_noncopy_test.s: primer/trie_noncopy_test.cpp.s
-.PHONY : primer/trie_noncopy_test.s
+primer/starter_trie_test.s: primer/starter_trie_test.cpp.s
+.PHONY : primer/starter_trie_test.s
 
 # target to generate assembly for a file
-primer/trie_noncopy_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_noncopy_test.dir/build.make test/CMakeFiles/trie_noncopy_test.dir/primer/trie_noncopy_test.cpp.s
-.PHONY : primer/trie_noncopy_test.cpp.s
+primer/starter_trie_test.cpp.s:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/starter_trie_test.dir/build.make test/CMakeFiles/starter_trie_test.dir/primer/starter_trie_test.cpp.s
+.PHONY : primer/starter_trie_test.cpp.s
 
-primer/trie_store_noncopy_test.o: primer/trie_store_noncopy_test.cpp.o
-.PHONY : primer/trie_store_noncopy_test.o
+recovery/recovery_test.o: recovery/recovery_test.cpp.o
+.PHONY : recovery/recovery_test.o
 
 # target to build an object file
-primer/trie_store_noncopy_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_store_noncopy_test.dir/build.make test/CMakeFiles/trie_store_noncopy_test.dir/primer/trie_store_noncopy_test.cpp.o
-.PHONY : primer/trie_store_noncopy_test.cpp.o
+recovery/recovery_test.cpp.o:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/recovery_test.dir/build.make test/CMakeFiles/recovery_test.dir/recovery/recovery_test.cpp.o
+.PHONY : recovery/recovery_test.cpp.o
 
-primer/trie_store_noncopy_test.i: primer/trie_store_noncopy_test.cpp.i
-.PHONY : primer/trie_store_noncopy_test.i
-
-# target to preprocess a source file
-primer/trie_store_noncopy_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_store_noncopy_test.dir/build.make test/CMakeFiles/trie_store_noncopy_test.dir/primer/trie_store_noncopy_test.cpp.i
-.PHONY : primer/trie_store_noncopy_test.cpp.i
-
-primer/trie_store_noncopy_test.s: primer/trie_store_noncopy_test.cpp.s
-.PHONY : primer/trie_store_noncopy_test.s
-
-# target to generate assembly for a file
-primer/trie_store_noncopy_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_store_noncopy_test.dir/build.make test/CMakeFiles/trie_store_noncopy_test.dir/primer/trie_store_noncopy_test.cpp.s
-.PHONY : primer/trie_store_noncopy_test.cpp.s
-
-primer/trie_store_test.o: primer/trie_store_test.cpp.o
-.PHONY : primer/trie_store_test.o
-
-# target to build an object file
-primer/trie_store_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_store_test.dir/build.make test/CMakeFiles/trie_store_test.dir/primer/trie_store_test.cpp.o
-.PHONY : primer/trie_store_test.cpp.o
-
-primer/trie_store_test.i: primer/trie_store_test.cpp.i
-.PHONY : primer/trie_store_test.i
+recovery/recovery_test.i: recovery/recovery_test.cpp.i
+.PHONY : recovery/recovery_test.i
 
 # target to preprocess a source file
-primer/trie_store_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_store_test.dir/build.make test/CMakeFiles/trie_store_test.dir/primer/trie_store_test.cpp.i
-.PHONY : primer/trie_store_test.cpp.i
+recovery/recovery_test.cpp.i:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/recovery_test.dir/build.make test/CMakeFiles/recovery_test.dir/recovery/recovery_test.cpp.i
+.PHONY : recovery/recovery_test.cpp.i
 
-primer/trie_store_test.s: primer/trie_store_test.cpp.s
-.PHONY : primer/trie_store_test.s
-
-# target to generate assembly for a file
-primer/trie_store_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_store_test.dir/build.make test/CMakeFiles/trie_store_test.dir/primer/trie_store_test.cpp.s
-.PHONY : primer/trie_store_test.cpp.s
-
-primer/trie_test.o: primer/trie_test.cpp.o
-.PHONY : primer/trie_test.o
-
-# target to build an object file
-primer/trie_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_test.dir/build.make test/CMakeFiles/trie_test.dir/primer/trie_test.cpp.o
-.PHONY : primer/trie_test.cpp.o
-
-primer/trie_test.i: primer/trie_test.cpp.i
-.PHONY : primer/trie_test.i
-
-# target to preprocess a source file
-primer/trie_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_test.dir/build.make test/CMakeFiles/trie_test.dir/primer/trie_test.cpp.i
-.PHONY : primer/trie_test.cpp.i
-
-primer/trie_test.s: primer/trie_test.cpp.s
-.PHONY : primer/trie_test.s
+recovery/recovery_test.s: recovery/recovery_test.cpp.s
+.PHONY : recovery/recovery_test.s
 
 # target to generate assembly for a file
-primer/trie_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/trie_test.dir/build.make test/CMakeFiles/trie_test.dir/primer/trie_test.cpp.s
-.PHONY : primer/trie_test.cpp.s
+recovery/recovery_test.cpp.s:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/recovery_test.dir/build.make test/CMakeFiles/recovery_test.dir/recovery/recovery_test.cpp.s
+.PHONY : recovery/recovery_test.cpp.s
 
 storage/b_plus_tree_concurrent_test.o: storage/b_plus_tree_concurrent_test.cpp.o
 .PHONY : storage/b_plus_tree_concurrent_test.o
 
 # target to build an object file
 storage/b_plus_tree_concurrent_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_concurrent_test.dir/build.make test/CMakeFiles/b_plus_tree_concurrent_test.dir/storage/b_plus_tree_concurrent_test.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_concurrent_test.dir/build.make test/CMakeFiles/b_plus_tree_concurrent_test.dir/storage/b_plus_tree_concurrent_test.cpp.o
 .PHONY : storage/b_plus_tree_concurrent_test.cpp.o
 
 storage/b_plus_tree_concurrent_test.i: storage/b_plus_tree_concurrent_test.cpp.i
@@ -1358,7 +1208,7 @@ storage/b_plus_tree_concurrent_test.i: storage/b_plus_tree_concurrent_test.cpp.i
 
 # target to preprocess a source file
 storage/b_plus_tree_concurrent_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_concurrent_test.dir/build.make test/CMakeFiles/b_plus_tree_concurrent_test.dir/storage/b_plus_tree_concurrent_test.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_concurrent_test.dir/build.make test/CMakeFiles/b_plus_tree_concurrent_test.dir/storage/b_plus_tree_concurrent_test.cpp.i
 .PHONY : storage/b_plus_tree_concurrent_test.cpp.i
 
 storage/b_plus_tree_concurrent_test.s: storage/b_plus_tree_concurrent_test.cpp.s
@@ -1366,7 +1216,7 @@ storage/b_plus_tree_concurrent_test.s: storage/b_plus_tree_concurrent_test.cpp.s
 
 # target to generate assembly for a file
 storage/b_plus_tree_concurrent_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_concurrent_test.dir/build.make test/CMakeFiles/b_plus_tree_concurrent_test.dir/storage/b_plus_tree_concurrent_test.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_concurrent_test.dir/build.make test/CMakeFiles/b_plus_tree_concurrent_test.dir/storage/b_plus_tree_concurrent_test.cpp.s
 .PHONY : storage/b_plus_tree_concurrent_test.cpp.s
 
 storage/b_plus_tree_contention_test.o: storage/b_plus_tree_contention_test.cpp.o
@@ -1374,7 +1224,7 @@ storage/b_plus_tree_contention_test.o: storage/b_plus_tree_contention_test.cpp.o
 
 # target to build an object file
 storage/b_plus_tree_contention_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_contention_test.dir/build.make test/CMakeFiles/b_plus_tree_contention_test.dir/storage/b_plus_tree_contention_test.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_contention_test.dir/build.make test/CMakeFiles/b_plus_tree_contention_test.dir/storage/b_plus_tree_contention_test.cpp.o
 .PHONY : storage/b_plus_tree_contention_test.cpp.o
 
 storage/b_plus_tree_contention_test.i: storage/b_plus_tree_contention_test.cpp.i
@@ -1382,7 +1232,7 @@ storage/b_plus_tree_contention_test.i: storage/b_plus_tree_contention_test.cpp.i
 
 # target to preprocess a source file
 storage/b_plus_tree_contention_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_contention_test.dir/build.make test/CMakeFiles/b_plus_tree_contention_test.dir/storage/b_plus_tree_contention_test.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_contention_test.dir/build.make test/CMakeFiles/b_plus_tree_contention_test.dir/storage/b_plus_tree_contention_test.cpp.i
 .PHONY : storage/b_plus_tree_contention_test.cpp.i
 
 storage/b_plus_tree_contention_test.s: storage/b_plus_tree_contention_test.cpp.s
@@ -1390,7 +1240,7 @@ storage/b_plus_tree_contention_test.s: storage/b_plus_tree_contention_test.cpp.s
 
 # target to generate assembly for a file
 storage/b_plus_tree_contention_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_contention_test.dir/build.make test/CMakeFiles/b_plus_tree_contention_test.dir/storage/b_plus_tree_contention_test.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_contention_test.dir/build.make test/CMakeFiles/b_plus_tree_contention_test.dir/storage/b_plus_tree_contention_test.cpp.s
 .PHONY : storage/b_plus_tree_contention_test.cpp.s
 
 storage/b_plus_tree_delete_test.o: storage/b_plus_tree_delete_test.cpp.o
@@ -1398,7 +1248,7 @@ storage/b_plus_tree_delete_test.o: storage/b_plus_tree_delete_test.cpp.o
 
 # target to build an object file
 storage/b_plus_tree_delete_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_delete_test.dir/build.make test/CMakeFiles/b_plus_tree_delete_test.dir/storage/b_plus_tree_delete_test.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_delete_test.dir/build.make test/CMakeFiles/b_plus_tree_delete_test.dir/storage/b_plus_tree_delete_test.cpp.o
 .PHONY : storage/b_plus_tree_delete_test.cpp.o
 
 storage/b_plus_tree_delete_test.i: storage/b_plus_tree_delete_test.cpp.i
@@ -1406,7 +1256,7 @@ storage/b_plus_tree_delete_test.i: storage/b_plus_tree_delete_test.cpp.i
 
 # target to preprocess a source file
 storage/b_plus_tree_delete_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_delete_test.dir/build.make test/CMakeFiles/b_plus_tree_delete_test.dir/storage/b_plus_tree_delete_test.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_delete_test.dir/build.make test/CMakeFiles/b_plus_tree_delete_test.dir/storage/b_plus_tree_delete_test.cpp.i
 .PHONY : storage/b_plus_tree_delete_test.cpp.i
 
 storage/b_plus_tree_delete_test.s: storage/b_plus_tree_delete_test.cpp.s
@@ -1414,7 +1264,7 @@ storage/b_plus_tree_delete_test.s: storage/b_plus_tree_delete_test.cpp.s
 
 # target to generate assembly for a file
 storage/b_plus_tree_delete_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_delete_test.dir/build.make test/CMakeFiles/b_plus_tree_delete_test.dir/storage/b_plus_tree_delete_test.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_delete_test.dir/build.make test/CMakeFiles/b_plus_tree_delete_test.dir/storage/b_plus_tree_delete_test.cpp.s
 .PHONY : storage/b_plus_tree_delete_test.cpp.s
 
 storage/b_plus_tree_insert_test.o: storage/b_plus_tree_insert_test.cpp.o
@@ -1422,7 +1272,7 @@ storage/b_plus_tree_insert_test.o: storage/b_plus_tree_insert_test.cpp.o
 
 # target to build an object file
 storage/b_plus_tree_insert_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_insert_test.dir/build.make test/CMakeFiles/b_plus_tree_insert_test.dir/storage/b_plus_tree_insert_test.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_insert_test.dir/build.make test/CMakeFiles/b_plus_tree_insert_test.dir/storage/b_plus_tree_insert_test.cpp.o
 .PHONY : storage/b_plus_tree_insert_test.cpp.o
 
 storage/b_plus_tree_insert_test.i: storage/b_plus_tree_insert_test.cpp.i
@@ -1430,7 +1280,7 @@ storage/b_plus_tree_insert_test.i: storage/b_plus_tree_insert_test.cpp.i
 
 # target to preprocess a source file
 storage/b_plus_tree_insert_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_insert_test.dir/build.make test/CMakeFiles/b_plus_tree_insert_test.dir/storage/b_plus_tree_insert_test.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_insert_test.dir/build.make test/CMakeFiles/b_plus_tree_insert_test.dir/storage/b_plus_tree_insert_test.cpp.i
 .PHONY : storage/b_plus_tree_insert_test.cpp.i
 
 storage/b_plus_tree_insert_test.s: storage/b_plus_tree_insert_test.cpp.s
@@ -1438,39 +1288,15 @@ storage/b_plus_tree_insert_test.s: storage/b_plus_tree_insert_test.cpp.s
 
 # target to generate assembly for a file
 storage/b_plus_tree_insert_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_insert_test.dir/build.make test/CMakeFiles/b_plus_tree_insert_test.dir/storage/b_plus_tree_insert_test.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_insert_test.dir/build.make test/CMakeFiles/b_plus_tree_insert_test.dir/storage/b_plus_tree_insert_test.cpp.s
 .PHONY : storage/b_plus_tree_insert_test.cpp.s
-
-storage/b_plus_tree_sequential_scale_test.o: storage/b_plus_tree_sequential_scale_test.cpp.o
-.PHONY : storage/b_plus_tree_sequential_scale_test.o
-
-# target to build an object file
-storage/b_plus_tree_sequential_scale_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_sequential_scale_test.dir/build.make test/CMakeFiles/b_plus_tree_sequential_scale_test.dir/storage/b_plus_tree_sequential_scale_test.cpp.o
-.PHONY : storage/b_plus_tree_sequential_scale_test.cpp.o
-
-storage/b_plus_tree_sequential_scale_test.i: storage/b_plus_tree_sequential_scale_test.cpp.i
-.PHONY : storage/b_plus_tree_sequential_scale_test.i
-
-# target to preprocess a source file
-storage/b_plus_tree_sequential_scale_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_sequential_scale_test.dir/build.make test/CMakeFiles/b_plus_tree_sequential_scale_test.dir/storage/b_plus_tree_sequential_scale_test.cpp.i
-.PHONY : storage/b_plus_tree_sequential_scale_test.cpp.i
-
-storage/b_plus_tree_sequential_scale_test.s: storage/b_plus_tree_sequential_scale_test.cpp.s
-.PHONY : storage/b_plus_tree_sequential_scale_test.s
-
-# target to generate assembly for a file
-storage/b_plus_tree_sequential_scale_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/b_plus_tree_sequential_scale_test.dir/build.make test/CMakeFiles/b_plus_tree_sequential_scale_test.dir/storage/b_plus_tree_sequential_scale_test.cpp.s
-.PHONY : storage/b_plus_tree_sequential_scale_test.cpp.s
 
 storage/disk_manager_test.o: storage/disk_manager_test.cpp.o
 .PHONY : storage/disk_manager_test.o
 
 # target to build an object file
 storage/disk_manager_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/disk_manager_test.dir/build.make test/CMakeFiles/disk_manager_test.dir/storage/disk_manager_test.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/disk_manager_test.dir/build.make test/CMakeFiles/disk_manager_test.dir/storage/disk_manager_test.cpp.o
 .PHONY : storage/disk_manager_test.cpp.o
 
 storage/disk_manager_test.i: storage/disk_manager_test.cpp.i
@@ -1478,7 +1304,7 @@ storage/disk_manager_test.i: storage/disk_manager_test.cpp.i
 
 # target to preprocess a source file
 storage/disk_manager_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/disk_manager_test.dir/build.make test/CMakeFiles/disk_manager_test.dir/storage/disk_manager_test.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/disk_manager_test.dir/build.make test/CMakeFiles/disk_manager_test.dir/storage/disk_manager_test.cpp.i
 .PHONY : storage/disk_manager_test.cpp.i
 
 storage/disk_manager_test.s: storage/disk_manager_test.cpp.s
@@ -1486,39 +1312,15 @@ storage/disk_manager_test.s: storage/disk_manager_test.cpp.s
 
 # target to generate assembly for a file
 storage/disk_manager_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/disk_manager_test.dir/build.make test/CMakeFiles/disk_manager_test.dir/storage/disk_manager_test.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/disk_manager_test.dir/build.make test/CMakeFiles/disk_manager_test.dir/storage/disk_manager_test.cpp.s
 .PHONY : storage/disk_manager_test.cpp.s
-
-storage/page_guard_test.o: storage/page_guard_test.cpp.o
-.PHONY : storage/page_guard_test.o
-
-# target to build an object file
-storage/page_guard_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/page_guard_test.dir/build.make test/CMakeFiles/page_guard_test.dir/storage/page_guard_test.cpp.o
-.PHONY : storage/page_guard_test.cpp.o
-
-storage/page_guard_test.i: storage/page_guard_test.cpp.i
-.PHONY : storage/page_guard_test.i
-
-# target to preprocess a source file
-storage/page_guard_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/page_guard_test.dir/build.make test/CMakeFiles/page_guard_test.dir/storage/page_guard_test.cpp.i
-.PHONY : storage/page_guard_test.cpp.i
-
-storage/page_guard_test.s: storage/page_guard_test.cpp.s
-.PHONY : storage/page_guard_test.s
-
-# target to generate assembly for a file
-storage/page_guard_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/page_guard_test.dir/build.make test/CMakeFiles/page_guard_test.dir/storage/page_guard_test.cpp.s
-.PHONY : storage/page_guard_test.cpp.s
 
 storage/tmp_tuple_page_test.o: storage/tmp_tuple_page_test.cpp.o
 .PHONY : storage/tmp_tuple_page_test.o
 
 # target to build an object file
 storage/tmp_tuple_page_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tmp_tuple_page_test.dir/build.make test/CMakeFiles/tmp_tuple_page_test.dir/storage/tmp_tuple_page_test.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tmp_tuple_page_test.dir/build.make test/CMakeFiles/tmp_tuple_page_test.dir/storage/tmp_tuple_page_test.cpp.o
 .PHONY : storage/tmp_tuple_page_test.cpp.o
 
 storage/tmp_tuple_page_test.i: storage/tmp_tuple_page_test.cpp.i
@@ -1526,7 +1328,7 @@ storage/tmp_tuple_page_test.i: storage/tmp_tuple_page_test.cpp.i
 
 # target to preprocess a source file
 storage/tmp_tuple_page_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tmp_tuple_page_test.dir/build.make test/CMakeFiles/tmp_tuple_page_test.dir/storage/tmp_tuple_page_test.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tmp_tuple_page_test.dir/build.make test/CMakeFiles/tmp_tuple_page_test.dir/storage/tmp_tuple_page_test.cpp.i
 .PHONY : storage/tmp_tuple_page_test.cpp.i
 
 storage/tmp_tuple_page_test.s: storage/tmp_tuple_page_test.cpp.s
@@ -1534,7 +1336,7 @@ storage/tmp_tuple_page_test.s: storage/tmp_tuple_page_test.cpp.s
 
 # target to generate assembly for a file
 storage/tmp_tuple_page_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tmp_tuple_page_test.dir/build.make test/CMakeFiles/tmp_tuple_page_test.dir/storage/tmp_tuple_page_test.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tmp_tuple_page_test.dir/build.make test/CMakeFiles/tmp_tuple_page_test.dir/storage/tmp_tuple_page_test.cpp.s
 .PHONY : storage/tmp_tuple_page_test.cpp.s
 
 table/tuple_test.o: table/tuple_test.cpp.o
@@ -1542,7 +1344,7 @@ table/tuple_test.o: table/tuple_test.cpp.o
 
 # target to build an object file
 table/tuple_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tuple_test.dir/build.make test/CMakeFiles/tuple_test.dir/table/tuple_test.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tuple_test.dir/build.make test/CMakeFiles/tuple_test.dir/table/tuple_test.cpp.o
 .PHONY : table/tuple_test.cpp.o
 
 table/tuple_test.i: table/tuple_test.cpp.i
@@ -1550,7 +1352,7 @@ table/tuple_test.i: table/tuple_test.cpp.i
 
 # target to preprocess a source file
 table/tuple_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tuple_test.dir/build.make test/CMakeFiles/tuple_test.dir/table/tuple_test.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tuple_test.dir/build.make test/CMakeFiles/tuple_test.dir/table/tuple_test.cpp.i
 .PHONY : table/tuple_test.cpp.i
 
 table/tuple_test.s: table/tuple_test.cpp.s
@@ -1558,7 +1360,7 @@ table/tuple_test.s: table/tuple_test.cpp.s
 
 # target to generate assembly for a file
 table/tuple_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tuple_test.dir/build.make test/CMakeFiles/tuple_test.dir/table/tuple_test.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/tuple_test.dir/build.make test/CMakeFiles/tuple_test.dir/table/tuple_test.cpp.s
 .PHONY : table/tuple_test.cpp.s
 
 type/type_test.o: type/type_test.cpp.o
@@ -1566,7 +1368,7 @@ type/type_test.o: type/type_test.cpp.o
 
 # target to build an object file
 type/type_test.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/type_test.dir/build.make test/CMakeFiles/type_test.dir/type/type_test.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/type_test.dir/build.make test/CMakeFiles/type_test.dir/type/type_test.cpp.o
 .PHONY : type/type_test.cpp.o
 
 type/type_test.i: type/type_test.cpp.i
@@ -1574,7 +1376,7 @@ type/type_test.i: type/type_test.cpp.i
 
 # target to preprocess a source file
 type/type_test.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/type_test.dir/build.make test/CMakeFiles/type_test.dir/type/type_test.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/type_test.dir/build.make test/CMakeFiles/type_test.dir/type/type_test.cpp.i
 .PHONY : type/type_test.cpp.i
 
 type/type_test.s: type/type_test.cpp.s
@@ -1582,7 +1384,7 @@ type/type_test.s: type/type_test.cpp.s
 
 # target to generate assembly for a file
 type/type_test.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/type_test.dir/build.make test/CMakeFiles/type_test.dir/type/type_test.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/type_test.dir/build.make test/CMakeFiles/type_test.dir/type/type_test.cpp.s
 .PHONY : type/type_test.cpp.s
 
 # Help Target
@@ -1603,28 +1405,22 @@ help:
 	@echo "... build-tests"
 	@echo "... check-public-ci-tests"
 	@echo "... check-tests"
-	@echo "... p0.01-lower-upper_test"
-	@echo "... p0.02-function-error_test"
-	@echo "... p0.03-string-scan_test"
 	@echo "... p3.01-seqscan_test"
 	@echo "... p3.02-insert_test"
-	@echo "... p3.03-update_test"
-	@echo "... p3.04-delete_test"
-	@echo "... p3.05-index-scan_test"
-	@echo "... p3.06-empty-table_test"
-	@echo "... p3.07-simple-agg_test"
-	@echo "... p3.08-group-agg-1_test"
-	@echo "... p3.09-group-agg-2_test"
-	@echo "... p3.10-simple-join_test"
-	@echo "... p3.11-multi-way-join_test"
-	@echo "... p3.12-repeat-execute_test"
-	@echo "... p3.13-nested-index-join_test"
-	@echo "... p3.14-hash-join_test"
-	@echo "... p3.15-multi-way-hash-join_test"
-	@echo "... p3.16-sort-limit_test"
-	@echo "... p3.17-topn_test"
-	@echo "... p3.18-integration-1_test"
-	@echo "... p3.19-integration-2_test"
+	@echo "... p3.03-delete_test"
+	@echo "... p3.04-index-scan_test"
+	@echo "... p3.05-empty-table_test"
+	@echo "... p3.06-simple-agg_test"
+	@echo "... p3.07-group-agg-1_test"
+	@echo "... p3.08-group-agg-2_test"
+	@echo "... p3.09-simple-join_test"
+	@echo "... p3.10-multi-way-join_test"
+	@echo "... p3.11-repeat-execute_test"
+	@echo "... p3.12-nested-index-join_test"
+	@echo "... p3.13-sort-limit_test"
+	@echo "... p3.14-topn_test"
+	@echo "... p3.15-integration-1_test"
+	@echo "... p3.16-integration-2_test"
 	@echo "... p3.leaderboard-q1_test"
 	@echo "... p3.leaderboard-q2_test"
 	@echo "... p3.leaderboard-q3_test"
@@ -1633,34 +1429,31 @@ help:
 	@echo "... b_plus_tree_contention_test"
 	@echo "... b_plus_tree_delete_test"
 	@echo "... b_plus_tree_insert_test"
-	@echo "... b_plus_tree_sequential_scale_test"
 	@echo "... binder_test"
-	@echo "... buffer_pool_manager_test"
+	@echo "... buffer_pool_manager_instance_test"
+	@echo "... catalog_test"
 	@echo "... clock_replacer_test"
 	@echo "... deadlock_detection_test"
 	@echo "... disk_manager_test"
+	@echo "... extendible_hash_table_test"
 	@echo "... hash_table_page_test"
 	@echo "... hash_table_test"
 	@echo "... lock_manager_test"
 	@echo "... lru_k_replacer_test"
 	@echo "... lru_replacer_test"
-	@echo "... page_guard_test"
+	@echo "... recovery_test"
 	@echo "... rwlatch_test"
+	@echo "... starter_trie_test"
 	@echo "... tmp_tuple_page_test"
-	@echo "... trie_debug_test"
-	@echo "... trie_noncopy_test"
-	@echo "... trie_store_noncopy_test"
-	@echo "... trie_store_test"
-	@echo "... trie_test"
+	@echo "... transaction_test"
 	@echo "... tuple_test"
-	@echo "... txn_integration_test"
 	@echo "... type_test"
 	@echo "... binder/binder_test.o"
 	@echo "... binder/binder_test.i"
 	@echo "... binder/binder_test.s"
-	@echo "... buffer/buffer_pool_manager_test.o"
-	@echo "... buffer/buffer_pool_manager_test.i"
-	@echo "... buffer/buffer_pool_manager_test.s"
+	@echo "... buffer/buffer_pool_manager_instance_test.o"
+	@echo "... buffer/buffer_pool_manager_instance_test.i"
+	@echo "... buffer/buffer_pool_manager_instance_test.s"
 	@echo "... buffer/clock_replacer_test.o"
 	@echo "... buffer/clock_replacer_test.i"
 	@echo "... buffer/clock_replacer_test.s"
@@ -1670,6 +1463,9 @@ help:
 	@echo "... buffer/lru_replacer_test.o"
 	@echo "... buffer/lru_replacer_test.i"
 	@echo "... buffer/lru_replacer_test.s"
+	@echo "... catalog/catalog_test.o"
+	@echo "... catalog/catalog_test.i"
+	@echo "... catalog/catalog_test.s"
 	@echo "... common/rwlatch_test.o"
 	@echo "... common/rwlatch_test.i"
 	@echo "... common/rwlatch_test.s"
@@ -1679,30 +1475,24 @@ help:
 	@echo "... concurrency/lock_manager_test.o"
 	@echo "... concurrency/lock_manager_test.i"
 	@echo "... concurrency/lock_manager_test.s"
-	@echo "... concurrency/txn_integration_test.o"
-	@echo "... concurrency/txn_integration_test.i"
-	@echo "... concurrency/txn_integration_test.s"
+	@echo "... concurrency/transaction_test.o"
+	@echo "... concurrency/transaction_test.i"
+	@echo "... concurrency/transaction_test.s"
 	@echo "... container/disk/hash/hash_table_page_test.o"
 	@echo "... container/disk/hash/hash_table_page_test.i"
 	@echo "... container/disk/hash/hash_table_page_test.s"
 	@echo "... container/disk/hash/hash_table_test.o"
 	@echo "... container/disk/hash/hash_table_test.i"
 	@echo "... container/disk/hash/hash_table_test.s"
-	@echo "... primer/trie_debug_test.o"
-	@echo "... primer/trie_debug_test.i"
-	@echo "... primer/trie_debug_test.s"
-	@echo "... primer/trie_noncopy_test.o"
-	@echo "... primer/trie_noncopy_test.i"
-	@echo "... primer/trie_noncopy_test.s"
-	@echo "... primer/trie_store_noncopy_test.o"
-	@echo "... primer/trie_store_noncopy_test.i"
-	@echo "... primer/trie_store_noncopy_test.s"
-	@echo "... primer/trie_store_test.o"
-	@echo "... primer/trie_store_test.i"
-	@echo "... primer/trie_store_test.s"
-	@echo "... primer/trie_test.o"
-	@echo "... primer/trie_test.i"
-	@echo "... primer/trie_test.s"
+	@echo "... container/hash/extendible_hash_table_test.o"
+	@echo "... container/hash/extendible_hash_table_test.i"
+	@echo "... container/hash/extendible_hash_table_test.s"
+	@echo "... primer/starter_trie_test.o"
+	@echo "... primer/starter_trie_test.i"
+	@echo "... primer/starter_trie_test.s"
+	@echo "... recovery/recovery_test.o"
+	@echo "... recovery/recovery_test.i"
+	@echo "... recovery/recovery_test.s"
 	@echo "... storage/b_plus_tree_concurrent_test.o"
 	@echo "... storage/b_plus_tree_concurrent_test.i"
 	@echo "... storage/b_plus_tree_concurrent_test.s"
@@ -1715,15 +1505,9 @@ help:
 	@echo "... storage/b_plus_tree_insert_test.o"
 	@echo "... storage/b_plus_tree_insert_test.i"
 	@echo "... storage/b_plus_tree_insert_test.s"
-	@echo "... storage/b_plus_tree_sequential_scale_test.o"
-	@echo "... storage/b_plus_tree_sequential_scale_test.i"
-	@echo "... storage/b_plus_tree_sequential_scale_test.s"
 	@echo "... storage/disk_manager_test.o"
 	@echo "... storage/disk_manager_test.i"
 	@echo "... storage/disk_manager_test.s"
-	@echo "... storage/page_guard_test.o"
-	@echo "... storage/page_guard_test.i"
-	@echo "... storage/page_guard_test.s"
 	@echo "... storage/tmp_tuple_page_test.o"
 	@echo "... storage/tmp_tuple_page_test.i"
 	@echo "... storage/tmp_tuple_page_test.s"
@@ -1744,6 +1528,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

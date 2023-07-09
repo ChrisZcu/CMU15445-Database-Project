@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/test/buffer/lru_k_replacer_test.cpp" "test/CMakeFiles/lru_k_replacer_test.dir/buffer/lru_k_replacer_test.cpp.o" "gcc" "test/CMakeFiles/lru_k_replacer_test.dir/buffer/lru_k_replacer_test.cpp.o.d"
+  "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/test/buffer/lru_k_replacer_test.cpp" "test/CMakeFiles/lru_k_replacer_test.dir/buffer/lru_k_replacer_test.cpp.o" "gcc" "test/CMakeFiles/lru_k_replacer_test.dir/buffer/lru_k_replacer_test.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

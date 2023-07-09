@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub
+CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
+CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CPackSourceConfig.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/recovery//CMakeFiles/progress.marks
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/recovery/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles 0
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/recovery//CMakeFiles/progress.marks
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/recovery/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/recovery/clean
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/recovery/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/recovery/preinstall
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/recovery/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/recovery/preinstall
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/recovery/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/recovery/CMakeFiles/bustub_recovery.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/recovery/CMakeFiles/bustub_recovery.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/recovery/CMakeFiles/bustub_recovery.dir/rule
 .PHONY : src/recovery/CMakeFiles/bustub_recovery.dir/rule
 
 # Convenience name for target.
@@ -202,7 +202,7 @@ bustub_recovery: src/recovery/CMakeFiles/bustub_recovery.dir/rule
 
 # fast build rule for target.
 bustub_recovery/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/recovery/CMakeFiles/bustub_recovery.dir/build.make src/recovery/CMakeFiles/bustub_recovery.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/recovery/CMakeFiles/bustub_recovery.dir/build.make src/recovery/CMakeFiles/bustub_recovery.dir/build
 .PHONY : bustub_recovery/fast
 
 checkpoint_manager.o: checkpoint_manager.cpp.o
@@ -210,7 +210,7 @@ checkpoint_manager.o: checkpoint_manager.cpp.o
 
 # target to build an object file
 checkpoint_manager.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/recovery/CMakeFiles/bustub_recovery.dir/build.make src/recovery/CMakeFiles/bustub_recovery.dir/checkpoint_manager.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/recovery/CMakeFiles/bustub_recovery.dir/build.make src/recovery/CMakeFiles/bustub_recovery.dir/checkpoint_manager.cpp.o
 .PHONY : checkpoint_manager.cpp.o
 
 checkpoint_manager.i: checkpoint_manager.cpp.i
@@ -218,7 +218,7 @@ checkpoint_manager.i: checkpoint_manager.cpp.i
 
 # target to preprocess a source file
 checkpoint_manager.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/recovery/CMakeFiles/bustub_recovery.dir/build.make src/recovery/CMakeFiles/bustub_recovery.dir/checkpoint_manager.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/recovery/CMakeFiles/bustub_recovery.dir/build.make src/recovery/CMakeFiles/bustub_recovery.dir/checkpoint_manager.cpp.i
 .PHONY : checkpoint_manager.cpp.i
 
 checkpoint_manager.s: checkpoint_manager.cpp.s
@@ -226,7 +226,7 @@ checkpoint_manager.s: checkpoint_manager.cpp.s
 
 # target to generate assembly for a file
 checkpoint_manager.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/recovery/CMakeFiles/bustub_recovery.dir/build.make src/recovery/CMakeFiles/bustub_recovery.dir/checkpoint_manager.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/recovery/CMakeFiles/bustub_recovery.dir/build.make src/recovery/CMakeFiles/bustub_recovery.dir/checkpoint_manager.cpp.s
 .PHONY : checkpoint_manager.cpp.s
 
 log_manager.o: log_manager.cpp.o
@@ -234,7 +234,7 @@ log_manager.o: log_manager.cpp.o
 
 # target to build an object file
 log_manager.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/recovery/CMakeFiles/bustub_recovery.dir/build.make src/recovery/CMakeFiles/bustub_recovery.dir/log_manager.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/recovery/CMakeFiles/bustub_recovery.dir/build.make src/recovery/CMakeFiles/bustub_recovery.dir/log_manager.cpp.o
 .PHONY : log_manager.cpp.o
 
 log_manager.i: log_manager.cpp.i
@@ -242,7 +242,7 @@ log_manager.i: log_manager.cpp.i
 
 # target to preprocess a source file
 log_manager.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/recovery/CMakeFiles/bustub_recovery.dir/build.make src/recovery/CMakeFiles/bustub_recovery.dir/log_manager.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/recovery/CMakeFiles/bustub_recovery.dir/build.make src/recovery/CMakeFiles/bustub_recovery.dir/log_manager.cpp.i
 .PHONY : log_manager.cpp.i
 
 log_manager.s: log_manager.cpp.s
@@ -250,8 +250,32 @@ log_manager.s: log_manager.cpp.s
 
 # target to generate assembly for a file
 log_manager.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/recovery/CMakeFiles/bustub_recovery.dir/build.make src/recovery/CMakeFiles/bustub_recovery.dir/log_manager.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/recovery/CMakeFiles/bustub_recovery.dir/build.make src/recovery/CMakeFiles/bustub_recovery.dir/log_manager.cpp.s
 .PHONY : log_manager.cpp.s
+
+log_recovery.o: log_recovery.cpp.o
+.PHONY : log_recovery.o
+
+# target to build an object file
+log_recovery.cpp.o:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/recovery/CMakeFiles/bustub_recovery.dir/build.make src/recovery/CMakeFiles/bustub_recovery.dir/log_recovery.cpp.o
+.PHONY : log_recovery.cpp.o
+
+log_recovery.i: log_recovery.cpp.i
+.PHONY : log_recovery.i
+
+# target to preprocess a source file
+log_recovery.cpp.i:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/recovery/CMakeFiles/bustub_recovery.dir/build.make src/recovery/CMakeFiles/bustub_recovery.dir/log_recovery.cpp.i
+.PHONY : log_recovery.cpp.i
+
+log_recovery.s: log_recovery.cpp.s
+.PHONY : log_recovery.s
+
+# target to generate assembly for a file
+log_recovery.cpp.s:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/recovery/CMakeFiles/bustub_recovery.dir/build.make src/recovery/CMakeFiles/bustub_recovery.dir/log_recovery.cpp.s
+.PHONY : log_recovery.cpp.s
 
 # Help Target
 help:
@@ -275,6 +299,9 @@ help:
 	@echo "... log_manager.o"
 	@echo "... log_manager.i"
 	@echo "... log_manager.s"
+	@echo "... log_recovery.o"
+	@echo "... log_recovery.i"
+	@echo "... log_recovery.s"
 .PHONY : help
 
 
@@ -286,6 +313,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

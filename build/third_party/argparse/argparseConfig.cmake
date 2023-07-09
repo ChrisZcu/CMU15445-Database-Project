@@ -55,7 +55,7 @@ add_library(argparse::argparse INTERFACE IMPORTED)
 
 set_target_properties(argparse::argparse PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_17"
-  INTERFACE_INCLUDE_DIRECTORIES "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/argparse/include"
+  INTERFACE_INCLUDE_DIRECTORIES "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party/argparse/include"
 )
 
 # This file does not depend on other imported targets which have

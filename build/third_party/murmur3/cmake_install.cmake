@@ -1,4 +1,4 @@
-# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/murmur3
+# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party/murmur3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -11,8 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/bustub_storage_page.dir/hash_table_bucket_page.cpp.o.d"
   "CMakeFiles/bustub_storage_page.dir/hash_table_directory_page.cpp.o"
   "CMakeFiles/bustub_storage_page.dir/hash_table_directory_page.cpp.o.d"
-  "CMakeFiles/bustub_storage_page.dir/page_guard.cpp.o"
-  "CMakeFiles/bustub_storage_page.dir/page_guard.cpp.o.d"
+  "CMakeFiles/bustub_storage_page.dir/header_page.cpp.o"
+  "CMakeFiles/bustub_storage_page.dir/header_page.cpp.o.d"
   "CMakeFiles/bustub_storage_page.dir/table_page.cpp.o"
   "CMakeFiles/bustub_storage_page.dir/table_page.cpp.o.d"
 )

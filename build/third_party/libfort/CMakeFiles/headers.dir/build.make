@@ -56,10 +56,10 @@ RM = /usr/local/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub
+CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
+CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build
 
 # Utility rule file for headers.
 
@@ -77,10 +77,10 @@ third_party/libfort/CMakeFiles/headers.dir/build: headers
 .PHONY : third_party/libfort/CMakeFiles/headers.dir/build
 
 third_party/libfort/CMakeFiles/headers.dir/clean:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/third_party/libfort && $(CMAKE_COMMAND) -P CMakeFiles/headers.dir/cmake_clean.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/third_party/libfort && $(CMAKE_COMMAND) -P CMakeFiles/headers.dir/cmake_clean.cmake
 .PHONY : third_party/libfort/CMakeFiles/headers.dir/clean
 
 third_party/libfort/CMakeFiles/headers.dir/depend:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/libfort /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/third_party/libfort /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/third_party/libfort/CMakeFiles/headers.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party/libfort /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/third_party/libfort /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/third_party/libfort/CMakeFiles/headers.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : third_party/libfort/CMakeFiles/headers.dir/depend
 

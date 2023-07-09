@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub
+CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
+CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build
 
 # Utility rule file for check-format.
 
@@ -67,7 +67,7 @@ include CMakeFiles/check-format.dir/compiler_depend.make
 include CMakeFiles/check-format.dir/progress.make
 
 CMakeFiles/check-format:
-	/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build_support/run_clang_format.py CLANG_FORMAT_BIN-NOTFOUND /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build_support/clang_format_exclusions.txt --source_dirs /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src,/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/test, --quiet
+	/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build_support/run_clang_format.py /usr/local/opt/llvm@12/bin/clang-format /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build_support/clang_format_exclusions.txt --source_dirs /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src,/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/test, --quiet
 
 check-format: CMakeFiles/check-format
 check-format: CMakeFiles/check-format.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/check-format.dir/clean:
 .PHONY : CMakeFiles/check-format.dir/clean
 
 CMakeFiles/check-format.dir/depend:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles/check-format.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles/check-format.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/check-format.dir/depend
 

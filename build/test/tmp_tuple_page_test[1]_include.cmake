@@ -1,5 +1,5 @@
-if(EXISTS "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/test/tmp_tuple_page_test[1]_tests.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/test/tmp_tuple_page_test[1]_tests.cmake")
+if(EXISTS "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/test/tmp_tuple_page_test[1]_tests.cmake")
+  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/test/tmp_tuple_page_test[1]_tests.cmake")
 else()
   add_test(tmp_tuple_page_test_NOT_BUILT tmp_tuple_page_test_NOT_BUILT)
 endif()

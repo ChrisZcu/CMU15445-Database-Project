@@ -1,4 +1,4 @@
-# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/execution
+# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/execution
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

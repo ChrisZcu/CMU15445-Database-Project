@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/linenoise/linenoise.c" "third_party/linenoise/CMakeFiles/bustub_linenoise.dir/linenoise.c.o" "gcc" "third_party/linenoise/CMakeFiles/bustub_linenoise.dir/linenoise.c.o.d"
+  "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party/linenoise/linenoise.c" "third_party/linenoise/CMakeFiles/bustub_linenoise.dir/linenoise.c.o" "gcc" "third_party/linenoise/CMakeFiles/bustub_linenoise.dir/linenoise.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

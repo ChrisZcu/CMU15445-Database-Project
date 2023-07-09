@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub
+CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
+CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build
 
 # Utility rule file for check-tests.
 
@@ -67,7 +67,7 @@ include test/CMakeFiles/check-tests.dir/compiler_depend.make
 include test/CMakeFiles/check-tests.dir/progress.make
 
 test/CMakeFiles/check-tests:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/test && /usr/local/Cellar/cmake/3.26.4/bin/ctest --verbose
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/test && /usr/local/Cellar/cmake/3.26.4/bin/ctest --verbose
 
 check-tests: test/CMakeFiles/check-tests
 check-tests: test/CMakeFiles/check-tests.dir/build.make
@@ -78,10 +78,10 @@ test/CMakeFiles/check-tests.dir/build: check-tests
 .PHONY : test/CMakeFiles/check-tests.dir/build
 
 test/CMakeFiles/check-tests.dir/clean:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/test && $(CMAKE_COMMAND) -P CMakeFiles/check-tests.dir/cmake_clean.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/test && $(CMAKE_COMMAND) -P CMakeFiles/check-tests.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/check-tests.dir/clean
 
 test/CMakeFiles/check-tests.dir/depend:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/test /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/test /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/test/CMakeFiles/check-tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/test /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/test /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/test/CMakeFiles/check-tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/CMakeFiles/check-tests.dir/depend
 

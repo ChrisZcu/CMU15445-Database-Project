@@ -1,4 +1,4 @@
-# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/argparse
+# Install script for directory: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party/argparse
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -41,7 +41,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/argparse/argparseConfig.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/argparse/argparseConfig.cmake"
-         "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/third_party/argparse/CMakeFiles/Export/f0d8c87ebea5ac75f18e83f434702067/argparseConfig.cmake")
+         "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/third_party/argparse/CMakeFiles/Export/f0d8c87ebea5ac75f18e83f434702067/argparseConfig.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/argparse/argparseConfig-*.cmake")
       if(_cmake_old_config_files)
@@ -54,18 +54,18 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/argparse" TYPE FILE FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/third_party/argparse/CMakeFiles/Export/f0d8c87ebea5ac75f18e83f434702067/argparseConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/argparse" TYPE FILE FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/third_party/argparse/CMakeFiles/Export/f0d8c87ebea5ac75f18e83f434702067/argparseConfig.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/argparse" TYPE FILE FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/argparse/include/argparse/argparse.hpp")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/argparse" TYPE FILE FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party/argparse/include/argparse/argparse.hpp")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/argparse" TYPE FILE FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/third_party/argparse/argparseConfig-version.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/argparse" TYPE FILE FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/third_party/argparse/argparseConfig-version.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/third_party/argparse/argparse.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/third_party/argparse/argparse.pc")
 endif()
 

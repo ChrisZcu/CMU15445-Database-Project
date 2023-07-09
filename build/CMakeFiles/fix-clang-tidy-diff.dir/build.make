@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub
+CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
+CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build
 
 # Utility rule file for fix-clang-tidy-diff.
 
@@ -67,7 +67,7 @@ include CMakeFiles/fix-clang-tidy-diff.dir/compiler_depend.make
 include CMakeFiles/fix-clang-tidy-diff.dir/progress.make
 
 CMakeFiles/fix-clang-tidy-diff:
-	/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build_support/run_clang_tidy.py -clang-tidy-binary CLANG_TIDY_BIN-NOTFOUND -p /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build -clang-apply-replacements-binary CLANG_APPLY_REPLACEMENTS_BIN-NOTFOUND -fix -only-diff
+	/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build_support/run_clang_tidy.py -clang-tidy-binary /usr/local/opt/llvm@12/bin/clang-tidy -p /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build -clang-apply-replacements-binary /usr/local/opt/llvm@12/bin/clang-apply-replacements -fix -only-diff
 
 fix-clang-tidy-diff: CMakeFiles/fix-clang-tidy-diff
 fix-clang-tidy-diff: CMakeFiles/fix-clang-tidy-diff.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/fix-clang-tidy-diff.dir/clean:
 .PHONY : CMakeFiles/fix-clang-tidy-diff.dir/clean
 
 CMakeFiles/fix-clang-tidy-diff.dir/depend:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles/fix-clang-tidy-diff.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles/fix-clang-tidy-diff.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/fix-clang-tidy-diff.dir/depend
 

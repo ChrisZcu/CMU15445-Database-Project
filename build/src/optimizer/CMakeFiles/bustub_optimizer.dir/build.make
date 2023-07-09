@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub
+CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
+CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build
 
 # Include any dependencies generated for this target.
 include src/optimizer/CMakeFiles/bustub_optimizer.dir/depend.make
@@ -70,158 +70,144 @@ include src/optimizer/CMakeFiles/bustub_optimizer.dir/progress.make
 include src/optimizer/CMakeFiles/bustub_optimizer.dir/flags.make
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/flags.make
-src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/eliminate_true_filter.cpp
+src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/eliminate_true_filter.cpp
 src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o -MF CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/eliminate_true_filter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o"
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o -MF CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/eliminate_true_filter.cpp
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.i"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/eliminate_true_filter.cpp > CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/eliminate_true_filter.cpp > CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.i
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.s"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/eliminate_true_filter.cpp -o CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/eliminate_true_filter.cpp -o CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.s
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/flags.make
-src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/merge_projection.cpp
+src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/merge_projection.cpp
 src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o -MF CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/merge_projection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o"
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o -MF CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/merge_projection.cpp
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.i"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/merge_projection.cpp > CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/merge_projection.cpp > CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.i
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.s"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/merge_projection.cpp -o CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/merge_projection.cpp -o CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.s
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/flags.make
-src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/merge_filter_nlj.cpp
+src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/merge_filter_nlj.cpp
 src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o -MF CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/merge_filter_nlj.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o"
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o -MF CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/merge_filter_nlj.cpp
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.i"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/merge_filter_nlj.cpp > CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/merge_filter_nlj.cpp > CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.i
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.s"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/merge_filter_nlj.cpp -o CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/merge_filter_nlj.cpp -o CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.s
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/flags.make
-src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/merge_filter_scan.cpp
+src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/merge_filter_scan.cpp
 src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o -MF CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/merge_filter_scan.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o"
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o -MF CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/merge_filter_scan.cpp
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.i"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/merge_filter_scan.cpp > CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/merge_filter_scan.cpp > CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.i
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.s"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/merge_filter_scan.cpp -o CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/merge_filter_scan.cpp -o CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.s
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/flags.make
-src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/nlj_as_hash_join.cpp
+src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/nlj_as_hash_join.cpp
 src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o -MF CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/nlj_as_hash_join.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o"
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o -MF CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/nlj_as_hash_join.cpp
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.i"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/nlj_as_hash_join.cpp > CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/nlj_as_hash_join.cpp > CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.i
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.s"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/nlj_as_hash_join.cpp -o CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/nlj_as_hash_join.cpp -o CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.s
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/flags.make
-src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/nlj_as_index_join.cpp
+src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/nlj_as_index_join.cpp
 src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o -MF CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/nlj_as_index_join.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o"
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o -MF CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/nlj_as_index_join.cpp
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.i"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/nlj_as_index_join.cpp > CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/nlj_as_index_join.cpp > CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.i
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.s"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/nlj_as_index_join.cpp -o CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/nlj_as_index_join.cpp -o CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.s
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/flags.make
-src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/optimizer.cpp
+src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/optimizer.cpp
 src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o -MF CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/optimizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o"
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o -MF CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/optimizer.cpp
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bustub_optimizer.dir/optimizer.cpp.i"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/optimizer.cpp > CMakeFiles/bustub_optimizer.dir/optimizer.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/optimizer.cpp > CMakeFiles/bustub_optimizer.dir/optimizer.cpp.i
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bustub_optimizer.dir/optimizer.cpp.s"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/optimizer.cpp -o CMakeFiles/bustub_optimizer.dir/optimizer.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/optimizer.cpp -o CMakeFiles/bustub_optimizer.dir/optimizer.cpp.s
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/flags.make
-src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/optimizer_custom_rules.cpp
+src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/optimizer_custom_rules.cpp
 src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o -MF CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/optimizer_custom_rules.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o"
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o -MF CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/optimizer_custom_rules.cpp
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.i"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/optimizer_custom_rules.cpp > CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/optimizer_custom_rules.cpp > CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.i
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.s"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/optimizer_custom_rules.cpp -o CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.s
-
-src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/flags.make
-src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/optimizer_internal.cpp
-src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.o"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.o -MF CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/optimizer_internal.cpp
-
-src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.i"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/optimizer_internal.cpp > CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.i
-
-src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.s"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/optimizer_internal.cpp -o CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/optimizer_custom_rules.cpp -o CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.s
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/flags.make
-src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/order_by_index_scan.cpp
+src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/order_by_index_scan.cpp
 src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o -MF CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/order_by_index_scan.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o"
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o -MF CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/order_by_index_scan.cpp
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.i"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/order_by_index_scan.cpp > CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/order_by_index_scan.cpp > CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.i
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.s"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/order_by_index_scan.cpp -o CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/order_by_index_scan.cpp -o CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.s
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/flags.make
-src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/sort_limit_as_topn.cpp
+src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o: /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/sort_limit_as_topn.cpp
 src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o: src/optimizer/CMakeFiles/bustub_optimizer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o -MF CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/sort_limit_as_topn.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o"
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o -MF CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o.d -o CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o -c /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/sort_limit_as_topn.cpp
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.i"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/sort_limit_as_topn.cpp > CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/sort_limit_as_topn.cpp > CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.i
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.s"
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer/sort_limit_as_topn.cpp -o CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer/sort_limit_as_topn.cpp -o CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.s
 
 bustub_optimizer: src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o
 bustub_optimizer: src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o
@@ -231,7 +217,6 @@ bustub_optimizer: src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join
 bustub_optimizer: src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o
 bustub_optimizer: src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o
 bustub_optimizer: src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o
-bustub_optimizer: src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.o
 bustub_optimizer: src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o
 bustub_optimizer: src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o
 bustub_optimizer: src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make
@@ -242,10 +227,10 @@ src/optimizer/CMakeFiles/bustub_optimizer.dir/build: bustub_optimizer
 .PHONY : src/optimizer/CMakeFiles/bustub_optimizer.dir/build
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/clean:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer && $(CMAKE_COMMAND) -P CMakeFiles/bustub_optimizer.dir/cmake_clean.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer && $(CMAKE_COMMAND) -P CMakeFiles/bustub_optimizer.dir/cmake_clean.cmake
 .PHONY : src/optimizer/CMakeFiles/bustub_optimizer.dir/clean
 
 src/optimizer/CMakeFiles/bustub_optimizer.dir/depend:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/src/optimizer /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/optimizer/CMakeFiles/bustub_optimizer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/src/optimizer /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/optimizer/CMakeFiles/bustub_optimizer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/optimizer/CMakeFiles/bustub_optimizer.dir/depend
 

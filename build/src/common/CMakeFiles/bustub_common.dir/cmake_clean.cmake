@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/bustub_common.dir/bustub_ddl.cpp.o"
-  "CMakeFiles/bustub_common.dir/bustub_ddl.cpp.o.d"
   "CMakeFiles/bustub_common.dir/bustub_instance.cpp.o"
   "CMakeFiles/bustub_common.dir/bustub_instance.cpp.o.d"
   "CMakeFiles/bustub_common.dir/config.cpp.o"

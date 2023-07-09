@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.o"
-  "CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.o.d"
+  "CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.o"
+  "CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.o.d"
   "CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o"
   "CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o.d"
   "CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o"

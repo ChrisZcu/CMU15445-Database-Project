@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub
+CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
+CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build
 
 # Utility rule file for check-clang-tidy-p0.
 
@@ -67,7 +67,7 @@ include CMakeFiles/check-clang-tidy-p0.dir/compiler_depend.make
 include CMakeFiles/check-clang-tidy-p0.dir/progress.make
 
 CMakeFiles/check-clang-tidy-p0:
-	/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build_support/run_clang_tidy.py -clang-tidy-binary CLANG_TIDY_BIN-NOTFOUND -p /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build src/include/primer/trie_answer.h src/include/primer/trie_store.h src/include/primer/trie.h src/primer/trie_store.cpp src/primer/trie.cpp src/planner/plan_func_call.cpp src/include/execution/expressions/string_expression.h
+	/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build_support/run_clang_tidy.py -clang-tidy-binary /usr/local/opt/llvm@12/bin/clang-tidy -p /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build src/primer/p0_trie.cpp
 
 check-clang-tidy-p0: CMakeFiles/check-clang-tidy-p0
 check-clang-tidy-p0: CMakeFiles/check-clang-tidy-p0.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/check-clang-tidy-p0.dir/clean:
 .PHONY : CMakeFiles/check-clang-tidy-p0.dir/clean
 
 CMakeFiles/check-clang-tidy-p0.dir/depend:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles/check-clang-tidy-p0.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles/check-clang-tidy-p0.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/check-clang-tidy-p0.dir/depend
 

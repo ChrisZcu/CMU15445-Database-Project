@@ -50,14 +50,14 @@ unset(_cmake_expected_targets)
 add_library(fort STATIC IMPORTED)
 
 set_target_properties(fort PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/third_party/libfort/lib"
+  INTERFACE_INCLUDE_DIRECTORIES "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/third_party/libfort/lib"
 )
 
 # Import target "fort" for configuration "Debug"
 set_property(TARGET fort APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(fort PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "C"
-  IMPORTED_LOCATION_DEBUG "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/lib/libfort.a"
+  IMPORTED_LOCATION_DEBUG "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/lib/libfort.a"
   )
 
 # This file does not depend on other imported targets which have

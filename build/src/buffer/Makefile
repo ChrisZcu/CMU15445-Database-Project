@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub
+CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
+CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CPackSourceConfig.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/buffer//CMakeFiles/progress.marks
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/buffer/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles 0
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/buffer//CMakeFiles/progress.marks
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/buffer/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/buffer/clean
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/buffer/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/buffer/preinstall
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/buffer/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/buffer/preinstall
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/buffer/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/buffer/CMakeFiles/bustub_buffer.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/buffer/CMakeFiles/bustub_buffer.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/buffer/CMakeFiles/bustub_buffer.dir/rule
 .PHONY : src/buffer/CMakeFiles/bustub_buffer.dir/rule
 
 # Convenience name for target.
@@ -202,39 +202,39 @@ bustub_buffer: src/buffer/CMakeFiles/bustub_buffer.dir/rule
 
 # fast build rule for target.
 bustub_buffer/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/build
 .PHONY : bustub_buffer/fast
 
-buffer_pool_manager.o: buffer_pool_manager.cpp.o
-.PHONY : buffer_pool_manager.o
+buffer_pool_manager_instance.o: buffer_pool_manager_instance.cpp.o
+.PHONY : buffer_pool_manager_instance.o
 
 # target to build an object file
-buffer_pool_manager.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.o
-.PHONY : buffer_pool_manager.cpp.o
+buffer_pool_manager_instance.cpp.o:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.o
+.PHONY : buffer_pool_manager_instance.cpp.o
 
-buffer_pool_manager.i: buffer_pool_manager.cpp.i
-.PHONY : buffer_pool_manager.i
+buffer_pool_manager_instance.i: buffer_pool_manager_instance.cpp.i
+.PHONY : buffer_pool_manager_instance.i
 
 # target to preprocess a source file
-buffer_pool_manager.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.i
-.PHONY : buffer_pool_manager.cpp.i
+buffer_pool_manager_instance.cpp.i:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.i
+.PHONY : buffer_pool_manager_instance.cpp.i
 
-buffer_pool_manager.s: buffer_pool_manager.cpp.s
-.PHONY : buffer_pool_manager.s
+buffer_pool_manager_instance.s: buffer_pool_manager_instance.cpp.s
+.PHONY : buffer_pool_manager_instance.s
 
 # target to generate assembly for a file
-buffer_pool_manager.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager.cpp.s
-.PHONY : buffer_pool_manager.cpp.s
+buffer_pool_manager_instance.cpp.s:
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/buffer_pool_manager_instance.cpp.s
+.PHONY : buffer_pool_manager_instance.cpp.s
 
 clock_replacer.o: clock_replacer.cpp.o
 .PHONY : clock_replacer.o
 
 # target to build an object file
 clock_replacer.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.o
 .PHONY : clock_replacer.cpp.o
 
 clock_replacer.i: clock_replacer.cpp.i
@@ -242,7 +242,7 @@ clock_replacer.i: clock_replacer.cpp.i
 
 # target to preprocess a source file
 clock_replacer.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.i
 .PHONY : clock_replacer.cpp.i
 
 clock_replacer.s: clock_replacer.cpp.s
@@ -250,7 +250,7 @@ clock_replacer.s: clock_replacer.cpp.s
 
 # target to generate assembly for a file
 clock_replacer.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/clock_replacer.cpp.s
 .PHONY : clock_replacer.cpp.s
 
 lru_k_replacer.o: lru_k_replacer.cpp.o
@@ -258,7 +258,7 @@ lru_k_replacer.o: lru_k_replacer.cpp.o
 
 # target to build an object file
 lru_k_replacer.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.o
 .PHONY : lru_k_replacer.cpp.o
 
 lru_k_replacer.i: lru_k_replacer.cpp.i
@@ -266,7 +266,7 @@ lru_k_replacer.i: lru_k_replacer.cpp.i
 
 # target to preprocess a source file
 lru_k_replacer.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.i
 .PHONY : lru_k_replacer.cpp.i
 
 lru_k_replacer.s: lru_k_replacer.cpp.s
@@ -274,7 +274,7 @@ lru_k_replacer.s: lru_k_replacer.cpp.s
 
 # target to generate assembly for a file
 lru_k_replacer.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/lru_k_replacer.cpp.s
 .PHONY : lru_k_replacer.cpp.s
 
 lru_replacer.o: lru_replacer.cpp.o
@@ -282,7 +282,7 @@ lru_replacer.o: lru_replacer.cpp.o
 
 # target to build an object file
 lru_replacer.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o
 .PHONY : lru_replacer.cpp.o
 
 lru_replacer.i: lru_replacer.cpp.i
@@ -290,7 +290,7 @@ lru_replacer.i: lru_replacer.cpp.i
 
 # target to preprocess a source file
 lru_replacer.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.i
 .PHONY : lru_replacer.cpp.i
 
 lru_replacer.s: lru_replacer.cpp.s
@@ -298,7 +298,7 @@ lru_replacer.s: lru_replacer.cpp.s
 
 # target to generate assembly for a file
 lru_replacer.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/buffer/CMakeFiles/bustub_buffer.dir/build.make src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.s
 .PHONY : lru_replacer.cpp.s
 
 # Help Target
@@ -317,9 +317,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... bustub_buffer"
-	@echo "... buffer_pool_manager.o"
-	@echo "... buffer_pool_manager.i"
-	@echo "... buffer_pool_manager.s"
+	@echo "... buffer_pool_manager_instance.o"
+	@echo "... buffer_pool_manager_instance.i"
+	@echo "... buffer_pool_manager_instance.s"
 	@echo "... clock_replacer.o"
 	@echo "... clock_replacer.i"
 	@echo "... clock_replacer.s"
@@ -340,6 +340,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

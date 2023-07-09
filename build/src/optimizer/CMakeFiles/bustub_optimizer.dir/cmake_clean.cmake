@@ -15,8 +15,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o.d"
   "CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o"
   "CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o.d"
-  "CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.o"
-  "CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.o.d"
   "CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o"
   "CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o.d"
   "CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o"

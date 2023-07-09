@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub
+CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
+CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackConfig.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CPackSourceConfig.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && /usr/local/Cellar/cmake/3.26.4/bin/cpack --config ./CPackSourceConfig.cmake /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/src/planner//CMakeFiles/progress.marks
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/planner/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/CMakeFiles 0
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/src/planner//CMakeFiles/progress.marks
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/planner/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/planner/clean
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/planner/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/planner/preinstall
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/planner/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/planner/preinstall
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/planner/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/planner/CMakeFiles/bustub_planner.dir/rule:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/planner/CMakeFiles/bustub_planner.dir/rule
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/planner/CMakeFiles/bustub_planner.dir/rule
 .PHONY : src/planner/CMakeFiles/bustub_planner.dir/rule
 
 # Convenience name for target.
@@ -202,7 +202,7 @@ bustub_planner: src/planner/CMakeFiles/bustub_planner.dir/rule
 
 # fast build rule for target.
 bustub_planner/fast:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/build
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/build
 .PHONY : bustub_planner/fast
 
 expression_factory.o: expression_factory.cpp.o
@@ -210,7 +210,7 @@ expression_factory.o: expression_factory.cpp.o
 
 # target to build an object file
 expression_factory.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/expression_factory.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/expression_factory.cpp.o
 .PHONY : expression_factory.cpp.o
 
 expression_factory.i: expression_factory.cpp.i
@@ -218,7 +218,7 @@ expression_factory.i: expression_factory.cpp.i
 
 # target to preprocess a source file
 expression_factory.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/expression_factory.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/expression_factory.cpp.i
 .PHONY : expression_factory.cpp.i
 
 expression_factory.s: expression_factory.cpp.s
@@ -226,7 +226,7 @@ expression_factory.s: expression_factory.cpp.s
 
 # target to generate assembly for a file
 expression_factory.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/expression_factory.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/expression_factory.cpp.s
 .PHONY : expression_factory.cpp.s
 
 plan_aggregation.o: plan_aggregation.cpp.o
@@ -234,7 +234,7 @@ plan_aggregation.o: plan_aggregation.cpp.o
 
 # target to build an object file
 plan_aggregation.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_aggregation.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_aggregation.cpp.o
 .PHONY : plan_aggregation.cpp.o
 
 plan_aggregation.i: plan_aggregation.cpp.i
@@ -242,7 +242,7 @@ plan_aggregation.i: plan_aggregation.cpp.i
 
 # target to preprocess a source file
 plan_aggregation.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_aggregation.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_aggregation.cpp.i
 .PHONY : plan_aggregation.cpp.i
 
 plan_aggregation.s: plan_aggregation.cpp.s
@@ -250,7 +250,7 @@ plan_aggregation.s: plan_aggregation.cpp.s
 
 # target to generate assembly for a file
 plan_aggregation.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_aggregation.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_aggregation.cpp.s
 .PHONY : plan_aggregation.cpp.s
 
 plan_expression.o: plan_expression.cpp.o
@@ -258,7 +258,7 @@ plan_expression.o: plan_expression.cpp.o
 
 # target to build an object file
 plan_expression.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_expression.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_expression.cpp.o
 .PHONY : plan_expression.cpp.o
 
 plan_expression.i: plan_expression.cpp.i
@@ -266,7 +266,7 @@ plan_expression.i: plan_expression.cpp.i
 
 # target to preprocess a source file
 plan_expression.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_expression.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_expression.cpp.i
 .PHONY : plan_expression.cpp.i
 
 plan_expression.s: plan_expression.cpp.s
@@ -274,39 +274,15 @@ plan_expression.s: plan_expression.cpp.s
 
 # target to generate assembly for a file
 plan_expression.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_expression.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_expression.cpp.s
 .PHONY : plan_expression.cpp.s
-
-plan_func_call.o: plan_func_call.cpp.o
-.PHONY : plan_func_call.o
-
-# target to build an object file
-plan_func_call.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_func_call.cpp.o
-.PHONY : plan_func_call.cpp.o
-
-plan_func_call.i: plan_func_call.cpp.i
-.PHONY : plan_func_call.i
-
-# target to preprocess a source file
-plan_func_call.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_func_call.cpp.i
-.PHONY : plan_func_call.cpp.i
-
-plan_func_call.s: plan_func_call.cpp.s
-.PHONY : plan_func_call.s
-
-# target to generate assembly for a file
-plan_func_call.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_func_call.cpp.s
-.PHONY : plan_func_call.cpp.s
 
 plan_insert.o: plan_insert.cpp.o
 .PHONY : plan_insert.o
 
 # target to build an object file
 plan_insert.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_insert.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_insert.cpp.o
 .PHONY : plan_insert.cpp.o
 
 plan_insert.i: plan_insert.cpp.i
@@ -314,7 +290,7 @@ plan_insert.i: plan_insert.cpp.i
 
 # target to preprocess a source file
 plan_insert.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_insert.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_insert.cpp.i
 .PHONY : plan_insert.cpp.i
 
 plan_insert.s: plan_insert.cpp.s
@@ -322,7 +298,7 @@ plan_insert.s: plan_insert.cpp.s
 
 # target to generate assembly for a file
 plan_insert.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_insert.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_insert.cpp.s
 .PHONY : plan_insert.cpp.s
 
 plan_select.o: plan_select.cpp.o
@@ -330,7 +306,7 @@ plan_select.o: plan_select.cpp.o
 
 # target to build an object file
 plan_select.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_select.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_select.cpp.o
 .PHONY : plan_select.cpp.o
 
 plan_select.i: plan_select.cpp.i
@@ -338,7 +314,7 @@ plan_select.i: plan_select.cpp.i
 
 # target to preprocess a source file
 plan_select.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_select.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_select.cpp.i
 .PHONY : plan_select.cpp.i
 
 plan_select.s: plan_select.cpp.s
@@ -346,7 +322,7 @@ plan_select.s: plan_select.cpp.s
 
 # target to generate assembly for a file
 plan_select.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_select.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_select.cpp.s
 .PHONY : plan_select.cpp.s
 
 plan_table_ref.o: plan_table_ref.cpp.o
@@ -354,7 +330,7 @@ plan_table_ref.o: plan_table_ref.cpp.o
 
 # target to build an object file
 plan_table_ref.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_table_ref.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_table_ref.cpp.o
 .PHONY : plan_table_ref.cpp.o
 
 plan_table_ref.i: plan_table_ref.cpp.i
@@ -362,7 +338,7 @@ plan_table_ref.i: plan_table_ref.cpp.i
 
 # target to preprocess a source file
 plan_table_ref.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_table_ref.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_table_ref.cpp.i
 .PHONY : plan_table_ref.cpp.i
 
 plan_table_ref.s: plan_table_ref.cpp.s
@@ -370,7 +346,7 @@ plan_table_ref.s: plan_table_ref.cpp.s
 
 # target to generate assembly for a file
 plan_table_ref.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_table_ref.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/plan_table_ref.cpp.s
 .PHONY : plan_table_ref.cpp.s
 
 planner.o: planner.cpp.o
@@ -378,7 +354,7 @@ planner.o: planner.cpp.o
 
 # target to build an object file
 planner.cpp.o:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/planner.cpp.o
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/planner.cpp.o
 .PHONY : planner.cpp.o
 
 planner.i: planner.cpp.i
@@ -386,7 +362,7 @@ planner.i: planner.cpp.i
 
 # target to preprocess a source file
 planner.cpp.i:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/planner.cpp.i
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/planner.cpp.i
 .PHONY : planner.cpp.i
 
 planner.s: planner.cpp.s
@@ -394,7 +370,7 @@ planner.s: planner.cpp.s
 
 # target to generate assembly for a file
 planner.cpp.s:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/planner.cpp.s
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(MAKE) $(MAKESILENT) -f src/planner/CMakeFiles/bustub_planner.dir/build.make src/planner/CMakeFiles/bustub_planner.dir/planner.cpp.s
 .PHONY : planner.cpp.s
 
 # Help Target
@@ -422,9 +398,6 @@ help:
 	@echo "... plan_expression.o"
 	@echo "... plan_expression.i"
 	@echo "... plan_expression.s"
-	@echo "... plan_func_call.o"
-	@echo "... plan_func_call.i"
-	@echo "... plan_func_call.s"
 	@echo "... plan_insert.o"
 	@echo "... plan_insert.i"
 	@echo "... plan_insert.s"
@@ -448,6 +421,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

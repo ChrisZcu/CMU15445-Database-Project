@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub
+CMAKE_SOURCE_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build
+CMAKE_BINARY_DIR = /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build
 
 # Utility rule file for p3.01-seqscan_test.
 
@@ -67,7 +67,7 @@ include test/CMakeFiles/p3.01-seqscan_test.dir/compiler_depend.make
 include test/CMakeFiles/p3.01-seqscan_test.dir/progress.make
 
 test/CMakeFiles/p3.01-seqscan_test:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/test && ../bin/bustub-sqllogictest /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/test/sql/p3.01-seqscan.slt --verbose -d --in-memory
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/test && ../bin/bustub-sqllogictest /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/test/sql/p3.01-seqscan.slt --verbose -d --in-memory
 
 p3.01-seqscan_test: test/CMakeFiles/p3.01-seqscan_test
 p3.01-seqscan_test: test/CMakeFiles/p3.01-seqscan_test.dir/build.make
@@ -78,10 +78,10 @@ test/CMakeFiles/p3.01-seqscan_test.dir/build: p3.01-seqscan_test
 .PHONY : test/CMakeFiles/p3.01-seqscan_test.dir/build
 
 test/CMakeFiles/p3.01-seqscan_test.dir/clean:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/test && $(CMAKE_COMMAND) -P CMakeFiles/p3.01-seqscan_test.dir/cmake_clean.cmake
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/test && $(CMAKE_COMMAND) -P CMakeFiles/p3.01-seqscan_test.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/p3.01-seqscan_test.dir/clean
 
 test/CMakeFiles/p3.01-seqscan_test.dir/depend:
-	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/test /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/test /Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/test/CMakeFiles/p3.01-seqscan_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/test /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/test /Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/test/CMakeFiles/p3.01-seqscan_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/CMakeFiles/p3.01-seqscan_test.dir/depend
 

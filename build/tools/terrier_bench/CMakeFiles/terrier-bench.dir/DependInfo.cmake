@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/tools/terrier_bench/terrier.cpp" "tools/terrier_bench/CMakeFiles/terrier-bench.dir/terrier.cpp.o" "gcc" "tools/terrier_bench/CMakeFiles/terrier-bench.dir/terrier.cpp.o.d"
+  "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/tools/terrier_bench/terrier.cpp" "tools/terrier_bench/CMakeFiles/terrier-bench.dir/terrier.cpp.o" "gcc" "tools/terrier_bench/CMakeFiles/terrier-bench.dir/terrier.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
