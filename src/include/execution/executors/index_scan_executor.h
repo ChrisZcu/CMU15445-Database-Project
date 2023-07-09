@@ -20,29 +20,34 @@
 #include "execution/plans/index_scan_plan.h"
 #include "storage/table/tuple.h"
 
-namespace bustub {
+namespace bustub
+{
 
-/**
- * IndexScanExecutor executes an index scan over a table.
- */
-
-class IndexScanExecutor : public AbstractExecutor {
- public:
   /**
-   * Creates a new index scan executor.
-   * @param exec_ctx the executor context
-   * @param plan the index scan plan to be executed
+   * IndexScanExecutor executes an index scan over a table.
    */
-  IndexScanExecutor(ExecutorContext *exec_ctx, const IndexScanPlanNode *plan);
 
-  auto GetOutputSchema() const -> const Schema & override { return plan_->OutputSchema(); }
+  class IndexScanExecutor : public AbstractExecutor
+  {
+  public:
+    /**
+     * Creates a new index scan executor.
+     * @param exec_ctx the executor context
+     * @param plan the index scan plan to be executed
+     */
+    IndexScanExecutor(ExecutorContext *exec_ctx, const IndexScanPlanNode *plan);
 
-  void Init() override;
+    auto GetOutputSchema() const -> const Schema & override { return plan_->OutputSchema(); }
 
-  auto Next(Tuple *tuple, RID *rid) -> bool override;
+    void Init() override;
 
- private:
-  /** The index scan plan node to be executed. */
-  const IndexScanPlanNode *plan_;
-};
-}  // namespace bustub
+    auto Next(Tuple *tuple, RID *rid) -> bool override;
+
+  private:
+    /** The index scan plan node to be executed. */
+    const IndexScanPlanNode *plan_;
+    TableHeap *table_;
+    std::unique_ptr<BPlusTreeIndexIteratorForOneIntegerColumn> iterator_;
+    BPlusTreeIndexForOneIntegerColumn *index_;
+  };
+} // namespace bustub

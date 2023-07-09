@@ -11,12 +11,32 @@
 //===----------------------------------------------------------------------===//
 #include "execution/executors/index_scan_executor.h"
 
-namespace bustub {
-IndexScanExecutor::IndexScanExecutor(ExecutorContext *exec_ctx, const IndexScanPlanNode *plan)
-    : AbstractExecutor(exec_ctx) {}
+namespace bustub
+{
+    IndexScanExecutor::IndexScanExecutor(ExecutorContext *exec_ctx, const IndexScanPlanNode *plan)
+        : AbstractExecutor(exec_ctx), plan_(plan) {}
 
-void IndexScanExecutor::Init() { throw NotImplementedException("IndexScanExecutor is not implemented"); }
+    void IndexScanExecutor::Init()
+    {
+        auto index_info = exec_ctx_->GetCatalog()->GetIndex(plan_->index_oid_);
+        index_ = dynamic_cast<BPlusTreeIndexForOneIntegerColumn *>(index_info->index_.get());
+        iterator_ = std::make_unique<BPlusTreeIndexIteratorForOneIntegerColumn>(index_->GetBeginIterator());
+        table_ = exec_ctx_->GetCatalog()->GetTable(index_info->table_name_)->table_.get();
+    }
 
-auto IndexScanExecutor::Next(Tuple *tuple, RID *rid) -> bool { return false; }
+    auto IndexScanExecutor::Next(Tuple *tuple, RID *rid) -> bool
+    {
+        if (*iterator_ != index_->GetEndIterator())
+        {
+            *rid = (*(*iterator_)).second;
+            if (table_->GetTuple(*rid, tuple, this->GetExecutorContext()->GetTransaction()))
+            {
+                iterator_->operator++();
+                return true;
+            }
+        }
 
-}  // namespace bustub
+        return false;
+    }
+
+} // namespace bustub
