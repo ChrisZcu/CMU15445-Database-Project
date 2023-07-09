@@ -53,6 +53,6 @@ namespace bustub
     /** The sequential scan plan node to be executed */
     const SeqScanPlanNode *plan_;
     TableHeap *table_;
-    std::unique_ptr<TableIterator> iterator;
+    std::unique_ptr<TableIterator> iterator_;
   };
 } // namespace bustub
