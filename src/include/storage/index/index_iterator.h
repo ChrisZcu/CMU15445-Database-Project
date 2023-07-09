@@ -15,29 +15,42 @@
 #pragma once
 #include "storage/page/b_plus_tree_leaf_page.h"
 
-namespace bustub {
+namespace bustub
+{
 
 #define INDEXITERATOR_TYPE IndexIterator<KeyType, ValueType, KeyComparator>
 
-INDEX_TEMPLATE_ARGUMENTS
-class IndexIterator {
- public:
-  // you may define your own constructor based on your member variables
-  IndexIterator();
-  ~IndexIterator();  // NOLINT
+  INDEX_TEMPLATE_ARGUMENTS
+  class IndexIterator
+  {
+  public:
+    // you may define your own constructor based on your member variables
+    IndexIterator();
+    IndexIterator(Page *cur_page, int index, page_id_t page_id, BufferPoolManager buffer_pool_manager);
+    ~IndexIterator(); // NOLINT
 
-  auto IsEnd() -> bool;
+    auto IsEnd() -> bool;
 
-  auto operator*() -> const MappingType &;
+    auto operator*() -> const MappingType &;
 
-  auto operator++() -> IndexIterator &;
+    auto operator++() -> IndexIterator &;
 
-  auto operator==(const IndexIterator &itr) const -> bool { throw std::runtime_error("unimplemented"); }
+    auto operator==(const IndexIterator &itr) const -> bool
+    {
+      return static_cast<bool>(page_id_ == itr.page_id_ && index_ == itr.index_);
+    }
 
-  auto operator!=(const IndexIterator &itr) const -> bool { throw std::runtime_error("unimplemented"); }
+    auto operator!=(const IndexIterator &itr) const -> bool
+    {
+      return s !tatic_cast<bool>(page_id_ == itr.page_id_ && index_ == itr.index_);
+    }
 
- private:
-  // add your own private member variables here
-};
+  private:
+    // add your own private member variables here
+    page_id_t page_id_ = INVALID_PAGE_ID;
+    Page *curr_page_ = nullptr;
+    int index_ = 0;
+    BufferPoolManager buffer_pool_manager_ = nullptr;
+  };
 
-}  // namespace bustub
+} // namespace bustub
