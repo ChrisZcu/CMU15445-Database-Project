@@ -26,7 +26,7 @@ namespace bustub
   public:
     // you may define your own constructor based on your member variables
     IndexIterator();
-    IndexIterator(Page *cur_page, int index, page_id_t page_id, BufferPoolManager buffer_pool_manager);
+    IndexIterator(Page *cur_page, int index, page_id_t page_id, BufferPoolManager *buffer_pool_manager);
     ~IndexIterator(); // NOLINT
 
     auto IsEnd() -> bool;
@@ -42,7 +42,7 @@ namespace bustub
 
     auto operator!=(const IndexIterator &itr) const -> bool
     {
-      return s !tatic_cast<bool>(page_id_ == itr.page_id_ && index_ == itr.index_);
+      return !static_cast<bool>(page_id_ == itr.page_id_ && index_ == itr.index_);
     }
 
   private:
@@ -50,7 +50,7 @@ namespace bustub
     page_id_t page_id_ = INVALID_PAGE_ID;
     Page *curr_page_ = nullptr;
     int index_ = 0;
-    BufferPoolManager buffer_pool_manager_ = nullptr;
+    BufferPoolManager *buffer_pool_manager_ = nullptr;
   };
 
 } // namespace bustub

@@ -756,6 +756,8 @@ _Python_EXECUTABLE:INTERNAL=/Library/Developer/CommandLineTools/Library/Framewor
 //Python Properties
 _Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;9;6;64;;cpython-39-darwin;abi3;/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9;/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9;/Library/Python/3.9/site-packages;/Library/Python/3.9/site-packages
 _Python_INTERPRETER_SIGNATURE:INTERNAL=7b21c1b9d5bd8c140cdee9cb9cb472b8
+//Interpreter reason failure
+_Python_Interpreter_REASON_FAILURE:INTERNAL=
 //NumPy reason failure
 _Python_NumPy_REASON_FAILURE:INTERNAL=
 cmake_package_name:INTERNAL=GTest
