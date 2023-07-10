@@ -55,7 +55,7 @@ namespace bustub
         if (iter_ == tuples_.end())
             return false;
         *tuple = *iter_;
-        *rid = (*tuple)->GetRid(); //???
+        *rid = tuple->GetRid(); //???
         ++iter_;
         return true;
     }
