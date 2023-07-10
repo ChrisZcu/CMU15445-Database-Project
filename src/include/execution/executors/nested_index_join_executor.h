@@ -24,31 +24,39 @@
 #include "execution/plans/nested_index_join_plan.h"
 #include "storage/table/tmp_tuple.h"
 #include "storage/table/tuple.h"
+#include "type/value_factory.h"
 
-namespace bustub {
+namespace bustub
+{
 
-/**
- * IndexJoinExecutor executes index join operations.
- */
-class NestIndexJoinExecutor : public AbstractExecutor {
- public:
   /**
-   * Creates a new nested index join executor.
-   * @param exec_ctx the context that the hash join should be performed in
-   * @param plan the nested index join plan node
-   * @param child_executor the outer table
+   * IndexJoinExecutor executes index join operations.
    */
-  NestIndexJoinExecutor(ExecutorContext *exec_ctx, const NestedIndexJoinPlanNode *plan,
-                        std::unique_ptr<AbstractExecutor> &&child_executor);
+  class NestIndexJoinExecutor : public AbstractExecutor
+  {
+  public:
+    /**
+     * Creates a new nested index join executor.
+     * @param exec_ctx the context that the hash join should be performed in
+     * @param plan the nested index join plan node
+     * @param child_executor the outer table
+     */
+    NestIndexJoinExecutor(ExecutorContext *exec_ctx, const NestedIndexJoinPlanNode *plan,
+                          std::unique_ptr<AbstractExecutor> &&child_executor);
 
-  auto GetOutputSchema() const -> const Schema & override { return plan_->OutputSchema(); }
+    auto GetOutputSchema() const -> const Schema & override { return plan_->OutputSchema(); }
 
-  void Init() override;
+    void Init() override;
 
-  auto Next(Tuple *tuple, RID *rid) -> bool override;
+    auto Next(Tuple *tuple, RID *rid) -> bool override;
 
- private:
-  /** The nested index join plan node. */
-  const NestedIndexJoinPlanNode *plan_;
-};
-}  // namespace bustub
+  private:
+    /** The nested index join plan node. */
+    const NestedIndexJoinPlanNode *plan_;
+    BPlusTreeIndexForOneIntegerColumn *tree_;
+    std::unique_ptr<AbstractExecutor> child_;
+    const TableInfo *table_info_;
+    const IndexInfo *index_info_;
+    bool is_inner_{false};
+  };
+} // namespace bustub
