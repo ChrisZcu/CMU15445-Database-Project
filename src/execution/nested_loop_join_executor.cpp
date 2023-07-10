@@ -84,7 +84,7 @@ namespace bustub
       if (index_ == right_tuples_.size())
       {
         index_ = 0;
-        is_match = false;
+        is_match_ = false;
         if (!left_executor_->Next(&left_tuple_, &left_rid_))
         {
           return false;
