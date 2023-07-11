@@ -1,5 +1,0 @@
-if(EXISTS "/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/test/extendible_hash_table_test[1]_tests.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/CMU15445-Database-Project/build/test/extendible_hash_table_test[1]_tests.cmake")
-else()
-  add_test(extendible_hash_table_test_NOT_BUILT extendible_hash_table_test_NOT_BUILT)
-endif()

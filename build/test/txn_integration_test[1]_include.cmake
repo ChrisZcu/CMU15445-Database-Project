@@ -1,5 +1,0 @@
-if(EXISTS "/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/test/txn_integration_test[1]_tests.cmake")
-  include("/Users/teechris/Desktop/SUSTech/CMU15445Project/bustub/build/test/txn_integration_test[1]_tests.cmake")
-else()
-  add_test(txn_integration_test_NOT_BUILT txn_integration_test_NOT_BUILT)
-endif()
