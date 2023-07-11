@@ -80,7 +80,7 @@ namespace bustub
     {
     public:
       /** List of lock requests for the same resource (table or row) */
-      std::list<LockRequest *> request_queue_;
+      std::list<std::shared_ptr<LockRequest>> request_queue_;
       /** For notifying blocked transactions on this rid */
       std::condition_variable cv_;
       /** txn_id of an upgrading transaction (if any) */
@@ -316,10 +316,11 @@ namespace bustub
     auto RunCycleDetection() -> void;
     // 共享锁，因为lm是全局的
     auto GrantLock(const std::shared_ptr<LockRequest> &lock_request,
-                   const std::shared_lock<LockRequestQueue> &lock_request_queue) -> bool;
+                   const std::shared_ptr<LockRequestQueue> &lock_request_queue) -> bool;
     auto InsertOrDeleteTableLockSet(Transaction *txn, const std::shared_ptr<LockRequest> &lock_request, bool insert) -> void;
     // 记录对应表中对应行锁
-    auto InsertTowLockSet(const std::shared_ptr<std::unordered_map<table_oid_t, std::unordered_set<RID>>> &lock_set_map, const table_oid_t &oid, const RID &rid) -> void
+    auto InsertOrDeleteRowLockSet(Transaction *txn, const std::shared_ptr<LockRequest> &lock_request, bool insert) -> void;
+    auto InsertRowLockSet(const std::shared_ptr<std::unordered_map<table_oid_t, std::unordered_set<RID>>> &lock_set_map, const table_oid_t &oid, const RID &rid) -> void
     {
       auto row_lock_set = lock_set_map->find(oid);
       if (row_lock_set == lock_set_map->end())
@@ -330,7 +331,7 @@ namespace bustub
       row_lock_set->second.emplace(rid);
     }
     // 删除对应表中对应行锁记录
-    auto DeleteTowLockSet(const std::shared_ptr<std::unordered_map<table_oid_t, std::unordered_set<RID>>> &lock_set_map,
+    auto DeleteRowLockSet(const std::shared_ptr<std::unordered_map<table_oid_t, std::unordered_set<RID>>> &lock_set_map,
                           const table_oid_t &oid, const RID &rid) -> void
     {
       auto row_lock_set = lock_set_map->find(oid);
