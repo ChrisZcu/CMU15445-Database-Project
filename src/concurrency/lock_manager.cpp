@@ -73,8 +73,102 @@ namespace bustub
     lock_request_queue->latch_.lock();
     table_lock_map_latch_.unlock();
 
-    // 主主体加锁逻辑分为升级锁和加新的锁
-    // 1. 增加新的锁
+    // 主体加锁逻辑分为升级锁和加新的锁
+    // 1. 锁升级
+    for (auto request : lock_request_queue->request_queue_)
+    {
+      // 注意返回的是表对应的所有的request，有的可能不是此txn的
+      if (request->txn_id_ != txn->GetTransactionId())
+        continue;
+      if (request->lock_mode_ == lock_mode)
+      {
+        lock_request_queue->latch_.unlock();
+        return;
+      }
+      // 判断是否已经有txn在处理锁升级的请求
+      if (lock_request_queue->upgrading_ != INVALID_TXN_ID)
+      {
+        lock_request_queue->latch_.unlock();
+        txn->SetState(TransactionState::ABORTED);
+        throw TransactionAbortException(txn->GetTransactionId(), AbortReason::UPGRADE_CONFLICT);
+      }
+      // 锁降级抛错
+      switch (request->lock_mode_)
+      {
+      case LockMode::INTENTION_SHARED:
+        if (!(lock_mode == LockMode::SHARED || lock_mode == LockMode::EXCLUSIVE || lock_mode == LockMode::INTENTION_EXCLUSIVE || lock_mode == LockMode::SHARED_INTENTION_EXCLUSIVE))
+        {
+          lock_request_queue->latch_.unlock();
+          txn->SetState(TransactionState);
+          throw TransactionAbortException(txn->GetTransactionId(), AbortReason::INCOMPATIBLE_UPGRADE);
+        }
+      case LockMode::SHARED:
+        if (!(lock_mode == LockMode::EXCLUSIVE || lock_mode == LockMode::SHARED_INTENTION_EXCLUSIVE))
+        {
+          lock_request_queue->latch_.unlock();
+          txn->SetState(TransactionState);
+          throw TransactionAbortException(txn->GetTransactionId(), AbortReason::INCOMPATIBLE_UPGRADE);
+        }
+      case LockMode::INTENTION_EXCLUSIVE:
+        if (!(lock_mode == LockMode::EXCLUSIVE || lock_mode == LockMode::SHARED_INTENTION_EXCLUSIVE))
+        {
+          lock_request_queue->latch_.unlock();
+          txn->SetState(TransactionState);
+          throw TransactionAbortException(txn->GetTransactionId(), AbortReason::INCOMPATIBLE_UPGRADE);
+        }
+      case LockMode::SHARED_INTENTION_EXCLUSIVE:
+        if (lock_mode != LockMode::EXCLUSIVE)
+        {
+          lock_request_queue->latch_.unlock();
+          txn->SetState(TransactionState);
+          throw TransactionAbortException(txn->GetTransactionId(), AbortReason::INCOMPATIBLE_UPGRADE);
+        }
+        break;
+      default:
+        lock_request_queue->latch_.unlock();
+        txn->SetState(TransactionState);
+        throw TransactionAbortException(txn->GetTransactionId(), AbortReason::INCOMPATIBLE_UPGRADE);
+        break;
+      }
+      // 开始锁升级
+      // 删除旧的request锁
+      lock_request_queue->request_queue_.remove(request);
+      InsertOrDeleteTableLockSet(txn, request, false);
+
+      // 生成新的锁请求加入队列
+      auto upgrade_lock_request = std::make_shared<LockRequest>(txn->GetTransactionId(), lock_mode, oid);
+      auto iter = lock_request_queue->request_queue_.begin();
+      for (; iter < lock_request_queue.end(); ++iter)
+        // 处理无效的请求
+        if (!(*iter)->granted_)
+          break;
+      lock_request_queue->request_queue_.insert(iter, upgrade_lock_request);
+      lock_request_queue->upgrading_ = txn->GetTransactionId();
+
+      std::unique_lock<std::mutex> lock(lock_request_queue->latch_, std::adopt_lock);
+      // 判断事务被唤醒时候的状态，如果已加的锁和请求加的锁不兼容则需要重新进行判断
+      while (!GrantLock(upgrade_lock_request, lock_request_queue))
+      {
+        // 条件变量释放出锁，让其他事务拿锁进行处理，再通过竞争抢锁，以此来进行下一轮状态的判断
+        lock_request_queue->cv_.wait(lock);
+
+        // 判断状态
+        if (txn->GetState() == TransactionState::ABORTED)
+        {
+          lock_request_queue->upgrading_ = INVALID_TXN_ID;
+          lock_request_queue->request_queue_.remove(upgrade_lock_request);
+          lock_request_queue->cv_.notify_all();
+          return false;
+        }
+      }
+      // 升级成功
+      lock_request_queue->upgrading_ = INVALID_TXN_ID;
+      upgrade_lock_request->granted_ = true;
+      InsertOrDeleteTableLockSet(txn, upgrade_lock_request, true);
+      return true;
+    }
+
+    // 2. 增加新的锁
     // 处理请求：生成请求
     auto lock_request = std::make_shared<LockRequest>(txn->GetTransactionId(), lock_mode, oid);
     lock_request_queue->request_queue_.push_back(lock_request);
