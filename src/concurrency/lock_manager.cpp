@@ -197,7 +197,48 @@ namespace bustub
     return true;
   }
 
-  auto LockManager::UnlockTable(Transaction *txn, const table_oid_t &oid) -> bool { return true; }
+  auto LockManager::UnlockTable(Transaction *txn, const table_oid_t &oid) -> bool
+  {
+    table_lock_map_latch_.lock();
+    if (table_lock_map_.find(oid) == table_lock_map_.end())
+    {
+      table_lock_map_latch_.unlock();
+      txn->SetState(TransactionState::ABORTED);
+      throw TransactionAbortException(txn->GetTransactionId(), AbortReason::ATTEMPTED_UNLOCK_BUT_NO_LOCK_HELD);
+    }
+    // 检测是否加了表锁
+    auto s_row_lock_set = txn->GetSharedRowLockSet();
+    auto x_row_lock_set = txn->GetExclusiveRowLockSet();
+    if (s_row_lock_set->find(oid) != s_row_lock_set->end() || x_row_lock_set->find(oid) != x_row_lock_set->end())
+    {
+      table_lock_map_latch_.unlock();
+      txn->SetState(TransactionState::ABORTED);
+      throw TransactionAbortException(txn->GetTransactionId(), AbortReason::TABLE_UNLOCKED_BEFORE_UNLOCKING_ROWS);
+    }
+    auto lock_request_queue = table_lock_map_[oid];
+    lock_request_queue->latch_.lock();
+    table_lock_map_latch_.unlock();
+    for (auto request : lock_request_queue->request_queue_)
+    {
+      if (request->txn_id_ != txn->GetTransactionId() || !request->granted_)
+        continue;
+      lock_request_queue->request_queue_.remove(request);
+      lock_request_queue->cv_.notify_all();
+      lock_request_queue->latch_.unlock();
+
+      // 检查是否进入shrink阶段
+      if ((txn->GetIsolationLevel() == IsolationLevel::REPEATABLE_READ && (request->lock_mode_ == LockMode::SHARED || request->lock_mode_ == LockMode::EXCLUSIVE)) || (txn->GetIsolationLevel() == IsolationLevel::READ_COMMITTED && (request->lock_mode_ == LockMode::EXCLUSIVE)) || (txn->GetIsolationLevel() == IsolationLevel::READ_UNCOMMITTED && (request->lock_mode_ == LockMode::EXCLUSIVE)))
+      {
+        if (txn->GetState() != TransactionState::COMMITTED && txn->GetState() != TransactionState::ABORTED)
+          txn->SetState(TransactionState::SHRINKING);
+      }
+      InsertOrDeleteTableLockSet(txn, request, false);
+      return true;
+    }
+    lock_request_queue->latch_.unlock();
+    txn->SetState(TransactionState::ABORTED);
+    throw bustub::TransactionAbortException(txn->GetTransactionId(), AbortReason::ATTEMPTED_UNLOCK_BUT_NO_LOCK_HELD);
+  }
 
   auto LockManager::LockRow(Transaction *txn, LockMode lock_mode, const table_oid_t &oid, const RID &rid) -> bool
   {
