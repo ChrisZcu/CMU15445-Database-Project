@@ -21,6 +21,7 @@
 #include <unordered_set>
 #include <utility>
 #include <vector>
+#include <set>
 
 #include "common/config.h"
 #include "common/rid.h"
@@ -94,7 +95,7 @@ namespace bustub
     LockManager()
     {
       enable_cycle_detection_ = true;
-      cycle_detection_thread_ = new std::thread(&ockManager::RunCycleDetection, this);
+      cycle_detection_thread_ = new std::thread(&LockManager::RunCycleDetection, this);
     }
 
     ~LockManager()
@@ -320,19 +321,20 @@ namespace bustub
     // 记录对应表中对应行锁
     auto InsertTowLockSet(const std::shared_ptr<std::unordered_map<table_oid_t, std::unordered_set<RID>>> &lock_set_map, const table_oid_t &oid, const RID &rid) -> void
     {
-      auto row_lock_set = lock_set_map.find(oid);
-      if (row_lock_set == lock_set_map.end())
+      auto row_lock_set = lock_set_map->find(oid);
+      if (row_lock_set == lock_set_map->end())
       {
-        lock_set_map.emplace_back(oid, std::unordered_set<RID>{});
-        row_lock_set = lock_set_map.find(oid);
+        lock_set_map->emplace(oid, std::unordered_set<RID>{});
+        row_lock_set = lock_set_map->find(oid);
       }
       row_lock_set->second.emplace(rid);
     }
     // 删除对应表中对应行锁记录
-    auto DeleteTowLockSet(const std::shared_ptr<std::unordered_map<table_oid_t, std::unordered_set<RID>>> &lock_set_map, const table_oid_t &oid, const RID &rid) -> void
+    auto DeleteTowLockSet(const std::shared_ptr<std::unordered_map<table_oid_t, std::unordered_set<RID>>> &lock_set_map,
+                          const table_oid_t &oid, const RID &rid) -> void
     {
-      auto row_lock_set = lock_set_map.find(oid);
-      if (row_lock_set == lock_set_map.end())
+      auto row_lock_set = lock_set_map->find(oid);
+      if (row_lock_set == lock_set_map->end())
       {
         return;
       }
@@ -377,9 +379,9 @@ namespace bustub
     /** Waits-for graph representation. */
     std::unordered_map<txn_id_t, std::vector<txn_id_t>> waits_for_; // 事物之间等待的关系
     std::mutex waits_for_latch_;
-    std::vector<txn_id_t> txn_set_;    // 所有事物集合
-    std::vector<txn_id_t> safe_set_;   // dfs判断安全的事务
-    std::vector<txn_id_t> active_set_; // dfs已经扫描过的事务
+    std::set<txn_id_t> txn_set_;    // 所有事物集合
+    std::set<txn_id_t> safe_set_;   // dfs判断安全的事务
+    std::set<txn_id_t> active_set_; // dfs已经扫描过的事务
 
     std::unordered_map<txn_id_t, RID> map_txn_rid_;
     std::unordered_map<txn_id_t, table_oid_t> map_txn_oid_;
