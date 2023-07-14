@@ -42,7 +42,7 @@ class BPlusTreeInternalPage : public BPlusTreePage {
   void SetKeyAt(int index, const KeyType &key);
   auto SetValueAt(int index, const ValueType &value) -> void;
   auto ValueAt(int index) const -> ValueType;
-  auto Lookup(const KeyType &key, const KeyComparator &keyComparator) -> ValueType;
+  auto LookUp(const KeyType &key, const KeyComparator &keyComparator) -> ValueType;
   auto Insert(const MappingType &value, const KeyComparator &keyComparator) -> void;
   auto Break(const KeyType &key, Page *page_bother, Page *page_parent_page, const KeyComparator &keyComparator,
              BufferPoolManager *buffer_pool_manager_) -> void;
@@ -54,6 +54,7 @@ class BPlusTreeInternalPage : public BPlusTreePage {
   auto Merge(const KeyType &key, Page *right_page, BufferPoolManager *buffer_pool_manager_) -> void;
   auto KeyIndex(const KeyType &key, const KeyComparator &keyComparator) -> int;
   auto InsertFirst(const KeyType &key, const ValueType &value) -> void;
+  auto DeleteFirst(const KeyType &key, const ValueType &value) -> void;
   auto DeleteFirst() -> void;
 
  private:
