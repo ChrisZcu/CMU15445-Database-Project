@@ -95,7 +95,11 @@ namespace bustub
     IncreaseSize(1);
   }
   // TODO Break?
-
+  INDEX_TEMPLATE_ARGUMENTS
+  auto B_PLUS_TREE_INTERNAL_PAGE_TYPE:: Break(const KeyType &key, Page *page_bother, Page *page_parent_page, const KeyComparator &keyComparator,
+             BufferPoolManager *buffer_pool_manager_) -> void{
+              
+  }
   INDEX_TEMPLATE_ARGUMENTS
   auto B_PLUS_TREE_INTERNAL_PAGE_TYPE::Delete(const KeyType &key, const KeyComparator &keyComparator) -> bool
   {
